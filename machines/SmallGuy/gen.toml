@@ -1,0 +1,10 @@
+# --------------------- #
+#    Generation File    #
+# --------------------- #
+
+pkgs = [
+    "xf86-video-intel",
+]
+
+flatpaks = [
+]

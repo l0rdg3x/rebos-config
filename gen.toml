@@ -1,0 +1,13 @@
+# --------------------- #
+#    Generation File    #
+# --------------------- #
+
+pkgs = [
+    "git",
+]
+
+flatpaks = [
+    "flatseal",
+    "whatip",
+    "supertuxkart",
+]

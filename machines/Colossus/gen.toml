@@ -1,0 +1,13 @@
+# --------------------- #
+#    Generation File    #
+# --------------------- #
+
+pkgs = [
+    "xf86-video-amdgpu",
+    "blender",
+]
+
+flatpaks = [
+    "simple64",
+    "blanket",
+]
