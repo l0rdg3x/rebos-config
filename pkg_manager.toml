@@ -2,13 +2,21 @@
 #    Package Manager Configuration    #
 # ----------------------------------- #
 
-install = "paru -S #:?"
-remove = "paru -Rns #:?"
-sync = "paru -Syy"
-upgrade = "paru -Syyu"
+# Make sure to enter the exact command you use as the normal user!
+# That means including 'sudo' or 'doas' or whatever if the command needs it.
+# Where you would put packages, enter '#:?'.
+
+# Example: install = "sudo apt install #:?"
+
+install = "" # Example: sudo apt install #:?
+remove = "" # Example: sudo apt remove #:?
+sync = "" # Example: sudo apt update
+upgrade = "" # Example: sudo apt upgrade
 
 # ------------------------------- #
 #    Additional configuration.    #
 # ------------------------------- #
+
+# many_pkg_args = BOOL: Can you supply many packages as an argument? Example: 'sudo apt install git vim wget'
 
 config = { many_pkg_args = true }

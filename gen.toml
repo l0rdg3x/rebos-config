@@ -5,9 +5,3 @@
 pkgs = [
     "git",
 ]
-
-flatpaks = [
-    "flatseal",
-    "whatip",
-    "supertuxkart",
-]

@@ -2,9 +2,12 @@
 #    Generation File    #
 # --------------------- #
 
+# Packages to be installed via the native package manager.
 pkgs = [
-    "xf86-video-intel",
+    # "git",
 ]
 
+# Packages to be installed via Flatpak.
 flatpaks = [
+    # "flatseal",
 ]
