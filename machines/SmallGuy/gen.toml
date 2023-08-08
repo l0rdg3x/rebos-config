@@ -4,6 +4,7 @@
 
 pkgs = [
   "xf86-video-intel",
+  "vulkan-intel",
 ]
 
 flatpaks = [
