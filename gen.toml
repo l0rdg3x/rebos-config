@@ -61,6 +61,7 @@ pkgs = [
   "chafa",
   "starship",
   "namcap",
+  "cava",
 ]
 
 flatpaks = [
