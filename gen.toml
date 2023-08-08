@@ -11,6 +11,7 @@ pkgs = [
   "git",
   "flatpak",
   "rustup",
+  "rust-analyzer",
   "python",
   "python-pip",
   "helix",
