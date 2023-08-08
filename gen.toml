@@ -3,6 +3,7 @@
 # --------------------- #
 
 pkgs = [
+  "lld",
   "gvfs",
   "udisks2",
   "parted",
