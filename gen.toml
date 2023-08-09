@@ -2,6 +2,7 @@
 #    Generation File    #
 # --------------------- #
 
+# !pkgs.start
 pkgs = [
   "lld",
   "llvm",
@@ -66,10 +67,14 @@ pkgs = [
   "starship",
   "namcap",
   "cava",
+  "gimp",
 ]
+# !pkgs.end
 
+# !flatpak.start
 flatpaks = [
   "flatseal",
   "whatip",
   "supertuxkart",
 ]
+# !flatpak.end
