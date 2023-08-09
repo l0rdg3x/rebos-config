@@ -4,6 +4,7 @@
 
 pkgs = [
   "lld",
+  "llvm",
   "gvfs",
   "udisks2",
   "parted",
@@ -11,6 +12,8 @@ pkgs = [
   "git",
   "flatpak",
   "rustup",
+  "rust-analyzer",
+  "rust-src",
   "python",
   "python-pip",
   "helix",
@@ -48,7 +51,7 @@ pkgs = [
   "eww-wayland",
   "xdg-desktop-portal-hyprland",
   "sddm-git",
-  "cmatrix",
+  "neo-matrix-git",
   "clido",
   "flattools",
   "dmenu-to-rofi",
