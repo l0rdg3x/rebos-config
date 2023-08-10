@@ -29,7 +29,7 @@ pkgs = [
   "cliphist",
   "waybar",
   "alacritty",
-  "rofi-lbonn-wayland",
+  "rofi-lbonn-wayland-git",
   "swww",
   "swaync",
   "networkmanager",
