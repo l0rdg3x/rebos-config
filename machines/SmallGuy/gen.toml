@@ -5,6 +5,9 @@
 pkgs = [
   "xf86-video-intel",
   "vulkan-intel",
+  "intel-media-driver",
+  "intel-gmmlib",
+  "intel-compute-runtime",
 ]
 
 flatpaks = [
