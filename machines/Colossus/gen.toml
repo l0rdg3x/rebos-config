@@ -11,4 +11,5 @@ pkgs = [
 flatpaks = [
     "simple64",
     "blanket",
+    "blockbench",
 ]
