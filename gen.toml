@@ -69,6 +69,7 @@ pkgs = [
   "cava",
   "gimp",
   "nushell",
+  "gthumb",
 ]
 # !pkgs.end
 
