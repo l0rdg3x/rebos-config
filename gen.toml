@@ -70,6 +70,7 @@ pkgs = [
   "gimp",
   "nushell",
   "gthumb",
+  "notepadqq",
 ]
 # !pkgs.end
 
