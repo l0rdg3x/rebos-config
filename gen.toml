@@ -55,6 +55,7 @@ pkgs = [
   "qt5-wayland",
   "qt5ct",
   "obs-studio",
+  "pipewire",
   "sddm-git",
   "neo-matrix-git",
   "clido",
