@@ -76,6 +76,7 @@ pkgs = [
   "nushell",
   "gthumb",
   "notepadqq",
+  "vlc",
 ]
 # !pkgs.end
 
