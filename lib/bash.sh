@@ -6,7 +6,7 @@ build-system () {
 
 sync-system () {
   cd $HOME/.config/dister
-  git pull origin maini
+  git pull origin main
 
   cd $HOME
 
