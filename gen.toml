@@ -78,6 +78,7 @@ pkgs = [
   "notepadqq",
   "vlc",
   "gnome-calculator",
+  "binum",
 ]
 # !pkgs.end
 
