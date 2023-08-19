@@ -88,5 +88,6 @@ flatpaks = [
   "whatip",
   "supertuxkart",
   "anki",
+  "signal",
 ]
 # !flatpak.end
