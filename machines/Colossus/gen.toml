@@ -13,4 +13,5 @@ flatpaks = [
     "simple64",
     "blanket",
     "blockbench",
+    "codium",
 ]
