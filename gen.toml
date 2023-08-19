@@ -67,7 +67,6 @@ pkgs = [
   "pytool",
   "rupell",
   "tmux",
-  "browsh-bin",
   "fastfetch",
   "chafa",
   "starship",
