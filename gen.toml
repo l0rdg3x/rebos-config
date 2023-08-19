@@ -16,6 +16,7 @@ pkgs = [
   "rust-analyzer",
   "rust-src",
   "python",
+  "python-pip",
   "python-pipx",
   "helix",
   "bat",
