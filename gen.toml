@@ -79,6 +79,7 @@ pkgs = [
   "vlc",
   "gnome-calculator",
   "binum",
+  "coin-flipper",
 ]
 # !pkgs.end
 
