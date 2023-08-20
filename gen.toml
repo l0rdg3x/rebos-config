@@ -53,6 +53,7 @@ pkgs = [
   "eww-wayland",
   "xdg-desktop-portal",
   "xdg-desktop-portal-hyprland",
+  "xdg-utils",
   "qt5-wayland",
   "qt5ct",
   "obs-studio",
