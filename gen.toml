@@ -77,7 +77,7 @@ pkgs = [
   "nushell",
   "gthumb",
   "notepadqq",
-  "vlc",
+  "mpv",
   "gnome-calculator",
   "binum",
   "coin-flipper",
