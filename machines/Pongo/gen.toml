@@ -7,6 +7,7 @@ pkgs = [
     "amdvlk",
     "blender",
     "element-desktop",
+    "kdenlive",
 ]
 
 flatpaks = [
