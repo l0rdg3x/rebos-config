@@ -8,6 +8,7 @@ pkgs = [
     "blender",
     "element-desktop",
     "kdenlive",
+    "lmms",
 ]
 
 flatpaks = [
