@@ -83,6 +83,7 @@ pkgs = [
   "coin-flipper",
   "appimagelauncher",
   "ncdu",
+  "mission-center",
 ]
 # !pkgs.end
 
