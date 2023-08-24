@@ -15,4 +15,5 @@ flatpaks = [
     "blanket",
     "blockbench",
     "codium",
+    "net.ankiweb.Anki",
 ]
