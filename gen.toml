@@ -81,6 +81,7 @@ pkgs = [
   "gnome-calculator",
   "binum",
   "coin-flipper",
+  "appimagelauncher",
 ]
 # !pkgs.end
 
