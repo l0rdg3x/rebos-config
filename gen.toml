@@ -82,6 +82,7 @@ pkgs = [
   "binum",
   "coin-flipper",
   "appimagelauncher",
+  "ncdu",
 ]
 # !pkgs.end
 
