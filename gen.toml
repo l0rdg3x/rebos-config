@@ -93,5 +93,6 @@ flatpaks = [
   "whatip",
   "supertuxkart",
   "signal",
+  "libreoffice",
 ]
 # !flatpak.end
