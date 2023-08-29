@@ -84,6 +84,7 @@ pkgs = [
   "appimagelauncher",
   "ncdu",
   "mission-center",
+  "libreoffice-fresh",
 ]
 # !pkgs.end
 
@@ -93,6 +94,5 @@ flatpaks = [
   "whatip",
   "supertuxkart",
   "signal",
-  "libreoffice",
 ]
 # !flatpak.end
