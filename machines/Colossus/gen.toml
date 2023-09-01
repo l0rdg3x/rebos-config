@@ -8,6 +8,10 @@ pkgs = [
     "blender",
     "element-desktop",
     "kdenlive",
+    "virtualbox",
+    "virtualbox-guest-iso",
+    "virtualbox-guest-utils",
+    "virtualbox-host-dkms",
 ]
 
 flatpaks = [

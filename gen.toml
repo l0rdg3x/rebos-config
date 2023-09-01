@@ -4,6 +4,8 @@
 
 # !pkgs.start
 pkgs = [
+  "linux-zen",
+  "linux-zen-headers",
   "lld",
   "llvm",
   "gvfs",
