@@ -87,6 +87,7 @@ pkgs = [
   "ncdu",
   "mission-center",
   "libreoffice-fresh",
+  "wine",
 ]
 # !pkgs.end
 
