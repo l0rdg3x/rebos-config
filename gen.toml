@@ -43,7 +43,6 @@ pkgs = [
   "papirus-icon-theme",
   "noto-fonts-emoji",
   "lxsession",
-  "grimblast",
   "brightnessctl",
   "light",
   "nwg-look-bin",
