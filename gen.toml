@@ -87,6 +87,7 @@ pkgs = [
   "mission-center",
   "libreoffice-fresh",
   "wine",
+  "transmission-gtk",
 ]
 # !pkgs.end
 
