@@ -88,6 +88,7 @@ pkgs = [
   "libreoffice-fresh",
   "wine",
   "transmission-gtk",
+  "htop",
 ]
 # !pkgs.end
 
