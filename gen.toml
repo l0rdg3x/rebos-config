@@ -106,5 +106,12 @@ crates = [
   "bacon",
   "cargo-info",
   "cargo-update",
+  "cargo-expand",
+  "cargo-show-asm",
+  "irust",
+  "mprocs",
+  "ncspot",
+  "speedtest-rs",
+  "wiki-tui",
 ]
 # !crates.end
