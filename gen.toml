@@ -68,7 +68,7 @@ pkgs = [
   "grape",
   "pytool",
   "rupell",
-  "tmux",
+  "zellij",
   "fastfetch",
   "chafa",
   "starship",
@@ -100,3 +100,11 @@ flatpaks = [
   "signal",
 ]
 # !flatpak.end
+
+# !crates.start
+crates = [
+  "bacon",
+  "cargo-info",
+  "cargo-update",
+]
+# !crates.end
