@@ -4,7 +4,8 @@
 
 pkgs = [
     "xf86-video-amdgpu",
-    "amdvlk",
+    "vulkan-radeon",
+    "lib32-vulkan-radeon",
     "element-desktop",
     "kdenlive",
     "virtualbox",
