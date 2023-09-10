@@ -78,7 +78,7 @@ pkgs = [
   "gimp",
   "nushell",
   "gthumb",
-  "notepadqq",
+  "lite-xl-bin",
   "mpv",
   "gnome-calculator",
   "binum",
