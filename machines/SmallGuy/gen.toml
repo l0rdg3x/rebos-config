@@ -9,6 +9,7 @@ pkgs = [
   "intel-media-driver",
   "intel-gmmlib",
   "intel-compute-runtime",
+  "intel-graphics-compiler",
 ]
 
 flatpaks = [
