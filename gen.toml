@@ -85,7 +85,6 @@ pkgs = [
   "coin-flipper",
   "appimagelauncher",
   "ncdu",
-  "mission-center",
   "libreoffice-fresh",
   "wine",
   "transmission-gtk",

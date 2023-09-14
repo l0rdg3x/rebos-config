@@ -13,6 +13,7 @@ pkgs = [
     "virtualbox-guest-utils",
     "virtualbox-host-dkms",
     "godot",
+    "mission-center",
 ]
 
 flatpaks = [
