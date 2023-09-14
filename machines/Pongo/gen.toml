@@ -24,3 +24,9 @@ flatpaks = [
     "net.ankiweb.Anki",
     "blender",
 ]
+
+crates = [
+    "ncspot",
+    "wiki-tui",
+    "mprocs",
+]

@@ -23,3 +23,9 @@ flatpaks = [
     "codium",
     "blender",
 ]
+
+crates = [
+    "ncspot",
+    "wiki-tui",
+    "mprocs",
+]
