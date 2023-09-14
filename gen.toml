@@ -22,7 +22,7 @@ pkgs = [
   "python-pipx",
   "helix",
   "bat",
-  "exa",
+  "eza",
   "brave-bin",
   "thunar",
   "noto-fonts-emoji",
