@@ -4,28 +4,16 @@
 
 # !imports.start
 imports = [
+  "core_packages",
+  "programming_languages",
   "hyprland",
 ]
 # !imports.end
 
 # !pkgs.start
 pkgs = [
-  "linux-zen",
-  "linux-zen-headers",
-  "lld",
-  "llvm",
-  "gvfs",
-  "udisks2",
-  "parted",
-  "gparted",
-  "git",
   "flatpak",
-  "rustup",
-  "rust-analyzer",
-  "rust-src",
-  "python",
-  "python-pip",
-  "python-pipx",
+  "gparted",
   "helix",
   "bat",
   "eza",

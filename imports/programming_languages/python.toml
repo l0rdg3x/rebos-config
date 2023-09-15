@@ -1,0 +1,5 @@
+pkgs = [
+  "python",
+  "python-pip",
+  "python-pipx",
+]
