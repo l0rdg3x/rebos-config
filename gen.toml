@@ -2,6 +2,12 @@
 #    Generation File    #
 # --------------------- #
 
+# !imports.start
+imports = [
+  "hyprland",
+]
+# !imports.end
+
 # !pkgs.start
 pkgs = [
   "linux-zen",
@@ -26,39 +32,10 @@ pkgs = [
   "brave-bin",
   "thunar",
   "noto-fonts-emoji",
-  "libnotify",
-  "notification-daemon",
-  "hyprland",
   "grimblast-git",
-  "cliphist",
-  "waybar",
-  "alacritty",
-  "rofi-lbonn-wayland-git",
-  "swww",
-  "swaync",
-  "networkmanager",
-  "network-manager-applet",
-  "bluez",
-  "bluez-utils",
-  "blueman",
-  "papirus-icon-theme",
   "noto-fonts-emoji",
-  "lxsession",
-  "brightnessctl",
-  "light",
-  "nwg-look-bin",
-  "yad",
-  "sox",
-  "mint-themes",
-  "xcursor-simp1e-gruvbox-light",
-  "gtklock",
-  "eww-wayland",
-  "xdg-desktop-portal",
-  "xdg-desktop-portal-hyprland",
-  "xdg-utils",
-  "qt5-wayland",
-  "qt5ct",
   "obs-studio",
+  "qt5ct",
   "pipewire",
   "sddm-git",
   "neo-matrix-git",

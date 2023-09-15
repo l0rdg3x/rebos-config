@@ -1,0 +1,9 @@
+imports = [
+  "wayland",
+  "ricing",
+]
+
+pkgs = [
+  "hyprland",
+  "xdg-desktop-portal-hyprland",
+]

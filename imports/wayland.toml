@@ -1,0 +1,11 @@
+pkgs = [
+  "cliphist",
+  "waybar",
+  "rofi-lbonn-wayland-git",
+  "swww",
+  "swaync",
+  "nwg-look-bin",
+  "gtklock",
+  "eww-wayland",
+  "qt5-wayland",
+]
