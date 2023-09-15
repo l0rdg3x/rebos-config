@@ -2,30 +2,18 @@
 #    Generation File    #
 # --------------------- #
 
+imports = [
+    "intensive",
+]
+
 pkgs = [
     "xf86-video-amdgpu",
     "vulkan-radeon",
     "lib32-vulkan-radeon",
-    "element-desktop",
-    "kdenlive",
-    "virtualbox",
-    "virtualbox-guest-iso",
-    "virtualbox-guest-utils",
-    "virtualbox-host-dkms",
-    "godot",
-    "mission-center",
 ]
 
 flatpaks = [
-    "simple64",
-    "blanket",
-    "blockbench",
-    "codium",
-    "blender",
 ]
 
 crates = [
-    "ncspot",
-    "wiki-tui",
-    "mprocs",
 ]

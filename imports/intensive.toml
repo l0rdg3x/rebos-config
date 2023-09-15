@@ -1,0 +1,24 @@
+imports = [
+    "virtualization",
+]
+
+pkgs = [
+    "element-desktop",
+    "kdenlive",
+    "godot",
+    "mission-center",
+]
+
+flatpaks = [
+    "simple64",
+    "blanket",
+    "blockbench",
+    "codium",
+    "blender",
+]
+
+crates = [
+    "ncspot",
+    "wiki-tui",
+    "mprocs",
+]
