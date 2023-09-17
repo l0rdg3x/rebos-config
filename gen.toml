@@ -54,6 +54,7 @@ pkgs = [
   "wine",
   "transmission-gtk",
   "htop",
+  "tty-clock-git",
 ]
 # !pkgs.end
 
