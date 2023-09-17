@@ -10,7 +10,7 @@ pkgs = [
     "xf86-video-amdgpu",
     "vulkan-radeon",
     "lib32-vulkan-radeon",
-    "jitsi-meet-bin",
+    "jitsi-meet-desktop-bin",
 ]
 
 flatpaks = [
