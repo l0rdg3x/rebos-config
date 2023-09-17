@@ -55,6 +55,7 @@ pkgs = [
   "transmission-gtk",
   "htop",
   "tty-clock-git",
+  "asciiquarium",
 ]
 # !pkgs.end
 
