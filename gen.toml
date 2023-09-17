@@ -56,6 +56,8 @@ pkgs = [
   "htop",
   "tty-clock-git",
   "asciiquarium",
+  "lolcat",
+  "catlol",
 ]
 # !pkgs.end
 
