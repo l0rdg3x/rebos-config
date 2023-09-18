@@ -59,6 +59,7 @@ pkgs = [
   "lolcat",
   "catlol",
   "lavat-git",
+  "moon-buggy",
 ]
 # !pkgs.end
 
