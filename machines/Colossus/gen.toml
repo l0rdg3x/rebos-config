@@ -4,6 +4,7 @@
 
 imports = [
     "intensive",
+    "intensive_proprietary",
 ]
 
 pkgs = [

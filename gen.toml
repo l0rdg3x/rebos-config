@@ -7,6 +7,7 @@ imports = [
   "core_packages",
   "programming_languages",
   "hyprland",
+  "proprietary",
 ]
 # !imports.end
 
