@@ -7,6 +7,7 @@ pkgs = [
     "kdenlive",
     "godot",
     "mission-center",
+    "blender",
 ]
 
 flatpaks = [
@@ -14,7 +15,6 @@ flatpaks = [
     "blanket",
     "blockbench",
     "codium",
-    "blender",
 ]
 
 crates = [
