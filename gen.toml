@@ -62,7 +62,7 @@ pkgs = [
   "lavat-git",
   "moon-buggy",
   "arp-scan",
-  "remmina",
+  "tigervnc",
 ]
 # !pkgs.end
 
