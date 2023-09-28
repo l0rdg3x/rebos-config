@@ -84,5 +84,7 @@ crates = [
   "cargo-show-asm",
   "irust",
   "speedtest-rs",
+  "wiki-tui",
+  "mprocs",
 ]
 # !crates.end

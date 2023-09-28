@@ -18,7 +18,4 @@ flatpaks = [
 ]
 
 crates = [
-    "ncspot",
-    "wiki-tui",
-    "mprocs",
 ]
