@@ -37,6 +37,7 @@ pkgs = [
   "rupell",
   "zellij",
   "fastfetch",
+  "cutefetch",
   "chafa",
   "starship",
   "namcap",
