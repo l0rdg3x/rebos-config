@@ -7,4 +7,5 @@ pkgs = [
   "udisks2",
   "parted",
   "git",
+  "zip",
 ]
