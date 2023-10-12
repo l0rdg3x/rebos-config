@@ -65,6 +65,7 @@ pkgs = [
   "arp-scan",
   "tigervnc",
   "dir-watcher",
+  "gnome-disk-utility",
 ]
 # !pkgs.end
 
