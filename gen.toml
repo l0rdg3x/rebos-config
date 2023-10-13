@@ -66,6 +66,7 @@ pkgs = [
   "tigervnc",
   "dir-watcher",
   "gnome-disk-utility",
+  "arg-info",
 ]
 # !pkgs.end
 
