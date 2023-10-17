@@ -16,5 +16,6 @@ pkgs = [
   "mint-themes",
   "xcursor-simp1e-gruvbox-light",
   "xdg-desktop-portal",
+  "xdg-desktop-portal-gtk",
   "xdg-utils",
 ]
