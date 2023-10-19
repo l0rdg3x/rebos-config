@@ -47,6 +47,7 @@ pkgs = [
   "gthumb",
   "lite-xl-bin",
   "mpv",
+  "rhythmbox",
   "gnome-calculator",
   "binum",
   "coin-flipper",
