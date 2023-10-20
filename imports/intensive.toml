@@ -4,7 +4,6 @@ imports = [
 
 pkgs = [
     "element-desktop",
-    "kdenlive",
     "godot",
     "mission-center",
     "blender",
