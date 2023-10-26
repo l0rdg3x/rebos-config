@@ -9,4 +9,6 @@ pkgs = [
   "git",
   "zip",
   "unzip",
+  "clang",
+  "gcc",
 ]
