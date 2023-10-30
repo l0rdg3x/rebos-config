@@ -28,6 +28,7 @@ pkgs = [
   "pipewire",
   "sddm-git",
   "neo-matrix-git",
+  "cmatrix-xterm-256color",
   "clido",
   "flattools",
   "dmenu-to-rofi",
