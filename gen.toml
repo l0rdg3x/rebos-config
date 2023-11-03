@@ -58,6 +58,7 @@ pkgs = [
   "wine",
   "transmission-gtk",
   "htop",
+  "btop",
   "tty-clock-git",
   "asciiquarium",
   "lolcat",
