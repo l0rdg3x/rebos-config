@@ -14,7 +14,8 @@ flatpaks = [
     "blanket",
     "blockbench",
     "codium",
-    "org.prismlauncher.PrismLauncher"
+    "org.prismlauncher.PrismLauncher",
+    "org.kde.kdenlive",
 ]
 
 crates = [
