@@ -19,4 +19,5 @@ pkgs = [
   "xdg-desktop-portal-gtk",
   "xdg-utils",
   "flatpak-xdg-utils",
+  "oglo-hyprland-rice-theme-translate-rs",
 ]
