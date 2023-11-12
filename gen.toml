@@ -71,6 +71,7 @@ pkgs = [
   "dir-watcher",
   "gnome-disk-utility",
   "arg-info",
+  "calibre",
 ]
 # !pkgs.end
 
