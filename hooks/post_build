@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
 sudo cp ~/.config/dister/environment /etc/environment
+
+if pacman -Qs firewalld > /dev/null 2>&1; then
+  sudo systemctl disable firewalld --now
+  sudo pacman -Rns firewalld
+  sudo pacman -S ufw
+  sudo systemctl enable ufw --now
+fi
