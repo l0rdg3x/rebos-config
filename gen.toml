@@ -72,6 +72,7 @@ pkgs = [
   "gnome-disk-utility",
   "arg-info",
   "calibre",
+  "waydroid",
 ]
 # !pkgs.end
 
