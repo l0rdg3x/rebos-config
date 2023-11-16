@@ -81,6 +81,7 @@ flatpaks = [
   "whatip",
   "supertuxkart",
   "signal",
+  "org.supertuxproject.SuperTux",
 ]
 # !flatpak.end
 
