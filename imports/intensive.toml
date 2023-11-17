@@ -8,6 +8,7 @@ pkgs = [
     "mission-center",
     "blender",
     "waydroid",
+    "lutris",
 ]
 
 flatpaks = [
