@@ -10,8 +10,11 @@ if pacman -Qs firewalld > /dev/null 2>&1; then
 fi
 
 if pacman -Qs virt-manager > /dev/null 2>&1; then
-  sudo useradd -g $USER libvirt
-  sudo useradd -g $USER libvirt-kvm
+  sudo usermod -aG libvirt $USER
+  sudo usermod -aG kvm $USER
+  sudo usermod -aG video $USER
   
   sudo systemctl enable libvirtd.service --now
+
+  sudo virsh net-autostart default > /dev/null
 fi
