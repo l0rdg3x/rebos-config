@@ -9,7 +9,9 @@ if pacman -Qs firewalld > /dev/null 2>&1; then
   sudo systemctl enable ufw --now
 fi
 
-sudo useradd -g $USER libvirt
-sudo useradd -g $USER libvirt-kvm
-
-sudo systemctl enable libvirtd.service --now
+if pacman -Qs virt-manager > /dev/null 2>&1; then
+  sudo useradd -g $USER libvirt
+  sudo useradd -g $USER libvirt-kvm
+  
+  sudo systemctl enable libvirtd.service --now
+fi
