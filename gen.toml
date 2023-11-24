@@ -72,6 +72,7 @@ pkgs = [
   "gnome-disk-utility",
   "arg-info",
   "calibre",
+  "netget-cli",
 ]
 # !pkgs.end
 
