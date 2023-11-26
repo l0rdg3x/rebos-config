@@ -73,6 +73,7 @@ pkgs = [
   "arg-info",
   "calibre",
   "netget-cli",
+  "gnu-netcat",
 ]
 # !pkgs.end
 
