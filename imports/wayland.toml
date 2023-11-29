@@ -8,4 +8,5 @@ pkgs = [
   "gtklock",
   "eww-wayland",
   "qt5-wayland",
+  "gammastep",
 ]
