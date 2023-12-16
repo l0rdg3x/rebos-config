@@ -74,6 +74,7 @@ pkgs = [
   "calibre",
   "netget-cli",
   "gnu-netcat",
+  "lazygit",
 ]
 # !pkgs.end
 
