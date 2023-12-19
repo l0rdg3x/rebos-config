@@ -99,5 +99,6 @@ crates = [
   "speedtest-rs",
   "wiki-tui",
   "mprocs",
+  "uwuify",
 ]
 # !crates.end
