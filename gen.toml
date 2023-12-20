@@ -30,6 +30,7 @@ pkgs = [
   "neo-matrix-git",
   "cmatrix-xterm-256color",
   "clido",
+  "tuido",
   "flattools",
   "dmenu-to-rofi",
   "cermic",
