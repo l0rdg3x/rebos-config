@@ -76,6 +76,7 @@ pkgs = [
   "netget-cli",
   "gnu-netcat",
   "lazygit",
+  "browsh-bin",
 ]
 # !pkgs.end
 
