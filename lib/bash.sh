@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
 build-system () {
-  dister gen current build
+  rebos gen current build
 }
 
 sync-system () {
-  cd $HOME/.config/dister
+  cd $HOME/.config/rebos
   git pull origin main
 
   cd $HOME
 
-  dister gen commit "SYNC"
+  rebos gen commit "SYNC"
 
   build-system
 }

@@ -1,14 +1,14 @@
 def build-system [] {
-  dister gen current build
+  rebos gen current build
 }
 
 def sync-system [] {
-  cd ~/.config/dister
+  cd ~/.config/rebos
   git pull origin main
 
   cd ~
 
-  dister gen commit "SYNC"
+  rebos gen commit "SYNC"
 
   build-system
 }
