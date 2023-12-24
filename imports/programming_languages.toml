@@ -3,4 +3,5 @@ imports = [
   "programming_languages/python",
   "programming_languages/r",
   "programming_languages/rhai",
+  "programming_languages/zig",
 ]
