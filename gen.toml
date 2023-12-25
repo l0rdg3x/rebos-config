@@ -8,6 +8,7 @@ imports = [
   "programming_languages",
   "hyprland",
   "proprietary",
+  "sddm_themes",
 ]
 # !imports.end
 

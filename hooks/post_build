@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 sudo cp ~/.config/rebos/environment /etc/environment
+sudo cp ~/.config/rebos/sddm.conf /etc/sddm.conf
 
 if pacman -Qs firewalld > /dev/null 2>&1; then
   sudo systemctl disable firewalld --now
