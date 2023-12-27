@@ -78,6 +78,9 @@ pkgs = [
   "gnu-netcat",
   "lazygit",
   "browsh-bin",
+  "sex",
+  "festival",
+  "cowsay",
 ]
 # !pkgs.end
 
