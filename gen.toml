@@ -80,6 +80,7 @@ pkgs = [
   "browsh-bin",
   "sex",
   "festival",
+  "festival-us",
   "cowsay",
 ]
 # !pkgs.end
