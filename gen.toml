@@ -84,6 +84,7 @@ pkgs = [
   "festival-us",
   "cowsay",
   "tayum-cli",
+  "kooha",
 ]
 # !pkgs.end
 
