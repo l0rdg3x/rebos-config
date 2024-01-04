@@ -85,6 +85,7 @@ pkgs = [
   "cowsay",
   "tayum-cli",
   "kooha",
+  "gnome-mines",
 ]
 # !pkgs.end
 
