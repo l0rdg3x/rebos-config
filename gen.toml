@@ -86,6 +86,7 @@ pkgs = [
   "tayum-cli",
   "kooha",
   "gnome-mines",
+  "pipes.sh",
 ]
 # !pkgs.end
 
