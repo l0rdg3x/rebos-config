@@ -87,6 +87,7 @@ pkgs = [
   "kooha",
   "gnome-mines",
   "pipes.sh",
+  "bettercap",
 ]
 # !pkgs.end
 
