@@ -19,7 +19,7 @@ pkgs = [
   "helix",
   "bat",
   "eza",
-  # "brave-bin",
+  "brave-bin",
   "thunar",
   "noto-fonts-emoji",
   "grimblast-git",
