@@ -88,6 +88,7 @@ pkgs = [
   "gnome-mines",
   "pipes.sh",
   "bettercap",
+  "rainfuck-cli",
 ]
 # !pkgs.end
 
