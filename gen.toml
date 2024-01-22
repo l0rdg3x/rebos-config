@@ -99,7 +99,6 @@ flatpaks = [
   "supertuxkart",
   "signal",
   "org.supertuxproject.SuperTux",
-  "app/one.ablaze.floorp/x86_64/stable",
 ]
 # !flatpak.end
 
