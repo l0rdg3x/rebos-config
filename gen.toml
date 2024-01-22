@@ -89,6 +89,7 @@ pkgs = [
   "pipes.sh",
   "bettercap",
   "rainfuck-cli",
+  "pmbootstrap",
 ]
 # !pkgs.end
 
