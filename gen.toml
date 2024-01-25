@@ -42,6 +42,7 @@ pkgs = [
   "fastfetch",
   "cutefetch",
   "retch",
+  "pfetch-rs-bin",
   "chafa",
   "starship",
   "namcap",
