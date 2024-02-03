@@ -13,4 +13,6 @@ sync-system () {
   rebos gen commit "SYNC"
 
   build-system
+
+  rebos gen tidy-up
 }
