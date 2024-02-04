@@ -93,6 +93,7 @@ pkgs = [
   "pmbootstrap",
   "bullshit",
   "yazi",
+  "logisim",
 ]
 # !pkgs.end
 
