@@ -5,7 +5,7 @@ pkgs = [
   "swww",
   "swaync",
   "nwg-look-bin",
-  "gtklock",
+  "hyprlock-git",
   "eww-wayland",
   "qt5-wayland",
   "gammastep",
