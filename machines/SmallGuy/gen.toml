@@ -4,6 +4,7 @@
 
 imports = [
   "gpu_drivers/intel",
+  "laptop",
 ]
 
 pkgs = [

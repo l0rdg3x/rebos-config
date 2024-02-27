@@ -6,6 +6,7 @@ imports = [
     "intensive",
     "intensive_proprietary",
     "gpu_drivers/amd",
+    "laptop",
 ]
 
 pkgs = [
