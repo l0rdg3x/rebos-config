@@ -6,5 +6,6 @@ def sync-system [] {
 
   rebos gen commit "SYNC"
   rebos gen current build
+  echo ""
   rebos gen tidy-up
 }
