@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-build-system () {
-  rebos gen current build
-}
-
 sync-system () {
   cd $HOME/.config/rebos
   git pull origin main
@@ -11,8 +7,6 @@ sync-system () {
   cd $HOME
 
   rebos gen commit "SYNC"
-
-  build-system
-
+  rebos gen current build
   rebos gen tidy-up
 }
