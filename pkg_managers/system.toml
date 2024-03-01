@@ -11,4 +11,6 @@ upgrade = "paru -Syyu"
 #    Additional configuration.    #
 # ------------------------------- #
 
+plural_name = "system packages"
+
 config = { many_pkg_args = true }

@@ -8,12 +8,6 @@ imports = [
     "gpu_drivers/amd",
 ]
 
-pkgs = [
+pkg_managers.system.pkgs = [
     "jitsi-meet-desktop-bin",
-]
-
-flatpaks = [
-]
-
-crates = [
 ]

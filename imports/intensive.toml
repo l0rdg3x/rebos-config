@@ -3,7 +3,7 @@ imports = [
     "virt-manager",
 ]
 
-pkgs = [
+pkg_managers.system.pkgs = [
     "element-desktop",
     "godot",
     "mission-center",
@@ -12,14 +12,11 @@ pkgs = [
     "lutris",
 ]
 
-flatpaks = [
+pkg_managers.flatpak.pkgs = [
     "simple64",
     "blanket",
     "blockbench",
     "codium",
     "org.prismlauncher.PrismLauncher",
     "org.kde.kdenlive",
-]
-
-crates = [
 ]

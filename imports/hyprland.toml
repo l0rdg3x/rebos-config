@@ -3,7 +3,7 @@ imports = [
   "ricing",
 ]
 
-pkgs = [
+pkg_managers.system.pkgs = [
   "hyprland",
   "xdg-desktop-portal-hyprland",
 ]

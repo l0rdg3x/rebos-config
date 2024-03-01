@@ -9,12 +9,9 @@ imports = [
     "laptop",
 ]
 
-pkgs = [
+pkg_managers.system.pkgs = [
 ]
 
-flatpaks = [
+pkg_managers.flatpak.pkgs = [
     "net.ankiweb.Anki",
-]
-
-crates = [
 ]

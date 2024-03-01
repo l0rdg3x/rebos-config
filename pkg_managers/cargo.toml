@@ -1,0 +1,6 @@
+install = "cargo install #:?"
+remove = "cargo uninstall #:?"
+
+plural_name = "crates"
+
+config = { pkg_many_args = true }
