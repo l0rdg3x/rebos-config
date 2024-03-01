@@ -4,4 +4,4 @@ upgrade = "flatpak upgrade"
 
 plural_name = "flatpaks"
 
-config = { pkg_many_args = true }
+config = { many_pkg_args = true }

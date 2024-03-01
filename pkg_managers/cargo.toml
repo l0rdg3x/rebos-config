@@ -3,4 +3,4 @@ remove = "cargo uninstall #:?"
 
 plural_name = "crates"
 
-config = { pkg_many_args = true }
+config = { many_pkg_args = true }
