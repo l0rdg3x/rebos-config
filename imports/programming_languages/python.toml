@@ -2,4 +2,5 @@ pkg_managers.system.pkgs = [
   "python",
   "python-pip",
   "python-pipx",
+  "ipython",
 ]
