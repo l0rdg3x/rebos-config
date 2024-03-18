@@ -95,6 +95,7 @@ pkg_managers.system.pkgs = [
   "yazi",
   "logisim",
   "bless",
+  "kitty",
 ]
 # !pkgs.end
 
