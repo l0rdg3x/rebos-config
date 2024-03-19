@@ -68,7 +68,6 @@ pkg_managers.system.pkgs = [
   "lolcat",
   "catlol",
   "lavat-git",
-  "moon-buggy",
   "arp-scan",
   "tigervnc",
   "dir-watcher",
