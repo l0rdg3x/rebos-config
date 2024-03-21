@@ -5,7 +5,7 @@ pkg_managers.system.pkgs = [
   "swww",
   "swaync",
   "nwg-look-bin",
-  "hyprlock-git",
+  "hyprlock",
   "eww-wayland",
   "qt5-wayland",
   "gammastep",
