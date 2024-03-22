@@ -5,5 +5,7 @@ imports = [
 
 pkg_managers.system.pkgs = [
   "hyprland",
+  "hyprlock",
+  "hypridle",
   "xdg-desktop-portal-hyprland",
 ]
