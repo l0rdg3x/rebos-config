@@ -11,4 +11,5 @@ pkg_managers.system.pkgs = [
   "unzip",
   "clang",
   "gcc",
+  "vim",
 ]
