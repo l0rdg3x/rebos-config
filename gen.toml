@@ -105,6 +105,7 @@ pkg_managers.flatpak.pkgs = [
   "signal",
   "org.supertuxproject.SuperTux",
   "org.gnome.World.PikaBackup",
+  "org.raspberrypi.rpi-imager",
 ]
 # !flatpak.end
 
