@@ -48,6 +48,7 @@ pkg_managers.system.pkgs = [
   "namcap",
   "cava",
   "gimp",
+  "zsh",
   "nushell",
   "gthumb",
   "lite-xl-bin",
