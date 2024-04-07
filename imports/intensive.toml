@@ -3,7 +3,8 @@ imports = [
     "virt-manager",
 ]
 
-pkg_managers.system.pkgs = [
+[managers.system]
+items = [
     "element-desktop",
     "godot",
     "mission-center",
@@ -12,7 +13,8 @@ pkg_managers.system.pkgs = [
     "lutris",
 ]
 
-pkg_managers.flatpak.pkgs = [
+[managers.flatpak]
+items = [
     "simple64",
     "blanket",
     "blockbench",

@@ -13,7 +13,8 @@ imports = [
 # !imports.end
 
 # !pkgs.start
-pkg_managers.system.pkgs = [
+[managers.system]
+items = [
   "flatpak",
   "gparted",
   "helix",
@@ -99,7 +100,8 @@ pkg_managers.system.pkgs = [
 # !pkgs.end
 
 # !flatpak.start
-pkg_managers.flatpak.pkgs = [
+[managers.flatpak]
+items = [
   "flatseal",
   "whatip",
   "supertuxkart",
@@ -111,7 +113,8 @@ pkg_managers.flatpak.pkgs = [
 # !flatpak.end
 
 # !crates.start
-pkg_managers.cargo.pkgs = [
+[managers.cargo]
+items = [
   "bacon",
   "cargo-info",
   "cargo-update",

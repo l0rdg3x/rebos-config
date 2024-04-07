@@ -2,7 +2,7 @@
 #    Package Manager Configuration    #
 # ----------------------------------- #
 
-install = "paru -S #:?"
+add = "paru -S #:?"
 remove = "paru -Rns #:?"
 sync = "paru -Syy"
 upgrade = "paru -Syyu"
@@ -13,4 +13,5 @@ upgrade = "paru -Syyu"
 
 plural_name = "system packages"
 
-config = { many_pkg_args = true }
+[config]
+many_args = true

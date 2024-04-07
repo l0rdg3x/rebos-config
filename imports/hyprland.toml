@@ -3,7 +3,8 @@ imports = [
   "ricing",
 ]
 
-pkg_managers.system.pkgs = [
+[managers.system]
+items = [
   "hyprland",
   "hyprlock",
   "hypridle",
