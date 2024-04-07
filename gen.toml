@@ -2,7 +2,6 @@
 #    Generation File    #
 # --------------------- #
 
-# !imports.start
 imports = [
   "core_packages",
   "programming_languages",
@@ -10,9 +9,12 @@ imports = [
   "proprietary",
   "sddm_themes",
 ]
-# !imports.end
 
-# !pkgs.start
+[managers.serv_startup]
+items = [
+  "sddm",
+]
+
 [managers.system]
 items = [
   "flatpak",
@@ -97,9 +99,7 @@ items = [
   "logisim",
   "bless",
 ]
-# !pkgs.end
 
-# !flatpak.start
 [managers.flatpak]
 items = [
   "flatseal",
@@ -110,9 +110,7 @@ items = [
   "org.gnome.World.PikaBackup",
   "org.raspberrypi.rpi-imager",
 ]
-# !flatpak.end
 
-# !crates.start
 [managers.cargo]
 items = [
   "bacon",
@@ -126,4 +124,3 @@ items = [
   "mprocs",
   "uwuify",
 ]
-# !crates.end
