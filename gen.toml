@@ -17,6 +17,8 @@ items = [
 
 [managers.system]
 items = [
+  "meson",
+  "ninja-build",
   "flatpak",
   "gparted",
   "helix",
