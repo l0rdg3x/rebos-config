@@ -70,6 +70,7 @@ items = [
   "transmission-gtk",
   "htop",
   "btop",
+  "nvtop",
   "tty-clock-git",
   "asciiquarium",
   "lolcat",
