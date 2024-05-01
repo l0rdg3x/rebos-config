@@ -46,6 +46,7 @@ items = [
   "zellij",
   "fastfetch",
   "cutefetch",
+  "uwufetch",
   "retch",
   "pfetch-rs-bin",
   "chafa",
