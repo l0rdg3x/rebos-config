@@ -11,6 +11,7 @@ items = [
     "blender",
     "waydroid",
     "lutris",
+    "flb-music-player-bin",
 ]
 
 [managers.flatpak]
