@@ -11,4 +11,5 @@ imports = [
 [managers.system]
 items = [
     "jitsi-meet-desktop-bin",
+    "alvr-git",
 ]
