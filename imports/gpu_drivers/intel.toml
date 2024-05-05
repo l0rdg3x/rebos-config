@@ -1,3 +1,7 @@
+imports = [
+  "gpu_drivers/shared",
+]
+
 [managers.system]
 items = [
   "xf86-video-intel",
