@@ -1,0 +1,10 @@
+# Flatpak
+
+add = "sudo flatpak install #:?"
+remove = "sudo flatpak uninstall #:?"
+upgrade = "sudo flatpak upgrade"
+
+plural_name = "flatpaks"
+
+[config]
+many_args = true

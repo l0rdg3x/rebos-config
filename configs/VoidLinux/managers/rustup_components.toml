@@ -1,0 +1,9 @@
+# Rustup Components
+
+add = "rustup component add #:?"
+remove = "rustup component remove #:?"
+
+plural_name = "rustup components"
+
+[config]
+many_args = true

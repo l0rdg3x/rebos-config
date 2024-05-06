@@ -1,0 +1,9 @@
+# System
+
+add = "sudo runitctl enable #:?"
+remove = "sudo runitctl disable #:?"
+
+plural_name = "runit services"
+
+[config]
+many_args = true

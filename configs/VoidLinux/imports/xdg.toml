@@ -1,0 +1,7 @@
+[managers.system]
+items = [
+  "xdg-utils",
+  "xdg-user-dirs",
+  "xdg-desktop-portal",
+  "xdg-desktop-portal-gnome",
+]

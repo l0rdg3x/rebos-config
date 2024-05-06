@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+export RUSTUP_INIT_SKIP_PATH_CHECKS="yes"
+command -v rustup || rustup-init -y

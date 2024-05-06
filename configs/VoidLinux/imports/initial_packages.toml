@@ -1,0 +1,6 @@
+[managers.initial_packages]
+items = [
+  "rust",
+  "cargo",
+  "flatpak",
+]

@@ -1,0 +1,22 @@
+imports = [
+    "core",
+    "repositories",
+    "initial_packages",
+    "programming_languages",
+]
+
+[managers.system]
+items = [
+    "fzf",
+    "helix",
+]
+
+[managers.flatpak]
+items = [
+    "com.github.tchx84.Flatseal",
+]
+
+[managers.cargo]
+items = [
+    "runitctl",
+]

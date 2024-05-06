@@ -1,0 +1,11 @@
+# System
+
+add = "sudo xbps-install #:?"
+remove = "sudo xbps-remove #:?"
+sync = "sudo xbps-install -S"
+upgrade = "sudo xbps-install -Su"
+
+plural_name = "system packages (pre)"
+
+[config]
+many_args = true
