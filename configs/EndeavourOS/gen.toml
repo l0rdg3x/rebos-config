@@ -124,6 +124,7 @@ items = [
   "cargo-update",
   "cargo-expand",
   "cargo-show-asm",
+  "cargo-llvm-ir",
   "irust",
   "speedtest-rs",
   "wiki-tui",
