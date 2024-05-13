@@ -35,4 +35,5 @@ items = [
   "seatd",
   "polkitd",
   "ntpd",
+  "elogind",
 ]
