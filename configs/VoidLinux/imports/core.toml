@@ -9,7 +9,6 @@ items = [
   "util-linux",
   "dbus",
   "seatd",
-  "elogind",
   "polkit",
   "ntp",
   "mesa-dri",
@@ -35,5 +34,4 @@ items = [
   "seatd",
   "polkitd",
   "ntpd",
-  "elogind",
 ]
