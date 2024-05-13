@@ -8,7 +8,7 @@ items = [
   "binutils",
   "util-linux",
   "dbus",
-  "seatd",
+  "elogind",
   "polkit",
   "ntp",
   "mesa-dri",
@@ -31,7 +31,7 @@ items = [
 [managers.runit]
 items = [
   "dbus",
-  "seatd",
+  "elogind",
   "polkitd",
   "ntpd",
 ]
