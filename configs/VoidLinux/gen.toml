@@ -4,6 +4,7 @@ imports = [
     "initial_packages",
     "programming_languages",
     "nix",
+    "networkmanager",
 ]
 
 [managers.system]
