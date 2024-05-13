@@ -1,7 +1,7 @@
 # System
 
 add = "sudo runitctl enable #:?"
-remove = "sudo runitctl disable #:?"
+remove = "sudo runitctl disable #:? || echo 'Failed to disable service(s): #:? (Not failing...)'"
 
 plural_name = "runit services"
 
