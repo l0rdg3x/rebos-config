@@ -3,6 +3,7 @@ imports = [
     "repositories",
     "initial_packages",
     "programming_languages",
+    "nix",
 ]
 
 [managers.system]

@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+  "nix",
+]
+
+[managers.runit]
+items = [
+  "nix-daemon",
+]
