@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
 sudo usermod -aG _seatd jackson
+
+nix-channel --add http://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
