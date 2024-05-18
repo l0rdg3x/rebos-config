@@ -1,0 +1,8 @@
+begin = [
+  "initial_packages",
+  "system",
+]
+
+end = [
+  "openrc",
+]

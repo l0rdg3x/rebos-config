@@ -1,0 +1,9 @@
+# System
+
+add = "sudo rc-update add #:? boot"
+remove = "sudo rc-update del #:? boot"
+
+plural_name = "OpenRC boot services"
+
+[config]
+many_args = false

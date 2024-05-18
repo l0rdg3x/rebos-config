@@ -1,0 +1,9 @@
+add = "sudo emerge -aNUg #:?"
+remove = "sudo emerge -cav #:?"
+sync = "sudo emerge --sync"
+upgrade = "sudo emerge -vuDNUg @world"
+
+plural_name = "initial packages"
+
+[config]
+many_args = true

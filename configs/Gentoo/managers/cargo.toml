@@ -1,0 +1,9 @@
+# Cargo
+
+add = "cargo install #:?"
+remove = "cargo uninstall #:?"
+
+plural_name = "crates"
+
+[config]
+many_args = true

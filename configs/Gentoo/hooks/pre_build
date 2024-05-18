@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+system_files_path="$HOME/.config/rebos/system_files"
+vct_path="$system_files_path/video_cards_template/$HOSTNAME"
+pkgs_use_path="$system_files_path/pkgs_use"
+make_conf_path="$system_files_path/make.conf"
+make_conf_template_path="$system_files_path/make_conf_template/make.conf"
+
+if [[ -f "$vct_path" ]]; then
+  echo "Found video cards template for machine."
+else
+  echo "Missing video cards template for machine."
+
+  echo "Template must be located at: $vct_path"
+
+  exit 1
+fi
+
+dfie_sudo () {
+  if [[ -f "$1" ]]; then
+    echo "Removing already existing '$1' file..."
+  
+    sudo rm "$1"
+  fi
+}
+
+video_cards="$(cat "$vct_path")"
+
+new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_cards}/g")"
+
+[[ -f "$make_conf_path" ]] && rm "$make_conf_path"
+echo "$new_make_conf" > "$make_conf_path"
+
+dfie_sudo /etc/portage/make.conf
+sudo cp "$make_conf_path" /etc/portage/make.conf
+
+dfie_sudo /etc/portage/package.use/pkgs
+sudo cp "$pkgs_use_path" /etc/portage/package.use/pkgs

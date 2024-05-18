@@ -1,0 +1,47 @@
+[managers.system]
+items = [
+  "app-editors/nano",
+  "app-editors/vim",
+  "dev-vcs/git",
+  "net-misc/networkmanager",
+  "sys-devel/llvm",
+  "sys-devel/llvm-common",
+  "sys-devel/clang",
+  "sys-devel/clang-common",
+  "sys-devel/clang-runtime",
+  "sys-devel/lld",
+  "sys-devel/gcc",
+  "sys-devel/gcc-config",
+  "sys-devel/binutils",
+  "sys-devel/binutils-config",
+  "sys-libs/binutils-libs",
+  "sys-block/parted",
+  "app-arch/zip",
+  "app-arch/unzip",
+  "app-arch/tar",
+  "sys-apps/coreutils",
+  "sys-apps/findutils",
+  "sys-devel/binutils",
+  "sys-devel/binutils-config",
+  "sys-libs/binutils-libs",
+  "sys-apps/dbus",
+  "sys-auth/elogind",
+  "sys-auth/polkit",
+  "dev-build/make",
+  "dev-build/cmake",
+  "dev-build/meson",
+  "net-misc/curl",
+  "net-misc/wget",
+  "sys-devel/gettext",
+]
+
+[managers.openrc]
+items = [
+  "NetworkManager",
+  "dbus",
+]
+
+[managers.openrc_boot]
+items = [
+  "elogind",
+]

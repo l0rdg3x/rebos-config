@@ -1,0 +1,9 @@
+# System
+
+add = "sudo rc-update add #:? default"
+remove = "sudo rc-update del #:? default"
+
+plural_name = "OpenRC services"
+
+[config]
+many_args = false

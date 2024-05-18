@@ -1,0 +1,30 @@
+imports = [
+  "initial_packages",
+  "core",
+  "shell_completions",
+]
+
+[managers.system]
+items = [
+  "app-misc/fastfetch",
+  "sys-block/gparted",
+]
+
+[managers.flatpak]
+items = [
+  "com.github.tchx84.Flatseal",
+  "org.gabmus.whatip",
+  "net.supertuxkart.SuperTuxKart",
+  "org.supertuxproject.SuperTux",
+  "org.raspberrypi.rpi-imager",
+]
+
+[managers.cargo]
+items = [
+  "bacon",
+  "cargo-info",
+  "cargo-update",
+  "cargo-expand",
+  "cargo-show-asm",
+  "irust",
+]
