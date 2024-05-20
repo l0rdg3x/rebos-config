@@ -36,3 +36,13 @@ sudo cp "$make_conf_path" /etc/portage/make.conf
 
 dfie_sudo /etc/portage/package.use/pkgs
 sudo cp "$pkgs_use_path" /etc/portage/package.use/pkgs
+
+autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
+
+if [[ -f "$autounmask_path" ]]; then
+  echo "Unmasking file is already present... skipping..."
+else
+  echo "Creating unmasking file..."
+
+  sudo touch "$autounmask_path"
+fi
