@@ -3,4 +3,5 @@ items = [
   "sys-apps/flatpak",
   "app-portage/pycargoebuild",
   "dev-lang/rust-bin",
+  "app-eselect/eselect-repository",
 ]

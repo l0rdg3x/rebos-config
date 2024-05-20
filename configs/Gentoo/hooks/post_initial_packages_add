@@ -1,3 +1,18 @@
 #!/usr/bin/env bash
 
+eselect_enable_repo () {
+  if eselect repository list | grep '*' | grep "$1" > /dev/null 2>&1; then
+    echo "'$1' repository already added! Skipping..."
+  else
+    echo "Enabling '$1' repository..."
+  
+    sudo eselect repository enable "$1"
+    sudo emerge --sync "$1"
+  fi
+}
+
+# Enable Flathub for Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Enable other Gentoo repositories.
+eselect_enable_repo "guru"
