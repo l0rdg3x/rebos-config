@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "NOTICE: If building fails due to masked packages, run 'sudo dispatch-conf' and hit 'u' to accept changes."
-echo "After that, simply run 'rebos gen current build' again."
+echo -e "\033[1;33mNOTICE: If building fails due to masked packages, run 'sudo dispatch-conf' and hit 'u' to accept changes."
+echo -e "After that, simply run 'rebos gen current build' again.\033[0m"
