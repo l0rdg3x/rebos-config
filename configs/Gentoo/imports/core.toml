@@ -39,9 +39,9 @@ items = [
 items = [
   "NetworkManager",
   "dbus",
+  "elogind",
 ]
 
 [managers.openrc_boot]
 items = [
-  "elogind",
 ]
