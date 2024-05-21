@@ -6,6 +6,8 @@ vct_path="$system_files_path/video_cards_template/$HOSTNAME"
 pkgs_use_path="$system_files_path/pkgs_use"
 pkgs_use_tmp_path="$system_files_tmp_path/pkgs_use"
 pkgs_use_machine_path="$system_files_path/machine_use/$HOSTNAME"
+pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
+pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
 
@@ -58,20 +60,24 @@ video_cards="$(cat "$vct_path")"
 
 new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_cards}/g")"
 
-[[ -f "$make_conf_path" ]] && rm "$make_conf_path"
 echo "$new_make_conf" > "$make_conf_path"
 
-[[ -f "$pkgs_use_tmp_path" ]] && rm "$pkgs_use_tmp_path"
 cat "$pkgs_use_path" > "$pkgs_use_tmp_path"
 cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
+
+cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 
 notice_nid "$make_conf_path" /etc/portage/make.conf "The Portage make.conf file has been changed!"
 dfie_sudo /etc/portage/make.conf
 sudo cp "$make_conf_path" /etc/portage/make.conf
 
-notice_nid "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs "The package use flags have been changed!"
+notice_nid "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs "The package USE flags have been changed!"
 dfie_sudo /etc/portage/package.use/pkgs
 sudo cp "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs
+
+notice_nid "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs "The package accept keywords (unmasking) have been changed!"
+dfie_sudo /etc/portage/package.accept_keywords/pkgs
+sudo cp "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
 
