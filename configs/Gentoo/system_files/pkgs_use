@@ -1,2 +1,2 @@
 sys-kernel/installkernel dracut grub
-x11-libs/libdrm video_cards_radeon
+media-libs/libsdl2 gles2
