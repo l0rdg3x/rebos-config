@@ -1,7 +1,7 @@
 add = "sudo emerge -aNUg #:? --autounmask --autounmask-write"
 remove = "sudo emerge -cav #:?"
 sync = "sudo emerge --sync"
-upgrade = "sudo emerge -vuDNUg @world"
+upgrade = "sudo emerge -vuDUg @world"
 
 plural_name = "system packages"
 
