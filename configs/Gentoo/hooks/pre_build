@@ -48,8 +48,8 @@ new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_c
 echo "$new_make_conf" > "$make_conf_path"
 
 [[ -f "$pkgs_use_tmp_path" ]] && rm "$pkgs_use_tmp_path"
-echo "$pkgs_use_path" > "$pkgs_use_tmp_path"
-echo "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
+cat "$pkgs_use_path" > "$pkgs_use_tmp_path"
+cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
 
 dfie_sudo /etc/portage/make.conf
 sudo cp "$make_conf_path" /etc/portage/make.conf
