@@ -3,5 +3,7 @@ remove = "sudo systemctl disable #:?"
 
 plural_name = "startup services"
 
+hook_name = "startup_services"
+
 [config]
 many_args = true

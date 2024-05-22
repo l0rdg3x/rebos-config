@@ -3,5 +3,7 @@ remove = "sudo systemctl disable #:? --now"
 
 plural_name = "services"
 
+hook_name = "services"
+
 [config]
 many_args = true

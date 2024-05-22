@@ -4,5 +4,7 @@ remove = "cargo uninstall #:?"
 
 plural_name = "crates"
 
+hook_name = "crates"
+
 [config]
 many_args = true
