@@ -13,6 +13,7 @@ items = [
   "sys-apps/eza",
   "sys-apps/bat",
   "app-misc/zellij",
+  "app-shells/fzf",
 ]
 
 [managers.flatpak]
