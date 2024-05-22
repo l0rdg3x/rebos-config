@@ -1,4 +1,4 @@
-add = "sudo emerge -vaNUg #:? --autounmask --autounmask-write"
+add = "sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
 remove = "sudo emerge -cav #:?"
 sync = "sudo emerge --sync -a"
 upgrade = "sudo emerge -avuDUg @world"
