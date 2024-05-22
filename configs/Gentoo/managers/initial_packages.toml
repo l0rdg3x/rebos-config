@@ -1,4 +1,4 @@
-add = "sudo emerge -aNUg #:? --autounmask --autounmask-write"
+add = "sudo emerge -vaNUg #:? --autounmask --autounmask-write"
 remove = "sudo emerge -cav #:?"
 
 plural_name = "initial packages"

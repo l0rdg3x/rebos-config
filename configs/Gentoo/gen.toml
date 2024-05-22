@@ -8,6 +8,11 @@ imports = [
 items = [
   "app-misc/fastfetch",
   "sys-block/gparted",
+  "app-editors/helix",
+  "app-shells/starship",
+  "sys-apps/eza",
+  "sys-apps/bat",
+  "app-misc/zellij",
 ]
 
 [managers.flatpak]
@@ -27,4 +32,6 @@ items = [
   "cargo-expand",
   "cargo-show-asm",
   "irust",
+  "cermic",
+  "tuido",
 ]
