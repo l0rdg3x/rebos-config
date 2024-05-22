@@ -10,6 +10,7 @@ pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
 pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
+wayland_sessions_path="$system_files_path/wayland-sessions"
 
 [[ -d "$system_files_tmp_path" ]] || mkdir "$system_files_tmp_path"
 [[ -d "$system_files_tmp_path" ]] || exit 1
@@ -88,3 +89,16 @@ else
 
   sudo touch "$autounmask_path"
 fi
+
+for i in $(find /usr/share/wayland-sessions); do
+  [[ "$i" == *".desktop" ]] || continue
+
+  f_name="$(basename "$i")"
+
+  if [[ -f "$wayland_sessions_path/$f_name" ]]; then
+    echo "Patching Session: $(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')"
+
+    sudo rm "/usr/share/wayland-sessions/$f_name"
+    sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
+  fi
+done
