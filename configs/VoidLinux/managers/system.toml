@@ -7,5 +7,7 @@ upgrade = "sudo xbps-install -Su"
 
 plural_name = "system packages"
 
+hook_name = "system_packages"
+
 [config]
 many_args = true

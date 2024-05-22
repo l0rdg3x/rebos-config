@@ -5,5 +5,7 @@ remove = "sudo runitctl disable #:? || echo 'Failed to disable service(s): #:? (
 
 plural_name = "runit services"
 
+hook_name = "runit_services"
+
 [config]
 many_args = true

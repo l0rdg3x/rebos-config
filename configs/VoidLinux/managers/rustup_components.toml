@@ -5,5 +5,7 @@ remove = "rustup component remove #:?"
 
 plural_name = "rustup components"
 
+hook_name = "rustup_components"
+
 [config]
 many_args = true
