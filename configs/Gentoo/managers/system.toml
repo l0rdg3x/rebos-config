@@ -5,5 +5,7 @@ upgrade = "sudo emerge -avuDUg @world"
 
 plural_name = "system packages"
 
+hook_name = "system_packages"
+
 [config]
 many_args = true

@@ -3,5 +3,7 @@ remove = "sudo emerge -cav #:?"
 
 plural_name = "initial packages"
 
+hook_name = "initial_packages"
+
 [config]
 many_args = true

@@ -5,5 +5,7 @@ remove = "sudo rc-update del #:? default"
 
 plural_name = "OpenRC services"
 
+hook_name = "services"
+
 [config]
 many_args = false
