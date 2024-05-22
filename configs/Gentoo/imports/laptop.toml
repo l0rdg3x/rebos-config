@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+  "sys-power/auto-cpufreq",
+]
+
+[managers.openrc]
+items = [
+  "auto-cpufreq",
+]
