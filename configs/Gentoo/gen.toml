@@ -14,6 +14,7 @@ items = [
   "sys-apps/bat",
   "app-misc/zellij",
   "app-shells/fzf",
+  "xfce-base/thunar",
 ]
 
 [managers.flatpak]
