@@ -16,3 +16,15 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 # Enable other Gentoo repositories.
 eselect_enable_repo "guru"
+
+# Symlink Rustup stuff.
+if command -v rustup > /dev/null 2>&1; then
+  echo "Rustup already symlinked! Skipping..."
+else
+  echo "Symlinking Rustup..."
+
+  rustup-init-gentoo --symlink
+fi
+
+# Select Rust stable toolchain with Rustup.
+rustup default stable

@@ -4,3 +4,4 @@ media-video/pipewire echo-cancel extra sound-server
 gui-apps/rofi-wayland drun
 gui-apps/waybar evdev experimental jack libinput logind mpd mpris network pipewire popups pulseaudio sndio tray udev upower wifi -systemd
 xfce-base/thunar trash-panel-plugin
+dev-lang/rust-bin big-endian clippy doc profiler rust-analyzer rust-src verify-sig
