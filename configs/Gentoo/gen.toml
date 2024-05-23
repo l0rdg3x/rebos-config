@@ -2,6 +2,7 @@ imports = [
   "initial_packages",
   "core",
   "shell_completions",
+  "noto",
 ]
 
 [managers.system]

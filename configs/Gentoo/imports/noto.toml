@@ -1,0 +1,6 @@
+[managers.system]
+items = [
+  "media-fonts/noto",
+  "media-fonts/noto-cjk",
+  "media-fonts/noto-emoji",
+]
