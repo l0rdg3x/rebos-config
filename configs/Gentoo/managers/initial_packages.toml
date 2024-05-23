@@ -1,5 +1,5 @@
-add = "sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
-remove = "sudo emerge -cav #:?"
+add = "time sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
+remove = "time sudo emerge -cav #:?"
 
 plural_name = "initial packages"
 
