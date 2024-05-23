@@ -27,6 +27,7 @@ items = [
   "net.supertuxkart.SuperTuxKart",
   "org.supertuxproject.SuperTux",
   "org.raspberrypi.rpi-imager",
+  "com.brave.Browser",
 ]
 
 [managers.cargo]
