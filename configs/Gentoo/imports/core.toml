@@ -33,6 +33,7 @@ items = [
   "net-misc/curl",
   "net-misc/wget",
   "sys-devel/gettext",
+  "sys-apps/pciutils",
 ]
 
 [managers.openrc]
