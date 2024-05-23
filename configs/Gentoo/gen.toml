@@ -15,6 +15,7 @@ items = [
   "app-misc/zellij",
   "app-shells/fzf",
   "xfce-base/thunar",
+  "media-sound/pavucontrol",
 ]
 
 [managers.flatpak]
