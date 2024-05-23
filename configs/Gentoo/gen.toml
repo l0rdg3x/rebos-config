@@ -16,6 +16,7 @@ items = [
   "app-shells/fzf",
   "xfce-base/thunar",
   "media-sound/pavucontrol",
+  "sys-process/htop",
 ]
 
 [managers.flatpak]
