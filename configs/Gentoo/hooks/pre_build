@@ -89,16 +89,3 @@ else
 
   sudo touch "$autounmask_path"
 fi
-
-for i in $(find /usr/share/wayland-sessions); do
-  [[ "$i" == *".desktop" ]] || continue
-
-  f_name="$(basename "$i")"
-
-  if [[ -f "$wayland_sessions_path/$f_name" ]]; then
-    echo "Patching Session: $(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')"
-
-    sudo rm "/usr/share/wayland-sessions/$f_name"
-    sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
-  fi
-done
