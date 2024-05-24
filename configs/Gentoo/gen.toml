@@ -3,13 +3,14 @@ imports = [
   "core",
   "shell_completions",
   "noto",
+  "wayland_apps",
 ]
 
 [managers.system]
 items = [
   "app-misc/fastfetch",
   "sys-block/gparted",
-  "app-editors/helix",
+  "app-editors/neovim",
   "app-shells/starship",
   "sys-apps/eza",
   "sys-apps/bat",
