@@ -34,6 +34,8 @@ items = [
   "net-misc/wget",
   "sys-devel/gettext",
   "sys-apps/pciutils",
+  "app-portage/gentoolkit",
+  "dev-util/tree-sitter-cli",
 ]
 
 [managers.openrc]
