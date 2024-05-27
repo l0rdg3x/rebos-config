@@ -20,6 +20,7 @@ items = [
   "media-sound/pavucontrol",
   "sys-process/htop",
   "app-portage/eix",
+  "www-client/brave-bin",
 ]
 
 [managers.flatpak]
