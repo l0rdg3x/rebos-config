@@ -1,21 +1,37 @@
 #!/usr/bin/env bash
 
 eselect_enable_repo () {
-  if eselect repository list | grep '*' | grep "$1" > /dev/null 2>&1; then
+  if [[ -d "/var/db/repos/$1" ]]; then
     echo "'$1' repository already added! Skipping..."
   else
     echo "Enabling '$1' repository..."
   
-    sudo eselect repository enable "$1"
-    sudo emerge --sync "$1"
+    sudo eselect repository enable "$1" || exit 1
+    sudo emerge --sync "$1" || exit 1
   fi
 }
 
+eselect_add_repo () {
+    repo_name="$1"
+    repo_method="$2"
+    repo_url="$3"
+
+    if [[ -d "/var/db/repos/${repo_name}" ]]; then
+        echo "'$repo_name' repository already added! Skipping..."
+    else
+        echo "Adding '$repo_name' repository..."
+
+        sudo eselect repository add "$repo_name" "$repo_method" "$repo_url" || exit 1
+        sudo emerge --sync "$repo_name" || exit 1
+    fi
+}
+
 # Enable Flathub for Flatpak.
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || exit 1
 
 # Enable other Gentoo repositories.
 eselect_enable_repo "guru"
+eselect_add_repo "brave-overlay" "git" "https://gitlab.com/jason.oliveira/brave-overlay.git"
 
 # Symlink Rustup stuff.
 if command -v rustup > /dev/null 2>&1; then
@@ -23,8 +39,8 @@ if command -v rustup > /dev/null 2>&1; then
 else
   echo "Symlinking Rustup..."
 
-  rustup-init-gentoo --symlink
+  rustup-init-gentoo --symlink || exit 1
 fi
 
 # Select Rust stable toolchain with Rustup.
-rustup default stable
+rustup default stable || exit 1
