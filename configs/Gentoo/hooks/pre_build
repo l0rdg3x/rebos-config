@@ -83,7 +83,7 @@ sudo cp "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pk
 for i in $(find "${pkgs_uses_path}/"*); do
     i_basename="$(basename "$i")"
 
-    if sudo mv "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
+    if sudo cp "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
         echo "Successfully added use flags from: '${i_basename}' (uses dir)"
     else
         echo "Failed to add use flags from: '${i_basename}' (uses dir)"
