@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+system_files_path="$HOME/.config/rebos/system_files"
+wayland_sessions_path="$system_files_path/wayland-sessions"
+
 for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
   [[ "$i" == *".desktop" ]] || continue
 
