@@ -1,6 +1,7 @@
 sys-kernel/installkernel dracut grub
 media-libs/libsdl2 gles2
 media-video/pipewire echo-cancel extra sound-server
+media-video/ffmpeg opus
 gui-apps/rofi-wayland drun
 gui-apps/waybar evdev experimental jack libinput logind mpd mpris network pipewire popups pulseaudio sndio tray udev upower wifi -systemd
 xfce-base/thunar trash-panel-plugin
@@ -8,3 +9,5 @@ dev-lang/rust-bin big-endian clippy doc profiler rust-analyzer rust-src verify-s
 media-video/pipewire gstreamer extra sound-server
 gui-libs/gtk-layer-shell introspection vala
 sys-libs/ncurses -gpm
+sys-apps/xdg-desktop-portal screencast
+media-libs/freetype abi_x86_32
