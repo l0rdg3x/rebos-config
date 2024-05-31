@@ -36,6 +36,7 @@ items = [
   "sys-apps/pciutils",
   "app-portage/gentoolkit",
   "dev-util/tree-sitter-cli",
+  "media-libs/glfw",
 ]
 
 [managers.openrc]
