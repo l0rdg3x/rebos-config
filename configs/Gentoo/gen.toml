@@ -25,6 +25,7 @@ items = [
   "media-video/mpv",
   "media-gfx/gimp",
   "net-irc/senpai",
+  "app-text/wgetpaste",
 ]
 
 [managers.flatpak]
