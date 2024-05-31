@@ -1,3 +1,8 @@
 [managers.system]
 items = [
 ]
+
+[managers.flatpak]
+items = [
+    "io.github.simple64.simple64",
+]
