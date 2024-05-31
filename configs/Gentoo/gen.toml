@@ -22,6 +22,7 @@ items = [
   "app-portage/eix",
   "www-client/brave-bin",
   "media-video/mpv",
+  "media-gfx/gimp",
 ]
 
 [managers.flatpak]
