@@ -24,6 +24,7 @@ items = [
   "www-client/brave-bin",
   "media-video/mpv",
   "media-gfx/gimp",
+  "net-irc/senpai",
 ]
 
 [managers.flatpak]
@@ -33,6 +34,7 @@ items = [
   "net.supertuxkart.SuperTuxKart",
   "org.supertuxproject.SuperTux",
   "org.raspberrypi.rpi-imager",
+  "im.riot.Riot",
 ]
 
 [managers.cargo]
