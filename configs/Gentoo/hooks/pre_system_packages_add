@@ -3,4 +3,4 @@
 echo -e "\033[1;33mNOTICE: If building fails due to masked packages, run 'sudo dispatch-conf' and hit 'u' to accept changes."
 echo -e "After that, simply run 'rebos gen current build' again.\033[0m"
 
-echo -e "\033[1;33mNOTICE: If building fails upon the very first Rebos generation build of the install's life, try updating @world first before building the generation.\033[0m"
+echo -e "\033[1;33mNOTICE: If building fails upon the very first Rebos generation build of the install's life, try updating @world (sudo emerge -avuDNUg @world) first before building the generation.\033[0m"
