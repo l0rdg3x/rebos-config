@@ -36,6 +36,7 @@ items = [
   "org.supertuxproject.SuperTux",
   "org.raspberrypi.rpi-imager",
   "im.riot.Riot",
+  "org.godotengine.Godot",
 ]
 
 [managers.cargo]
