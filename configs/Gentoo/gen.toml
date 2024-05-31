@@ -21,6 +21,7 @@ items = [
   "sys-process/htop",
   "app-portage/eix",
   "www-client/brave-bin",
+  "media-video/mpv",
 ]
 
 [managers.flatpak]
