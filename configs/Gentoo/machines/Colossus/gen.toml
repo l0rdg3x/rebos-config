@@ -1,4 +1,6 @@
 imports = [
+    "intensive",
+    "intensive_proprietary",
 ]
 
 [managers.system]

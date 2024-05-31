@@ -1,5 +1,7 @@
 imports = [
   "laptop",
+  "intensive",
+  "intensive_proprietary",
 ]
 
 [managers.system]

@@ -6,6 +6,7 @@ vct_path="$system_files_path/video_cards_template/$HOSTNAME"
 pkgs_use_path="$system_files_path/pkgs_use"
 pkgs_use_tmp_path="$system_files_tmp_path/pkgs_use"
 pkgs_use_machine_path="$system_files_path/machine_use/$HOSTNAME"
+pkgs_uses_path="$system_files_path/uses"
 pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
 pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
 make_conf_path="$system_files_tmp_path/make.conf"
@@ -78,6 +79,18 @@ sudo cp "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs
 notice_nid "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs "The package accept keywords (unmasking) have been changed!"
 dfie_sudo /etc/portage/package.accept_keywords/pkgs
 sudo cp "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs
+
+for i in $(find "${pkgs_uses_path}/"*); do
+    i_basename="$(basename "$i")"
+
+    if sudo mv "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
+        echo "Successfully added use flags from: '${i_basename}' (uses dir)"
+    else
+        echo "Failed to add use flags from: '${i_basename}' (uses dir)"
+
+        exit 1
+    fi
+done
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
 
