@@ -37,6 +37,7 @@ items = [
   "app-portage/gentoolkit",
   "dev-util/tree-sitter-cli",
   "media-libs/glfw",
+  "media-libs/glew",
 ]
 
 [managers.openrc]
