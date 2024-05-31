@@ -4,6 +4,7 @@ imports = [
   "shell_completions",
   "noto",
   "wayland_apps",
+  "rices/hyprland",
 ]
 
 [managers.system]
