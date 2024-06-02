@@ -9,5 +9,8 @@ dev-lang/rust-bin big-endian clippy doc profiler rust-analyzer rust-src verify-s
 media-video/pipewire gstreamer extra sound-server
 gui-libs/gtk-layer-shell introspection vala
 sys-libs/ncurses -gpm
+sys-libs/zlib abi_x86_32
 sys-apps/xdg-desktop-portal screencast
 media-libs/freetype abi_x86_32
+media-libs/libpng abi_x86_32
+app-arch/bzip2 abi_x86_32
