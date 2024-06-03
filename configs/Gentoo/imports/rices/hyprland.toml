@@ -2,6 +2,7 @@
 items = [
   "gui-wm/hyprland",
   "gui-wm/hyprland-contrib",
+  "gui-libs/hyprcursor",
   "app-misc/cliphist",
   "gui-apps/waybar",
   "x11-terms/alacritty",
