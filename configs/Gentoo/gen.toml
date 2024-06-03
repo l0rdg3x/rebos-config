@@ -12,6 +12,7 @@ items = [
   "app-misc/fastfetch",
   "sys-block/gparted",
   "app-editors/neovim",
+  "app-editors/helix",
   "app-shells/starship",
   "sys-apps/eza",
   "sys-apps/bat",
