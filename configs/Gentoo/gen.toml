@@ -24,7 +24,6 @@ items = [
   "www-client/brave-bin",
   "media-video/mpv",
   "media-gfx/gimp",
-  "media-gfx/inkscape",
   "net-irc/senpai",
   "app-text/wgetpaste",
   "media-video/obs-studio",
@@ -39,6 +38,7 @@ items = [
   "org.raspberrypi.rpi-imager",
   "im.riot.Riot",
   "org.godotengine.Godot",
+  "org.inkscape.Inkscape",
 ]
 
 [managers.cargo]
