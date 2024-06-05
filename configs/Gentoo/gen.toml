@@ -40,6 +40,7 @@ items = [
   "im.riot.Riot",
   "org.godotengine.Godot",
   "org.inkscape.Inkscape",
+  "com.github.reds.LogisimEvolution",
 ]
 
 [managers.cargo]
