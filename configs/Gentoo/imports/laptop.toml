@@ -1,9 +1,8 @@
 [managers.system]
 items = [
-  "sys-power/auto-cpufreq",
+  "sys-power/tlp",
 ]
 
 [managers.openrc]
 items = [
-  "auto-cpufreq",
 ]
