@@ -30,6 +30,7 @@ items = [
   "dev-build/make",
   "dev-build/cmake",
   "dev-build/meson",
+  "dev-lang/python",
   "net-misc/curl",
   "net-misc/wget",
   "sys-devel/gettext",
