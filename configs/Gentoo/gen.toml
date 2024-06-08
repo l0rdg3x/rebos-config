@@ -41,6 +41,7 @@ items = [
   "org.godotengine.Godot",
   "org.inkscape.Inkscape",
   "com.github.reds.LogisimEvolution",
+  "net.ankiweb.Anki",
 ]
 
 [managers.cargo]
