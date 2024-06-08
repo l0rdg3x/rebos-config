@@ -93,6 +93,7 @@ for i in $(find "${pkgs_uses_path}/"*); do
 done
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
+autopkguse_path="/etc/portage/package.use/zzz_pkg_use"
 
 if [[ -f "$autounmask_path" ]]; then
   echo "Unmasking file is already present... skipping..."
@@ -100,4 +101,12 @@ else
   echo "Creating unmasking file..."
 
   sudo touch "$autounmask_path"
+fi
+
+if [[ -f "$autopkguse_path" ]]; then
+  echo "Auto package USE flags file is already present... skipping..."
+else
+  echo "Creating auto package USE flags file..."
+
+  sudo touch "$autopkguse_path"
 fi
