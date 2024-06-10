@@ -1,4 +1,8 @@
 [managers.system]
 items = [
-  "media-video/kooha",
+]
+
+[managers.flatpak]
+items = [
+  "io.github.seadve.Kooha",
 ]
