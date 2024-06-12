@@ -27,7 +27,6 @@ items = [
   "media-gfx/gimp",
   "net-irc/senpai",
   "app-text/wgetpaste",
-  "media-video/obs-studio",
 ]
 
 [managers.flatpak]
@@ -43,6 +42,7 @@ items = [
   "com.github.reds.LogisimEvolution",
   "net.ankiweb.Anki",
   "org.kde.kdenlive",
+  "com.obsproject.Studio",
 ]
 
 [managers.cargo]
