@@ -42,6 +42,7 @@ items = [
   "org.inkscape.Inkscape",
   "com.github.reds.LogisimEvolution",
   "net.ankiweb.Anki",
+  "org.kde.kdenlive",
 ]
 
 [managers.cargo]
