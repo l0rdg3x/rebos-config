@@ -1,8 +1,4 @@
 [managers.system]
 items = [
-]
-
-[managers.flatpak]
-items = [
-    "com.valvesoftware.Steam",
+    "games-util/steam-launcher",
 ]
