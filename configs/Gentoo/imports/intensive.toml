@@ -1,3 +1,7 @@
+imports = [
+    "virtualization",
+]
+
 [managers.system]
 items = [
 ]

@@ -1,0 +1,10 @@
+[managers.system]
+items = [
+    "app-emulation/virt-manager",
+    "app-emulation/libvirt",
+]
+
+[managers.openrc]
+items = [
+    "libvirtd",
+]

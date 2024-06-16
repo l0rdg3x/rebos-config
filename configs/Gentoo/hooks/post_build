@@ -3,6 +3,23 @@
 system_files_path="$HOME/.config/rebos/system_files"
 wayland_sessions_path="$system_files_path/wayland-sessions"
 
+add_group_to_user () {
+    if groups "$2" | tr ' ' '\n' | grep "$1" > /dev/null 2>&1; then
+        echo "User $2 already has group: '$1' (skipping...)"
+
+        return
+    fi
+
+    if sudo usermod -aG "$1" "$2"; then
+        echo "Successfully added group '$1' to user $2! :D"
+    else
+        echo "Failed to add group '$1' to user $2! :("
+
+        exit 1
+    fi
+}
+
+# Patch Wayland Sessions
 for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
   [[ "$i" == *".desktop" ]] || continue
 
@@ -15,3 +32,16 @@ for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
     sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
   fi
 done
+
+# User Groups
+add_group_to_user audio "${USER}"
+add_group_to_user cdrom "${USER}"
+add_group_to_user cron "${USER}"
+add_group_to_user floppy "${USER}"
+add_group_to_user portage "${USER}"
+add_group_to_user usb "${USER}"
+add_group_to_user video "${USER}"
+add_group_to_user wheel "${USER}"
+
+# Virtualization Stuff (QEMU)
+add_group_to_user libvirt "${USER}"
