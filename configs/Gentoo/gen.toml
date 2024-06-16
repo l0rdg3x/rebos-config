@@ -27,6 +27,7 @@ items = [
   "media-gfx/gimp",
   "net-irc/senpai",
   "app-text/wgetpaste",
+  "games-misc/asciiquarium",
 ]
 
 [managers.flatpak]
