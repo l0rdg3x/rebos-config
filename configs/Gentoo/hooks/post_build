@@ -44,4 +44,8 @@ add_group_to_user video "${USER}"
 add_group_to_user wheel "${USER}"
 
 # Virtualization Stuff (QEMU)
-add_group_to_user libvirt "${USER}"
+if command -v virt-manager > /dev/null 2>&1; then
+    echo "Detected VirtManager... setting up VirtManager stuff..."
+
+    add_group_to_user libvirt "${USER}"
+fi
