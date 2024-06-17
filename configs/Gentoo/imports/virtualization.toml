@@ -2,6 +2,7 @@
 items = [
     "app-emulation/virt-manager",
     "app-emulation/libvirt",
+    "x11-drivers/xf86-video-qxl",
 ]
 
 [managers.openrc]
