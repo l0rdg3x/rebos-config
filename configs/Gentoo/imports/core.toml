@@ -39,6 +39,7 @@ items = [
   "dev-util/tree-sitter-cli",
   "media-libs/glfw",
   "media-libs/glew",
+  "media-sound/alsa-utils",
 ]
 
 [managers.openrc]
