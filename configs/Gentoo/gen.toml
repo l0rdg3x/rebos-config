@@ -28,6 +28,7 @@ items = [
   "net-irc/senpai",
   "app-text/wgetpaste",
   "games-misc/asciiquarium",
+  "media-sound/cava",
 ]
 
 [managers.flatpak]
