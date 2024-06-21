@@ -29,6 +29,7 @@ items = [
   "app-text/wgetpaste",
   "games-misc/asciiquarium",
   "media-sound/cava",
+  "app-misc/tty-clock",
 ]
 
 [managers.flatpak]
