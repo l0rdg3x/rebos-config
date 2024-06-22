@@ -34,6 +34,7 @@ items = [
   "games-misc/lolcat",
   "games-misc/sex",
   "games-misc/cowsay",
+  "games-action/moon-buggy",
   "sys-fs/ncdu",
 ]
 
