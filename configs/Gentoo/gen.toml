@@ -32,6 +32,8 @@ items = [
   "media-sound/cava",
   "app-misc/tty-clock",
   "games-misc/lolcat",
+  "games-misc/sex",
+  "games-misc/cowsay",
   "sys-fs/ncdu",
 ]
 
