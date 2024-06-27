@@ -37,6 +37,7 @@ items = [
   "games-action/moon-buggy",
   "sys-fs/ncdu",
   "x11-misc/gammastep",
+  "media-gfx/gthumb",
 ]
 
 [managers.flatpak]
