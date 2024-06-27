@@ -54,6 +54,7 @@ items = [
   "net.ankiweb.Anki",
   "org.kde.kdenlive",
   "com.obsproject.Studio",
+  "xyz.armcord.ArmCord",
 ]
 
 [managers.cargo]
