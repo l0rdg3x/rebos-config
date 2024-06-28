@@ -55,6 +55,7 @@ items = [
   "org.kde.kdenlive",
   "com.obsproject.Studio",
   "xyz.armcord.ArmCord",
+  "org.kde.krita",
 ]
 
 [managers.cargo]
