@@ -19,6 +19,7 @@ items = [
   "app-arch/zip",
   "app-arch/unzip",
   "app-arch/tar",
+  "app-arch/7zip",
   "sys-apps/coreutils",
   "sys-apps/findutils",
   "sys-devel/binutils",
