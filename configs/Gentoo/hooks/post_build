@@ -49,3 +49,6 @@ if command -v virt-manager > /dev/null 2>&1; then
 
     add_group_to_user libvirt "${USER}"
 fi
+
+# Eselect Stuff
+sudo eselect editor set /usr/bin/nvim
