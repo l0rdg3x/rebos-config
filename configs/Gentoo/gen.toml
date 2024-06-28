@@ -56,6 +56,7 @@ items = [
   "com.obsproject.Studio",
   "xyz.armcord.ArmCord",
   "org.kde.krita",
+  "org.polymc.PolyMC",
 ]
 
 [managers.cargo]
