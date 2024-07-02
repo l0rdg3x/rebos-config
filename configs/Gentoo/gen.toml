@@ -5,6 +5,7 @@ imports = [
   "noto",
   "wayland_apps",
   "rices/hyprland",
+  "qt",
 ]
 
 [managers.system]

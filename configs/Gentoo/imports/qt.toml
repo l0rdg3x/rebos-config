@@ -1,0 +1,6 @@
+[managers.system]
+items = [
+    "dev-qt/qtgraphicaleffects",
+    "dev-qt/qtquickcontrols",
+    "dev-qt/qtquickcontrols2",
+]
