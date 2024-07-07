@@ -30,6 +30,7 @@ eselect_add_repo () {
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || exit 1
 
 # Enable other Gentoo repositories.
+eselect_enable_repo "gentoo"
 eselect_enable_repo "guru"
 eselect_enable_repo "steam-overlay"
 eselect_add_repo "brave-overlay" "git" "https://gitlab.com/jason.oliveira/brave-overlay.git"
