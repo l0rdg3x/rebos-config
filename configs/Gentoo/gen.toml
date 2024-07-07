@@ -6,6 +6,7 @@ imports = [
   "wayland_apps",
   "rices/hyprland",
   "qt",
+  "appimage_dependencies",
 ]
 
 [managers.system]
