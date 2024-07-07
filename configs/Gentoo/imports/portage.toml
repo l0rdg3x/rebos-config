@@ -1,0 +1,5 @@
+[managers.system]
+items = [
+    "dev-util/pkgdev",
+    "app-portage/gentoolkit",
+]
