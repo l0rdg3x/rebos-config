@@ -59,6 +59,7 @@ items = [
   "com.obsproject.Studio",
   "xyz.armcord.ArmCord",
   "org.kde.krita",
+  "org.xonotic.Xonotic",
 ]
 
 [managers.cargo]
