@@ -10,4 +10,5 @@ items = [
 items = [
     "io.github.simple64.simple64",
     "org.polymc.PolyMC",
+    "org.blender.Blender",
 ]
