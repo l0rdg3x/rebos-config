@@ -41,6 +41,7 @@ items = [
   "sys-fs/ncdu",
   "x11-misc/gammastep",
   "media-gfx/gthumb",
+  "games-misc/cbonsai",
 ]
 
 [managers.flatpak]
