@@ -42,6 +42,7 @@ items = [
   "x11-misc/gammastep",
   "media-gfx/gthumb",
   "games-misc/cbonsai",
+  "app-misc/pipes-rs",
 ]
 
 [managers.flatpak]
