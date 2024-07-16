@@ -43,6 +43,7 @@ items = [
   "media-gfx/gthumb",
   "games-misc/cbonsai",
   "app-misc/pipes-rs",
+  "app-misc/cmatrix",
 ]
 
 [managers.flatpak]
