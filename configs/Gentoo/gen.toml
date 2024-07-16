@@ -8,6 +8,7 @@ imports = [
   "qt",
   "appimage_dependencies",
   "portage",
+  "gtk_themes",
 ]
 
 [managers.system]
