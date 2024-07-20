@@ -45,6 +45,7 @@ items = [
   "games-misc/cbonsai",
   "app-misc/pipes-rs",
   "app-misc/cmatrix",
+  "net-analyzer/arp-scan",
 ]
 
 [managers.flatpak]
