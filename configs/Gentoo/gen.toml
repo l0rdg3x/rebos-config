@@ -78,4 +78,5 @@ items = [
   "cermic",
   "tuido",
   "rainfuck-cli",
+  "shabi",
 ]
