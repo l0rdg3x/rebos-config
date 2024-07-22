@@ -1,4 +1,5 @@
 [managers.system]
 items = [
     "x11-themes/flat-remix-gtk",
+    "x11-themes/juno",
 ]
