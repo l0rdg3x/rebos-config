@@ -43,6 +43,7 @@ add_group_to_user usb "${USER}"
 add_group_to_user video "${USER}"
 add_group_to_user wheel "${USER}"
 add_group_to_user pipewire "${USER}"
+add_group_to_user dialout "${USER}"
 
 # Virtualization Stuff (QEMU)
 if command -v virt-manager > /dev/null 2>&1; then
