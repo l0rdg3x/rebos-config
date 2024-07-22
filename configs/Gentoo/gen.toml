@@ -46,6 +46,7 @@ items = [
   "app-misc/pipes-rs",
   "app-misc/cmatrix",
   "net-analyzer/arp-scan",
+  "app-misc/yazi",
 ]
 
 [managers.flatpak]
