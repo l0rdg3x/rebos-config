@@ -1,0 +1,4 @@
+[managers.system]
+items = [
+    "gui-libs/gtk-layer-shell",
+]

@@ -1,6 +1,7 @@
 imports = [
   "initial_packages",
   "core",
+  "gui_core",
   "shell_completions",
   "noto",
   "wayland_apps",
