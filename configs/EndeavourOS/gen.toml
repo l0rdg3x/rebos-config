@@ -3,6 +3,7 @@
 # --------------------- #
 
 imports = [
+  "initial_packages",
   "core_packages",
   "programming_languages",
   "hyprland",

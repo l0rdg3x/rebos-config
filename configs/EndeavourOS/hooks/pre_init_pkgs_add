@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+warn_notice () {
+    echo -e "\033[1;33mNOTICE: $1\033[0m"
+}
+
+warn_notice "When prompted to install either 'rust' or 'rustup', choose 'rustup'!"

@@ -1,0 +1,7 @@
+[managers.init_pkgs]
+items = [
+    "rustup",
+    "cargo",
+    "flatpak",
+    "paru",
+]

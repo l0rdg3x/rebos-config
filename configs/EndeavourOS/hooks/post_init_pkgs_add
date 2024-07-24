@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Enable Flathub
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || exit 1
+
+# Set Rustup Toolchain To Stable
+rustup default stable || exit 1
