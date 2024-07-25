@@ -24,6 +24,7 @@ items = [
   "gparted",
   "helix",
   "neovim",
+  "nodejs",
   "bat",
   "eza",
   "brave-bin",
