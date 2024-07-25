@@ -1,14 +1,11 @@
 imports = [
-    "virtualbox",
     "virt-manager",
 ]
 
 [managers.system]
 items = [
     "element-desktop",
-    "godot",
     "mission-center",
-    "blender",
     "waydroid",
     "lutris",
 ]
@@ -19,6 +16,7 @@ items = [
     "blanket",
     "blockbench",
     "codium",
-    "org.prismlauncher.PrismLauncher",
+    "org.polymc.PolyMC",
     "org.kde.kdenlive",
+    "org.blender.Blender",
 ]

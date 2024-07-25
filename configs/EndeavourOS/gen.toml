@@ -29,9 +29,6 @@ items = [
   "brave-bin",
   "thunar",
   "noto-fonts-emoji",
-  "grimblast-git",
-  "noto-fonts-emoji",
-  "obs-studio",
   "qt5ct",
   "pipewire",
   "sddm-git",
@@ -103,7 +100,6 @@ items = [
   "pmbootstrap",
   "bullshit",
   "yazi",
-  "logisim",
   "bless",
   "senpai",
 ]
@@ -117,6 +113,10 @@ items = [
   "org.supertuxproject.SuperTux",
   "org.gnome.World.PikaBackup",
   "org.raspberrypi.rpi-imager",
+  "com.github.reds.LogisimEvolution",
+  "xyz.armcord.ArmCord",
+  "com.obsproject.Studio",
+  "org.godotengine.Godot",
 ]
 
 [managers.cargo]
