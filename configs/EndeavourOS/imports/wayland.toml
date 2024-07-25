@@ -9,4 +9,6 @@ items = [
   "eww-wayland",
   "qt5-wayland",
   "gammastep",
+  "grim",
+  "slurp",
 ]
