@@ -105,6 +105,7 @@ items = [
   "senpai",
   "shabi",
   "oglo-cpu-asm",
+  "warpinator",
 ]
 
 [managers.flatpak]
