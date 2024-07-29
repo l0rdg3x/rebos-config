@@ -12,10 +12,10 @@ items = [
 
 [managers.flatpak]
 items = [
-    "simple64",
-    "blanket",
-    "blockbench",
-    "codium",
+    "io.github.simple64.simple64",
+    "com.rafaelmardojai.Blanket",
+    "net.blockbench.Blockbench",
+    "com.vscodium.codium",
     "org.polymc.PolyMC",
     "org.kde.kdenlive",
     "org.blender.Blender",

@@ -110,10 +110,10 @@ items = [
 
 [managers.flatpak]
 items = [
-  "flatseal",
-  "whatip",
-  "supertuxkart",
-  "signal",
+  "com.github.tchx84.Flatseal",
+  "org.gabmus.whatip",
+  "net.supertuxkart.SuperTuxKart",
+  "org.signal.Signal",
   "org.supertuxproject.SuperTux",
   "org.gnome.World.PikaBackup",
   "org.raspberrypi.rpi-imager",
