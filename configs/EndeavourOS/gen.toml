@@ -121,6 +121,7 @@ items = [
   "xyz.armcord.ArmCord",
   "com.obsproject.Studio",
   "org.godotengine.Godot",
+  "org.xonotic.Xonotic",
 ]
 
 [managers.cargo]
