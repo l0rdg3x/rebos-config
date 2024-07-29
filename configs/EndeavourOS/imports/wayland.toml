@@ -5,7 +5,7 @@ items = [
   "rofi-wayland",
   "swww",
   "swaync",
-  "nwg-look-bin",
+  "nwg-look",
   "eww-wayland",
   "qt5-wayland",
   "gammastep",
