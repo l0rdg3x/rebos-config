@@ -96,6 +96,7 @@ items = [
   "kooha",
   "gnome-mines",
   "pipes.sh",
+  "pipes-rs",
   "bettercap",
   "rainfuck-cli",
   "pmbootstrap",
