@@ -3,5 +3,5 @@ items = [
     "virtualbox",
     "virtualbox-guest-iso",
     "virtualbox-guest-utils",
-    "virtualbox-host-dkms",
+    "virtualbox-host-modules-arch",
 ]
