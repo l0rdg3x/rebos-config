@@ -1,5 +1,30 @@
 #!/usr/bin/env bash
 
+log_fatal () {
+    rebos api echo fatal "$1"
+}
+
+log_info () {
+    rebos api echo info "$1"
+}
+
+log_warning () {
+    rebos api echo warning "$1"
+}
+
+die () {
+    log_fatal "$1"
+    exit 1
+}
+
+attxtf_root () {
+    sudo bash -c "cat '$1' | grep '$2' || echo '$2' >> '$1'" || return 1
+}
+
+sysctl_boot () {
+    attxtf_root "/etc/sysctl.d/99-sysctl.conf" "$1" || return 1
+}
+
 sudo cp ~/.config/rebos/environment /etc/environment
 sudo cp ~/.config/rebos/sddm.conf /etc/sddm.conf
 
@@ -22,4 +47,12 @@ fi
 
 if pacman -Qs auto-cpufreq > /dev/null 2>&1; then
   sudo systemctl enable auto-cpufreq --now
+fi
+
+if [[ "$(cat /proc/sys/kernel/sysrq)" == "1" ]]; then
+    log_info "SysRQ already enabled..."
+else
+    log_info "Enabling SysRQ..."
+    sysctl_boot "kernel.sysrq = 1" || die "Failed to enable SysRQ! (For Every Boot)"
+    sudo sysctl kernel.sysrq=1 > /dev/null || log_warning "Failed to start SysRQ! (For Just This Session)"
 fi
