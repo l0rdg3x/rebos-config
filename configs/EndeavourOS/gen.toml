@@ -123,6 +123,7 @@ items = [
   "com.obsproject.Studio",
   "org.godotengine.Godot",
   "org.xonotic.Xonotic",
+  "com.stremio.Stremio",
 ]
 
 [managers.cargo]
