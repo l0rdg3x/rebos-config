@@ -1,5 +1,6 @@
 imports = [
     "virt-manager",
+    "virtualbox",
 ]
 
 [managers.system]
