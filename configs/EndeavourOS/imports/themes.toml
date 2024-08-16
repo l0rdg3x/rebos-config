@@ -1,0 +1,5 @@
+imports = [
+    "themes/gtk",
+    "themes/icons",
+    "themes/cursors",
+]

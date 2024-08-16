@@ -1,0 +1,5 @@
+[managers.system]
+items = [
+    "mint-themes",
+    "juno-theme-git",
+]
