@@ -12,7 +12,7 @@ items = [
     "bluez",
     "bluez-utils",
     "blueman",
-    "lxsession",
+    "lxsession-gtk3",
     "brightnessctl",
     "light",
     "yad",
