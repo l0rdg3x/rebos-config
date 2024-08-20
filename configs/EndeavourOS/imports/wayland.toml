@@ -11,4 +11,5 @@ items = [
   "gammastep",
   "grim",
   "slurp",
+  "wlr-randr",
 ]
