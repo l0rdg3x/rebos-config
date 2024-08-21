@@ -124,6 +124,7 @@ items = [
   "org.godotengine.Godot",
   "org.xonotic.Xonotic",
   "com.stremio.Stremio",
+  "org.kde.krita",
 ]
 
 [managers.cargo]
