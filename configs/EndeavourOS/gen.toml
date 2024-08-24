@@ -107,6 +107,8 @@ items = [
   "shabi",
   "oglo-cpu-asm",
   "warpinator",
+  "handbrake",
+  "handbrake-cli",
 ]
 
 [managers.flatpak]
