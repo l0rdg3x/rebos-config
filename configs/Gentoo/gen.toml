@@ -48,6 +48,7 @@ items = [
   "app-misc/cmatrix",
   "net-analyzer/arp-scan",
   "gnome-extra/gnome-calculator",
+  "gui-apps/wlr-randr",
 ]
 
 [managers.flatpak]
