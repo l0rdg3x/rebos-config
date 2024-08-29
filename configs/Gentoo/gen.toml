@@ -49,6 +49,7 @@ items = [
   "net-analyzer/arp-scan",
   "gnome-extra/gnome-calculator",
   "gui-apps/wlr-randr",
+  "app-editors/ghex",
 ]
 
 [managers.flatpak]
