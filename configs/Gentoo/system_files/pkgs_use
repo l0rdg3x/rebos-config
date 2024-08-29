@@ -12,3 +12,4 @@ sys-libs/ncurses -gpm
 sys-apps/xdg-desktop-portal screencast
 app-emulation/qemu spice usbredir aio
 x11-misc/gammastep geoclue
+app-editors/helix grammar
