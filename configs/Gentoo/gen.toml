@@ -69,6 +69,7 @@ items = [
   "xyz.armcord.ArmCord",
   "org.kde.krita",
   "org.xonotic.Xonotic",
+  "com.stremio.Stremio",
 ]
 
 [managers.cargo]
