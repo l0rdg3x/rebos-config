@@ -50,6 +50,7 @@ items = [
   "gnome-extra/gnome-calculator",
   "gui-apps/wlr-randr",
   "app-editors/ghex",
+  "dev-python/ipython",
 ]
 
 [managers.flatpak]
