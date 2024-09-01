@@ -28,6 +28,7 @@ items = [
   "media-sound/sox",
   "gui-apps/hyprlock",
   "gui-apps/hypridle",
+  "gui-apps/hyprpicker",
   "dev-vcs/git",
   "sys-apps/xdg-desktop-portal",
   "sys-apps/xdg-desktop-portal-gtk",
