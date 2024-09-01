@@ -26,6 +26,7 @@ items = [
   "xfce-base/thunar",
   "media-sound/pavucontrol",
   "sys-process/htop",
+  "sys-process/btop",
   "app-portage/eix",
   "www-client/brave-bin",
   "www-client/links",
