@@ -52,6 +52,7 @@ items = [
   "gui-apps/wlr-randr",
   "app-editors/ghex",
   "dev-python/ipython",
+  "net-p2p/transmission",
 ]
 
 [managers.flatpak]
