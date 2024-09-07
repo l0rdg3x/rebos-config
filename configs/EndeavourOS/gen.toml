@@ -110,6 +110,7 @@ items = [
   "handbrake",
   "handbrake-cli",
   "ttyper",
+  "myman",
 ]
 
 [managers.flatpak]
