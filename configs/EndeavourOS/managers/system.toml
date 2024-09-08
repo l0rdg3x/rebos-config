@@ -5,7 +5,7 @@
 add = "paru -S #:?"
 remove = "paru -Rns #:?"
 sync = "paru -Syy"
-upgrade = "paru -Syyu"
+upgrade = "paru -Syu"
 
 # ------------------------------- #
 #    Additional configuration.    #
