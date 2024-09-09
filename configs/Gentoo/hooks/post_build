@@ -21,16 +21,16 @@ add_group_to_user () {
 
 # Patch Wayland Sessions
 for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
-  [[ "$i" == *".desktop" ]] || continue
+    [[ "$i" == *".desktop" ]] || continue
 
-  f_name="$(basename "$i")"
+    f_name="$(basename "$i")"
 
-  if [[ -f "$wayland_sessions_path/$f_name" ]]; then
-    echo "Patching Session: $(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')"
+    if [[ -f "$wayland_sessions_path/$f_name" ]]; then
+        echo "Patching Session: $(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')"
 
-    sudo rm "/usr/share/wayland-sessions/$f_name"
-    sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
-  fi
+        sudo rm "/usr/share/wayland-sessions/$f_name"
+        sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
+    fi
 done
 
 # User Groups
@@ -50,6 +50,14 @@ if command -v virt-manager > /dev/null 2>&1; then
     echo "Detected VirtManager... setting up VirtManager stuff..."
 
     add_group_to_user libvirt "${USER}"
+fi
+
+if [[ -f /etc/libvirt/qemu.conf ]]; then
+    echo "Overwriting 'qemu.conf' file..."
+
+    sudo cp "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
+
+    echo "Successfully overwrote 'qemu.conf' file!"
 fi
 
 # Eselect Stuff
