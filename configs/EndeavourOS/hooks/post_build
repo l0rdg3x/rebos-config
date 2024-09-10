@@ -28,6 +28,10 @@ sysctl_boot () {
 sudo cp ~/.config/rebos/environment /etc/environment
 sudo cp ~/.config/rebos/sddm.conf /etc/sddm.conf
 
+if [[ -f /usr/bin/helix ]]; then
+	command -v hx > /dev/null 2>&1 || sudo ln -s /usr/bin/helix /usr/local/bin/hx
+fi
+
 if pacman -Qs firewalld > /dev/null 2>&1; then
   sudo systemctl disable firewalld --now
   sudo pacman -Rns firewalld
