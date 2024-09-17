@@ -5,4 +5,5 @@ imports = [
   "programming_languages/rhai",
   "programming_languages/zig",
   "programming_languages/go",
+  "programming_languages/c3",
 ]
