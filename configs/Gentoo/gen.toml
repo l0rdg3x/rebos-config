@@ -87,4 +87,6 @@ items = [
   "tuido",
   "rainfuck-cli",
   "shabi",
+  "retch",
+  "termova",
 ]
