@@ -53,6 +53,7 @@ items = [
   "app-editors/ghex",
   "dev-python/ipython",
   "net-p2p/transmission",
+  "games-puzzle/bastet",
 ]
 
 [managers.flatpak]
