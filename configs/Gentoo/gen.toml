@@ -54,6 +54,8 @@ items = [
   "dev-python/ipython",
   "net-p2p/transmission",
   "games-puzzle/bastet",
+  "games-arcade/ninvaders",
+  "games-puzzle/nudoku",
 ]
 
 [managers.flatpak]
