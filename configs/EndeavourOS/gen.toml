@@ -111,6 +111,10 @@ items = [
   "ttyper",
   "myman",
   "termova",
+  "nudoku",
+  "nsnake",
+  "ninvaders-git",
+  "bastet",
 ]
 
 [managers.flatpak]
