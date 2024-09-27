@@ -57,6 +57,7 @@ items = [
   "games-arcade/ninvaders",
   "games-puzzle/nudoku",
   "net-misc/telnet-bsd",
+  "x11-terms/cool-retro-term",
 ]
 
 [managers.flatpak]
