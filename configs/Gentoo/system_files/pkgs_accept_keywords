@@ -5,3 +5,4 @@ gui-wm/hyprland ~amd64
 gui-apps/waybar ~amd64
 media-video/wireplumber ~amd64
 media-video/pipewire ~amd64
+sys-devel/gcc ~amd64
