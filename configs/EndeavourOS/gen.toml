@@ -116,6 +116,7 @@ items = [
   "ninvaders-git",
   "bastet",
   "moon-buggy",
+  "tui48",
 ]
 
 [managers.flatpak]
