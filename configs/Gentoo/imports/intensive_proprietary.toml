@@ -2,3 +2,8 @@
 items = [
     "games-util/steam-launcher",
 ]
+
+[managers.flatpak]
+items = [
+    "at.vintagestory.VintageStory",
+]
