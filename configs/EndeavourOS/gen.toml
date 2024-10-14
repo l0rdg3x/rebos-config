@@ -117,6 +117,7 @@ items = [
   "bastet",
   "moon-buggy",
   "tui48",
+  "yt-dlp",
 ]
 
 [managers.flatpak]
