@@ -1,7 +1,7 @@
 add = "time sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
 remove = "time sudo emerge -cav #:?"
 sync = "time sudo emerge --sync"
-upgrade = "time sudo emerge -avuDNUg @world --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
+upgrade = "time sudo emerge -avuDNUg --with-bdeps=y @world --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
 
 plural_name = "system packages"
 
