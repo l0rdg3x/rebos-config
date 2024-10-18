@@ -40,6 +40,7 @@ items = [
   "media-libs/glfw",
   "media-libs/glew",
   "media-sound/alsa-utils",
+  "media-plugins/alsa-plugins",
 ]
 
 [managers.openrc]
