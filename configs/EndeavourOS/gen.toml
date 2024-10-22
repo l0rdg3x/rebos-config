@@ -25,6 +25,7 @@ items = [
   "helix",
   "neovim",
   "nodejs",
+  "yarn",
   "bat",
   "eza",
   "brave-bin",
