@@ -10,6 +10,7 @@ imports = [
   "appimage_dependencies",
   "portage",
   "gtk_themes",
+  "gpm",
 ]
 
 [managers.system]

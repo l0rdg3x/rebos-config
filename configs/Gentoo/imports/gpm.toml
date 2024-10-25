@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+    "sys-libs/gpm",
+]
+
+[managers.openrc]
+items = [
+    "gpm",
+]
