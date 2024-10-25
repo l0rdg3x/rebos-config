@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+    "gpm",
+]
+
+[managers.serv_now]
+items = [
+    "gpm",
+]

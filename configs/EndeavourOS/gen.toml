@@ -9,6 +9,7 @@ imports = [
   "hyprland",
   "proprietary",
   "sddm_themes",
+  "gpm",
 ]
 
 [managers.serv_startup]
