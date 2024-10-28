@@ -120,6 +120,7 @@ items = [
   "moon-buggy",
   "tui48",
   "yt-dlp",
+  "asciinema",
 ]
 
 [managers.flatpak]
