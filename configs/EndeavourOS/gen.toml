@@ -132,7 +132,7 @@ items = [
   "org.gnome.World.PikaBackup",
   "org.raspberrypi.rpi-imager",
   "com.github.reds.LogisimEvolution",
-  "xyz.armcord.ArmCord",
+  "dev.vencord.Vesktop",
   "com.obsproject.Studio",
   "org.godotengine.Godot",
   "org.xonotic.Xonotic",
