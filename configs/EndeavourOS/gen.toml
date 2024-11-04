@@ -121,6 +121,7 @@ items = [
   "tui48",
   "yt-dlp",
   "asciinema",
+  "krita",
 ]
 
 [managers.flatpak]
@@ -138,7 +139,6 @@ items = [
   "org.godotengine.Godot",
   "org.xonotic.Xonotic",
   "com.stremio.Stremio",
-  "org.kde.krita",
   "org.ardour.Ardour",
 ]
 
