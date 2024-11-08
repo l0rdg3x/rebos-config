@@ -30,6 +30,7 @@ items = [
   "bat",
   "eza",
   "brave-bin",
+  "floorp-bin",
   "thunar",
   "noto-fonts-emoji",
   "qt5ct",
