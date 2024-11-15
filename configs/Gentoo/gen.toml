@@ -59,6 +59,7 @@ items = [
   "games-puzzle/nudoku",
   "net-misc/telnet-bsd",
   "x11-terms/cool-retro-term",
+  "sys-devel/qbe",
 ]
 
 [managers.flatpak]
