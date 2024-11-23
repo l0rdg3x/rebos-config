@@ -141,6 +141,7 @@ items = [
   "org.xonotic.Xonotic",
   "com.stremio.Stremio",
   "org.ardour.Ardour",
+  "com.play0ad.zeroad",
 ]
 
 [managers.cargo]
