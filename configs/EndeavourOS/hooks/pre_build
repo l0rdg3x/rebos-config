@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+log_fatal () {
+    rebos api echo fatal "$1"
+}
+
+log_info () {
+    rebos api echo info "$1"
+}
+
+log_success () {
+    rebos api echo success "$1"
+}
+
+log_warning () {
+    rebos api echo warning "$1"
+}
+
+die () {
+    log_fatal "$1"
+    exit 1
+}
+
+system_files_path="$HOME/.config/rebos/system_files"
+
+sudo cp "${system_files_path}/sudo_config" /etc/sudoers || exit 1
