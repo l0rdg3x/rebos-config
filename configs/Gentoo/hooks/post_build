@@ -3,17 +3,44 @@
 system_files_path="$HOME/.config/rebos/system_files"
 wayland_sessions_path="$system_files_path/wayland-sessions"
 
+overwrite_file () {
+  use_sudo=0
+
+  src="$1"
+  dest="$2"
+
+  [[ "$OFSUDO" == 1 ]] && use_sudo=1
+
+  cmd_to_exec="cp"
+
+  [[ "$use_sudo" == 1 ]] && cmd_to_exec="sudo ${cmd_to_exec}"
+
+  exit_status=0
+
+  $cmd_to_exec "$src" "$dest" > /dev/null 2>&1 || exit_status=1
+
+  echo -en "\033[1;93mOVERWRITE\033[0m \033[0;96m${src}\033[0m -> \033[0;95m${dest}\033[0m "
+
+  if [[ "$exit_status" == 0 ]]; then
+    echo -e "\033[1;92m(^-^)\033[0m"
+  else
+    echo -e "\033[1;91m(T~T)\033[0m"
+  fi
+
+  return $exit_status
+}
+
 add_group_to_user () {
     if groups "$2" | tr ' ' '\n' | grep "$1" > /dev/null 2>&1; then
-        echo "User $2 already has group: '$1' (skipping...)"
+        echo -e "User \033[0;36m$2\033[0m already has group: '\033[0;96m$1\033[0m' (skipping...)"
 
         return
     fi
 
     if sudo usermod -aG "$1" "$2"; then
-        echo "Successfully added group '$1' to user $2! :D"
+        echo -e "Successfully added group '\033[0;96m$1\033[0m' to user \033[0;36m$2\033[0m! :D\033[0m"
     else
-        echo "Failed to add group '$1' to user $2! :("
+        echo -e "Failed to add group '\033[0;96m$1\033[0m' to user \033[0;36m$2\033[0m! :(\033[0m"
 
         exit 1
     fi
@@ -26,7 +53,7 @@ for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
     f_name="$(basename "$i")"
 
     if [[ -f "$wayland_sessions_path/$f_name" ]]; then
-        echo "Patching Session: $(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')"
+        echo -e "Patching Session: \033[1;96m$(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')\033[0m"
 
         sudo rm "/usr/share/wayland-sessions/$f_name"
         sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
@@ -53,11 +80,7 @@ if command -v virt-manager > /dev/null 2>&1; then
 fi
 
 if [[ -f /etc/libvirt/qemu.conf ]]; then
-    echo "Overwriting 'qemu.conf' file..."
-
-    sudo cp "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
-
-    echo "Successfully overwrote 'qemu.conf' file!"
+    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
 fi
 
 # Eselect Stuff

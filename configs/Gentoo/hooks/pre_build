@@ -11,6 +11,36 @@ pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
 pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
+sudo_conf_path="$system_files_path/sudo_config"
+
+overwrite_file () {
+  use_sudo=0
+
+  src="$1"
+  dest="$2"
+
+  [[ "$OFSUDO" == 1 ]] && use_sudo=1
+
+  cmd_to_exec="cp"
+
+  [[ "$use_sudo" == 1 ]] && cmd_to_exec="sudo ${cmd_to_exec}"
+
+  exit_status=0
+
+  $cmd_to_exec "$src" "$dest" > /dev/null 2>&1 || exit_status=1
+
+  echo -en "\033[1;93mOVERWRITE\033[0m \033[0;96m${src}\033[0m -> \033[0;95m${dest}\033[0m "
+
+  if [[ "$exit_status" == 0 ]]; then
+    echo -e "\033[1;92m(^-^)\033[0m"
+  else
+    echo -e "\033[1;91m(T~T)\033[0m"
+  fi
+
+  return $exit_status
+}
+
+OFSUDO=1 overwrite_file "$sudo_conf_path" /etc/sudoers || exit 1
 
 [[ -d "$system_files_tmp_path" ]] || mkdir "$system_files_tmp_path"
 [[ -d "$system_files_tmp_path" ]] || exit 1
@@ -35,28 +65,6 @@ else
   exit 1
 fi
 
-# Notify the user if the first file and second file are different, and tell the user the 3rd argument.
-user_nid () {
-  checksum_first="$(cat "$1")"
-  checksum_second="$(cat "$2")"
-
-  [[ "$checksum_first" == "$checksum_second" ]] || echo -e "$3"
-}
-
-# user_nid() but with extra notice.
-notice_nid () {
-  user_nid "$1" "$2" "\033[1;33mNOTICE: $3\033[0m"
-}
-
-# Delete File If Existing (Sudo)
-dfie_sudo () {
-  if [[ -f "$1" ]]; then
-    echo "Removing already existing '$1' file..."
-  
-    sudo rm "$1"
-  fi
-}
-
 video_cards="$(cat "$vct_path")"
 
 new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_cards}/g")"
@@ -68,19 +76,13 @@ cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
 
 cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 
-notice_nid "$make_conf_path" /etc/portage/make.conf "The Portage make.conf file has been changed!"
-dfie_sudo /etc/portage/make.conf
-sudo cp "$make_conf_path" /etc/portage/make.conf
+OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 
-notice_nid "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs "The package USE flags have been changed!"
-dfie_sudo /etc/portage/package.use/pkgs
-sudo cp "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs
+OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || exit 1
 
-notice_nid "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs "The package accept keywords (unmasking) have been changed!"
-dfie_sudo /etc/portage/package.accept_keywords/pkgs
-sudo cp "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs
+OFSUDO=1 overwrite_file "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs || exit 1
 
-for i in $(find "${pkgs_uses_path}/"*); do
+for i in $(find "${pkgs_uses_path}" -mindepth 1 -maxdepth 1); do
     i_basename="$(basename "$i")"
 
     if sudo cp "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
