@@ -1,7 +1,7 @@
 add = "time sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
 remove = "time sudo emerge -cav #:?"
-sync = "time sudo emerge --sync"
-upgrade = "time sudo emerge -avuDNUg --with-bdeps=y @world --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
+sync = "time sudo emerge --sync && notify-send 'Rebos' 'Successfully synced Gentoo overlays!'"
+upgrade = "time sudo emerge -avuDNUg --with-bdeps=y @world --jobs $(($(nproc) / 2)) --autounmask --autounmask-write && notify-send 'Rebos' 'Successfully upgraded Gentoo system packages!' || notify-send -u critical 'Rebos' 'Failed to upgrade Gentoo system packages!'"
 
 plural_name = "system packages"
 
