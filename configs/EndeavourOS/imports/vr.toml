@@ -1,0 +1,10 @@
+[managers.system]
+items = [
+    "monado",
+    "opencomposite",
+]
+
+[managers.flatpak]
+items = [
+    "io.github.wivrn.wivrn",
+]
