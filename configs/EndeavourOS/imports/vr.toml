@@ -2,6 +2,9 @@
 items = [
     "monado",
     "opencomposite",
+    "envision-xr-git",
+    "libudev0-shim",
+    "wlx-overlay-s-git",
 ]
 
 [managers.flatpak]
