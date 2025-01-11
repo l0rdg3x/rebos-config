@@ -61,6 +61,7 @@ items = [
   "x11-terms/cool-retro-term",
   "sys-devel/qbe",
   "dev-python/pipx",
+  "x11-misc/ydotool",
 ]
 
 [managers.flatpak]
