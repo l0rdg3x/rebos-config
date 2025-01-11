@@ -85,3 +85,9 @@ fi
 
 # Eselect Stuff
 sudo eselect editor set /usr/bin/nvim
+
+# ENV Variables (System-Wide)
+OFSUDO=1 overwrite_file "$system_files_path/global_bashrc" "/etc/bash/bashrc.d/rebos.bash" || exit 1
+
+# Update Environment
+sudo env-update
