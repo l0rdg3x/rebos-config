@@ -123,6 +123,7 @@ items = [
   "yt-dlp",
   "asciinema",
   "krita",
+  "gajim",
 ]
 
 [managers.flatpak]
