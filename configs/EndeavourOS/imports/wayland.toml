@@ -2,7 +2,7 @@
 items = [
   "cliphist",
   "waybar",
-  "rofi-wayland",
+  "rofi-lbonn-wayland-git",
   "swww",
   "swaync",
   "nwg-look",
