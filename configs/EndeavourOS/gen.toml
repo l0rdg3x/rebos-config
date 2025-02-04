@@ -144,6 +144,7 @@ items = [
   "org.ardour.Ardour",
   "com.play0ad.zeroad",
   "at.vintagestory.VintageStory",
+  "org.kde.kdenlive",
 ]
 
 [managers.cargo]

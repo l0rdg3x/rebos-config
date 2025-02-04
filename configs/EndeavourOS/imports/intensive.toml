@@ -19,6 +19,5 @@ items = [
     "net.blockbench.Blockbench",
     "com.vscodium.codium",
     "org.polymc.PolyMC",
-    "org.kde.kdenlive",
     "org.blender.Blender",
 ]
