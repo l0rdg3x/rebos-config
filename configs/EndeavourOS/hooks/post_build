@@ -74,15 +74,3 @@ else
     sysctl_boot "kernel.sysrq = 1" || die "Failed to enable SysRQ! (For Every Boot)"
     sudo sysctl kernel.sysrq=1 > /dev/null || log_warning "Failed to start SysRQ! (For Just This Session)"
 fi
-
-nsnake_usr="/usr/share/games/nsnake/levels"
-nsnake_home="${HOME}/.local/share/nsnake/levels"
-if [[ -L "$nsnake_home" ]]; then
-    log_info "NSnake levels already linked! :D"
-else
-    if [[ -d "$nsnake_usr" ]]; then
-        log_info "Linking NSnake levels... ('$nsnake_usr' -> '$nsnake_home')"
-        ln -s "$nsnake_usr" "$nsnake_home" || exit 1
-        log_success "Linked NSnake levels! :D"
-    fi
-fi
