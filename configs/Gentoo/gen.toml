@@ -11,6 +11,7 @@ imports = [
   "portage",
   "gtk_themes",
   "gpm",
+  "vr",
 ]
 
 [managers.system]
@@ -62,6 +63,7 @@ items = [
   "sys-devel/qbe",
   "dev-python/pipx",
   "x11-misc/ydotool",
+  "dev-util/android-tools",
 ]
 
 [managers.flatpak]

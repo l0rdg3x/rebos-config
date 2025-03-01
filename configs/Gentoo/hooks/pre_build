@@ -9,6 +9,7 @@ pkgs_use_machine_path="$system_files_path/machine_use/$HOSTNAME"
 pkgs_uses_path="$system_files_path/uses"
 pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
 pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
+pkgs_mask_path="$system_files_path/pkgs_mask"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
 sudo_conf_path="$system_files_path/sudo_config"
@@ -81,6 +82,8 @@ OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || exit 1
 
 OFSUDO=1 overwrite_file "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs || exit 1
+
+OFSUDO=1 overwrite_file "$pkgs_mask_path" /etc/portage/package.mask/pkgs || exit 1
 
 for i in $(find "${pkgs_uses_path}" -mindepth 1 -maxdepth 1); do
     i_basename="$(basename "$i")"

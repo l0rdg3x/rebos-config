@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+    "media-libs/wivrn",
+]
+
+[managers.openrc]
+items = [
+    "avahi-daemon",
+]

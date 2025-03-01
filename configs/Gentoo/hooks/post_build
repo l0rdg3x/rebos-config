@@ -71,6 +71,7 @@ add_group_to_user video "${USER}"
 add_group_to_user wheel "${USER}"
 add_group_to_user pipewire "${USER}"
 add_group_to_user dialout "${USER}"
+add_group_to_user android "${USER}"
 
 # Virtualization Stuff (QEMU)
 if command -v virt-manager > /dev/null 2>&1; then
@@ -87,7 +88,7 @@ fi
 sudo eselect editor set /usr/bin/nvim
 
 # ENV Variables (System-Wide)
-OFSUDO=1 overwrite_file "$system_files_path/global_bashrc" "/etc/bash/bashrc.d/rebos.bash" || exit 1
+OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
 
 # Update Environment
 sudo env-update
