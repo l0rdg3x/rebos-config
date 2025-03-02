@@ -1,6 +1,7 @@
 [managers.system]
 items = [
     "media-libs/wivrn",
+    "media-libs/monado::oglo-gentoo-overlay",
 ]
 
 [managers.openrc]

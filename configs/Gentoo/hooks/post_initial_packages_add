@@ -33,7 +33,8 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 eselect_enable_repo "gentoo"
 eselect_enable_repo "guru"
 eselect_enable_repo "steam-overlay"
-eselect_add_repo "brave-overlay" "git" "https://gitlab.com/jason.oliveira/brave-overlay.git"
+eselect_add_repo "brave-overlay" git https://gitlab.com/jason.oliveira/brave-overlay.git
+eselect_add_repo "oglo-gentoo-overlay" git https://gitlab.com/Oglo12/oglo-gentoo-overlay.git
 
 # Symlink Rustup stuff.
 if command -v rustup > /dev/null 2>&1; then
