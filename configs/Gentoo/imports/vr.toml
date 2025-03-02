@@ -2,6 +2,7 @@
 items = [
     "media-libs/wivrn",
     "media-libs/monado::oglo-gentoo-overlay",
+    "media-libs/opencomposite",
 ]
 
 [managers.openrc]
