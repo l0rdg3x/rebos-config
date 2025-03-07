@@ -64,6 +64,7 @@ items = [
   "dev-python/pipx",
   "x11-misc/ydotool",
   "dev-util/android-tools",
+  "app-misc/sl",
 ]
 
 [managers.flatpak]
