@@ -17,3 +17,4 @@ dev-libs/folks bluetooth eds telepathy utils
 net-vpn/protonvpn-cli python_targets_python3_11
 dev-util/android-tools udev
 media-libs/glew egl-only
+media-gfx/gthumb jpegxl exif tiff heif webp
