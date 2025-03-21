@@ -88,6 +88,7 @@ items = [
   "com.stremio.Stremio",
   "org.ardour.Ardour",
   "com.rafaelmardojai.Blanket",
+  "org.tenacityaudio.Tenacity",
 ]
 
 [managers.cargo]
