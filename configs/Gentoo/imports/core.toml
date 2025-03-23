@@ -48,6 +48,7 @@ items = [
   "sys-fs/f2fs-tools",
   "sys-fs/ntfs3g",
   "sys-fs/zfs",
+  "dev-debug/gdb",
 ]
 
 [managers.openrc]
