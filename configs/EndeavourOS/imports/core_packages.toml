@@ -13,4 +13,6 @@ items = [
   "clang",
   "gcc",
   "vim",
+  "xfsprogs",
+  "xfsdump",
 ]
