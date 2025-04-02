@@ -12,6 +12,7 @@ items = [
   "unzip",
   "clang",
   "gcc",
+  "gdb",
   "vim",
   "xfsprogs",
   "xfsdump",
