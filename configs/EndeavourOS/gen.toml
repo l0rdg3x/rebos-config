@@ -124,6 +124,7 @@ items = [
   "krita",
   "gajim",
   "bong-song",
+  "sl",
 ]
 
 [managers.flatpak]
