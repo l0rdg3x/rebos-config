@@ -50,6 +50,8 @@ items = [
   "sys-fs/zfs",
   "dev-debug/gdb",
   "sys-auth/rtkit",
+  "dev-libs/light",
+  "media-sound/sox",
 ]
 
 [managers.openrc]
