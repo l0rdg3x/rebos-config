@@ -1,0 +1,19 @@
+[managers.system]
+items = [
+    "gui-wm/sway",
+    "gui-apps/swaybg",
+    "gui-apps/swayidle",
+    "gui-apps/swaylock",
+    "gui-apps/rofi-wayland",
+    "x11-terms/alacritty",
+    "app-misc/brightnessctl",
+    "x11-libs/libnotify",
+    "virtual/notification-daemon",
+    "gui-apps/swaync",
+    "gui-apps/waybar",
+    "gui-apps/grim",
+    "gui-apps/slurp",
+    "app-misc/cliphist",
+    "gui-apps/wl-clipboard",
+    "lxde-base/lxsession",
+]

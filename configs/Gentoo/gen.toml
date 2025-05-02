@@ -6,6 +6,7 @@ imports = [
   "noto",
   "wayland_apps",
   "rices/hyprland",
+  "rices/sway",
   "qt",
   "appimage_dependencies",
   "portage",
