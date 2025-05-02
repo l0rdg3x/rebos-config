@@ -5,7 +5,7 @@ imports = [
   "shell_completions",
   "noto",
   "wayland_apps",
-  "rices/sway",
+  "rices/hyprland",
   "qt",
   "appimage_dependencies",
   "portage",
