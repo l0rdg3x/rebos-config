@@ -93,6 +93,9 @@ items = [
   "org.ardour.Ardour",
   "com.rafaelmardojai.Blanket",
   "org.tenacityaudio.Tenacity",
+  "org.frozen_bubble.frozen-bubble",
+  "org.neverball.Neverball",
+  "io.thp.numptyphysics",
 ]
 
 [managers.cargo]
