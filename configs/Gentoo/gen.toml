@@ -70,7 +70,6 @@ items = [
   "app-misc/nwg-look",
   "media-sound/playerctl",
   "sys-apps/yarn",
-  "app-pda/gtkpod",
 ]
 
 [managers.flatpak]
