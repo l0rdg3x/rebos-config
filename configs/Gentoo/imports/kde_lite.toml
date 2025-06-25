@@ -1,0 +1,20 @@
+[managers.system]
+items = [
+    "kde-plasma/plasma-meta",
+    "kde-apps/kdeadmin-meta",
+    "kde-apps/dolphin",
+    "kde-apps/kdialog",
+    "kde-apps/keditbookmarks",
+    "kde-apps/kfind",
+    "kde-apps/konsole",
+    "kde-apps/kdegraphics-meta",
+    "kde-apps/ffmpegthumbs",
+    "kde-apps/kaccounts-integration",
+    "kde-apps/kaccounts-providers",
+    "kde-apps/kdenetwork-filesharing",
+    "kde-apps/krdc",
+    "kde-apps/krfb",
+    "kde-misc/kdeconnect",
+    "net-misc/kio-zeroconf",
+    "kde-apps/kdeutils-meta",
+]
