@@ -1,6 +1,0 @@
-[managers.system_pre]
-items = [
-  "void-repo-nonfree",
-  "void-repo-multilib",
-  "void-repo-multilib-nonfree",
-]

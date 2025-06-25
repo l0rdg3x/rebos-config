@@ -26,7 +26,6 @@ items = [
   "sys-devel/binutils-config",
   "sys-libs/binutils-libs",
   "sys-apps/dbus",
-  "sys-auth/elogind",
   "sys-auth/polkit",
   "dev-build/make",
   "dev-build/cmake",
@@ -52,15 +51,11 @@ items = [
   "sys-auth/rtkit",
   "dev-libs/light",
   "media-sound/sox",
+  "dev-util/ccache",
 ]
 
-[managers.openrc]
+[managers.serv_startup]
 items = [
   "NetworkManager",
   "dbus",
-  "elogind",
-]
-
-[managers.openrc_boot]
-items = [
 ]

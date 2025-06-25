@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 system_files_path="$HOME/.config/rebos/system_files"
-wayland_sessions_path="$system_files_path/wayland-sessions"
 
 overwrite_file () {
   use_sudo=0
@@ -46,20 +45,6 @@ add_group_to_user () {
     fi
 }
 
-# Patch Wayland Sessions
-for i in $(find /usr/share/wayland-sessions 2> /dev/null); do
-    [[ "$i" == *".desktop" ]] || continue
-
-    f_name="$(basename "$i")"
-
-    if [[ -f "$wayland_sessions_path/$f_name" ]]; then
-        echo -e "Patching Session: \033[1;96m$(cat "/usr/share/wayland-sessions/$f_name" | grep 'Name=' | sed 's/^Name=//')\033[0m"
-
-        sudo rm "/usr/share/wayland-sessions/$f_name"
-        sudo cp "$wayland_sessions_path/$f_name" "/usr/share/wayland-sessions/$f_name"
-    fi
-done
-
 # User Groups
 add_group_to_user audio "${USER}"
 add_group_to_user cdrom "${USER}"
@@ -80,15 +65,17 @@ if command -v virt-manager > /dev/null 2>&1; then
     add_group_to_user libvirt "${USER}"
 fi
 
-if [[ -f /etc/libvirt/qemu.conf ]]; then
-    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
-fi
+## CHECK
+#if [[ -f /etc/libvirt/qemu.conf ]]; then
+#    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
+#fi
 
 # Eselect Stuff
-sudo eselect editor set /usr/bin/nvim
+sudo eselect editor set /usr/bin/nano
 
+## CHECK
 # ENV Variables (System-Wide)
-OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
+#OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
 
 # Update Environment
 sudo env-update

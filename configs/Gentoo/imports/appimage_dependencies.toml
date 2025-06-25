@@ -1,4 +1,0 @@
-[managers.system]
-items = [
-    "sys-fs/fuse:0",
-]

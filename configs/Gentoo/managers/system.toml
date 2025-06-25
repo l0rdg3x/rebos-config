@@ -1,4 +1,4 @@
-add = "time sudo emerge -vaNUg #:? --jobs $(($(nproc) / 2)) --autounmask --autounmask-write"
+add = "time sudo emerge -vaNUg #:?"
 remove = "time sudo emerge -cav #:?"
 sync = "~/.config/rebos/scripts/portage_sync.sh"
 upgrade = "~/.config/rebos/scripts/portage_upgrade.sh"

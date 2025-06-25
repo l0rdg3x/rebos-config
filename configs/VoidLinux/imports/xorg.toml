@@ -1,6 +1,0 @@
-[managers.system]
-items = [
-  "xorg",
-  "xorg-server",
-  "xinit",
-]

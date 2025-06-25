@@ -1,8 +1,0 @@
-[managers.system]
-items = [
-]
-
-[managers.flatpak]
-items = [
-  "io.github.seadve.Kooha",
-]

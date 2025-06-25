@@ -3,6 +3,8 @@
 system_files_path="$HOME/.config/rebos/system_files"
 system_files_tmp_path="$system_files_path/tmp"
 vct_path="$system_files_path/video_cards_template/$HOSTNAME"
+makeopts_path="$system_files_path/makeopts_template/$HOSTNAME"
+emergedefaultopts_path="$system_files_path/emerge_default_opts_template/$HOSTNAME"
 pkgs_use_path="$system_files_path/pkgs_use"
 pkgs_use_tmp_path="$system_files_tmp_path/pkgs_use"
 pkgs_use_machine_path="$system_files_path/machine_use/$HOSTNAME"
@@ -13,6 +15,8 @@ pkgs_mask_path="$system_files_path/pkgs_mask"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
 sudo_conf_path="$system_files_path/sudo_config"
+ccache_path="/var/cache/ccache/"
+ccache_system_path="$system_files_path/ccache/ccache.conf"
 
 overwrite_file () {
   use_sudo=0
@@ -56,6 +60,26 @@ else
   exit 1
 fi
 
+if [[ -f "$makeopts_path" ]]; then
+  echo "Found MAKEOPTS template for machine."
+else
+  echo "Missing MAKEOPTS template for machine."
+
+  echo "Template must be located at: $makeopts_path"
+
+  exit 1
+fi
+
+if [[ -f "$emergedefaultopts_path" ]]; then
+  echo "Found EMERGE_DEFAULT_OPTS template for machine."
+else
+  echo "Missing EMERGE_DEFAULT_OPTS template for machine."
+
+  echo "Template must be located at: $emergedefaultopts_path"
+
+  exit 1
+fi
+
 if [[ -f "$pkgs_use_machine_path" ]]; then
   echo "Found machine package use flags."
 else
@@ -67,8 +91,13 @@ else
 fi
 
 video_cards="$(cat "$vct_path")"
+makeopts="$(cat "$makeopts_path")"
+emerge_default_opts="$(cat "$emergedefaultopts_path")"
 
 new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_cards}/g")"
+new_make_conf="$(cat "$new_make_conf" | sed "s/%makeopts%/${makeopts}/g")"
+new_make_conf="$(cat "$new_make_conf" | sed "s/%emergedefopts%/${emerge_default_opts}/g")"
+new_make_conf="$(cat "$new_make_conf" | sed "s/%ccache_path%/${ccache_path}/g")"
 
 echo "$new_make_conf" > "$make_conf_path"
 
@@ -114,4 +143,13 @@ else
   echo "Creating auto package USE flags file..."
 
   sudo touch "$autopkguse_path"
+fi
+
+if [[ -d "$ccache_path" && -f "$ccache_path/ccache.conf" ]]; then
+  echo "ccache path and config are already present... skipping..."
+else
+  echo "Creating ccache path and file..."
+
+  sudo mkdir -p $ccache_path
+  sudo cp $ccache_system_path $ccache_path
 fi

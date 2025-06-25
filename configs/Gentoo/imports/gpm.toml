@@ -3,7 +3,7 @@ items = [
     "sys-libs/gpm",
 ]
 
-[managers.openrc]
+[managers.serv_startup]
 items = [
     "gpm",
 ]

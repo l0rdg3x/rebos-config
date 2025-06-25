@@ -4,7 +4,7 @@ items = [
     "app-emulation/libvirt",
 ]
 
-[managers.openrc]
+[managers.serv_startup]
 items = [
     "libvirtd",
 ]
