@@ -19,11 +19,14 @@ items = [
     "kde-apps/kdeutils-meta",
     "kde-plasma/plasma-login-sessions",
     "kde-plasma/plasma-nm",
+    "kde-plasma/bluedevil",
+    "x11-misc/sddm",
 ]
 
 [managers.serv_startup]
 items = [
-  "pipewire-pulse",
-  "wireplumber",
-  "pipewire",
+    "sddm",
+    "pipewire-pulse",
+    "wireplumber",
+    "pipewire",
 ]

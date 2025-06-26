@@ -4,3 +4,8 @@ items = [
     "net-wireless/bluez-tools",
     "net-wireless/blueman",
 ]
+
+[managers.serv_startup]
+items = [
+  "bluetooth",
+]
