@@ -70,7 +70,7 @@ fi
 #    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
 #fi
 
-if [[ -f /etc/libvirt/qemu.conf ]]; then
+if [[ -f /var/ccache/ccache.conf ]]; then
     OFSUDO=1 overwrite_file "$system_files_path/ccache/ccache.conf" "/var/ccache/ccache.conf" || exit 1
 fi
 
