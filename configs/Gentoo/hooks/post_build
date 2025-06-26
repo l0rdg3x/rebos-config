@@ -70,12 +70,15 @@ fi
 #    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
 #fi
 
+if [[ -f /etc/libvirt/qemu.conf ]]; then
+    OFSUDO=1 overwrite_file "$system_files_path/ccache/ccache.conf" "/var/ccache/ccache.conf" || exit 1
+fi
+
 # Eselect Stuff
 sudo eselect editor set /usr/bin/nano
 
-## CHECK
 # ENV Variables (System-Wide)
-#OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
+OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
 
 # Update Environment
 sudo env-update

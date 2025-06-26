@@ -1,0 +1,14 @@
+[managers.system]
+items = [
+    "kde-plasma/plasma-meta",
+    "kde-apps/kde-apps-meta",
+    "kde-plasma/plasma-login-sessions",
+    "kde-plasma/plasma-nm",
+]
+
+[managers.serv_startup]
+items = [
+  "pipewire-pulse",
+  "wireplumber",
+  "pipewire",
+]
