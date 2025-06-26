@@ -4,3 +4,5 @@ media-video/wireplumber ~amd64
 media-video/pipewire ~amd64
 sys-devel/gcc ~amd64
 virtual/rust ~amd64
+app-admin/btrfs-assistant ~amd64
+app-backup/grub-btrfs ~amd64
