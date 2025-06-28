@@ -1,0 +1,16 @@
+imports = [
+  "laptop",
+  "kde_lite",
+]
+
+[managers.system]
+items = [
+]
+
+[managers.flatpak]
+items = [
+]
+
+[managers.cargo]
+items = [
+]
