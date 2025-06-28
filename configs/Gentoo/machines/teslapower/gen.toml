@@ -5,6 +5,7 @@ imports = [
 
 [managers.system]
 items = [
+  "sys-apps/amdgpu_top",
 ]
 
 [managers.flatpak]
