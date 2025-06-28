@@ -8,6 +8,7 @@ imports = [
   "bluetooth",
   "gaming",
   "virtualization",
+  "office",
 ]
 
 [managers.system]
@@ -40,6 +41,7 @@ items = [
   "org.raspberrypi.rpi-imager",
   "com.stremio.Stremio",
   "com.rafaelmardojai.Blanket",
+  "com.usebottles.bottles",
 ]
 
 [managers.cargo]

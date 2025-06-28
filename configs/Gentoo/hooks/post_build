@@ -65,6 +65,14 @@ if command -v virt-manager > /dev/null 2>&1; then
     add_group_to_user libvirt "${USER}"
 fi
 
+# Virtualization Stuff (QEMU)
+if command -v cupsd > /dev/null 2>&1; then
+    echo "Detected CUPS... setting up CUPS stuff..."
+
+    add_group_to_user lp "${USER}"
+    add_group_to_user lpadmin "${USER}"
+fi
+
 ## CHECK
 #if [[ -f /etc/libvirt/qemu.conf ]]; then
 #    OFSUDO=1 overwrite_file "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1

@@ -1,0 +1,10 @@
+[managers.system]
+items = [
+  "app-office/libreoffice-bin",
+  "net-print/cups-meta",
+]
+
+[managers.serv_startup]
+items = [
+  "cups"
+]

@@ -55,6 +55,9 @@ items = [
   "app-admin/btrfs-assistant",
   "app-backup/snapper",
   "app-backup/grub-btrfs",
+  "app-shells/zsh",
+  "app-shells/zsh-autosuggestions",
+  "app-shells/zsh-syntax-highlighting",
 ]
 
 [managers.serv_startup]
