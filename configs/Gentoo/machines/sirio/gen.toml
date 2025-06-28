@@ -1,0 +1,16 @@
+imports = [
+  "kde_full",
+]
+
+[managers.system]
+items = [
+  "x11-drivers/nvidia-drivers",
+]
+
+[managers.flatpak]
+items = [
+]
+
+[managers.cargo]
+items = [
+]

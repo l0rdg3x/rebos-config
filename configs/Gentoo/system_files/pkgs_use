@@ -14,6 +14,9 @@ app-emulation/qemu spice usbredir aio
 app-editors/helix grammar
 dev-util/android-tools udev
 app-office/libreoffice-bin java python
+# Nvidia
+x11-drivers/nvidia-drivers kernel-open tools
+# END Nvidia
 # Steam
 app-accessibility/at-spi2-core  abi_x86_32
 app-arch/bzip2                  abi_x86_32

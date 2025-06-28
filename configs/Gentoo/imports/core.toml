@@ -58,6 +58,7 @@ items = [
   "app-shells/zsh",
   "app-shells/zsh-autosuggestions",
   "app-shells/zsh-syntax-highlighting",
+  "sys-kernel/dkms",
 ]
 
 [managers.serv_startup]

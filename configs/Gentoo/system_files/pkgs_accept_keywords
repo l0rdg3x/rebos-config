@@ -11,7 +11,6 @@ games-util/game-device-udev-rules ~amd64
 sys-libs/libudev-compat ~amd64
 dev-libs/nss ~amd64
 www-client/librewolf-bin ~amd64
-app-admin/btrfs-assistant-2.2 ~amd64
-app-backup/grub-btrfs-4.13 ~amd64
-app-shells/zsh-autocomplete-24.09.04 ~amd64
-app-shells/zsh-autosuggestions-0.7.0-r2 ~amd64
+app-shells/zsh-autocomplete ~amd64
+app-shells/zsh-autosuggestions ~amd64
+x11-drivers/nvidia-drivers ~amd64
