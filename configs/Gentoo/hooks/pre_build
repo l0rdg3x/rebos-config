@@ -137,17 +137,17 @@ OFSUDO=1 overwrite_file "$pkgs_accept_keywords_tmp_path" /etc/portage/package.ac
 
 OFSUDO=1 overwrite_file "$pkgs_mask_path" /etc/portage/package.mask/pkgs || exit 1
 
-for i in $(find "${pkgs_uses_path}" -mindepth 1 -maxdepth 1); do
-    i_basename="$(basename "$i")"
+# for i in $(find "${pkgs_uses_path}" -mindepth 1 -maxdepth 1); do
+#     i_basename="$(basename "$i")"
 
-    if sudo cp "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
-        echo "Successfully added use flags from: '${i_basename}' (uses dir)"
-    else
-        echo "Failed to add use flags from: '${i_basename}' (uses dir)"
+#     if sudo cp "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
+#         echo "Successfully added use flags from: '${i_basename}' (uses dir)"
+#     else
+#         echo "Failed to add use flags from: '${i_basename}' (uses dir)"
 
-        exit 1
-    fi
-done
+#         exit 1
+#     fi
+# done
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
 autopkguse_path="/etc/portage/package.use/zzz_pkg_use"
