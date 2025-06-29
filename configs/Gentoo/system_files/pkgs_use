@@ -24,6 +24,7 @@ www-client/ungoogled-chromium-bin widevine
 app-emulation/guestfs-tools libvirt
 net-misc/nextcloud-client dolphin
 dev-libs/libdbusmenu gtk3
+net-libs/nodejs inspector npm
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
