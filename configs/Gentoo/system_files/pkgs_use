@@ -26,6 +26,7 @@ dev-libs/libdbusmenu gtk3
 net-libs/nodejs inspector npm
 net-analyzer/wireshark
 app-emulation/libguestfs ocaml
+media-video/vlc aom archive aribsub bluray chromecast dav1d dc1394 faad fdk gme gstreamer kate kms libplacebo libtar libtiger linsys live matroska mpeg nfs omxil sdl-image sftp shout skins soxr srt tremor twolame x265 zeroconf zvbi
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
