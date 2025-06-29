@@ -2,7 +2,6 @@
 items = [
     "app-emulation/virt-manager",
     "app-emulation/libvirt",
-    "app-emulation/guestfs-tools",
     "app-containers/docker",
     "app-containers/docker-compose",
     "app-containers/nvidia-container-toolkit",
