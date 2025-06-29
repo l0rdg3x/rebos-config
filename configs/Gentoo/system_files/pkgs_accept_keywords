@@ -4,6 +4,7 @@ media-video/wireplumber ~amd64
 media-video/pipewire ~amd64
 sys-devel/gcc ~amd64
 virtual/rust ~amd64
+dev-util/rustup ~amd64
 games-misc/lolcat ~amd64
 dev-python/pipx ~amd64
 app-admin/btrfs-assistant ~amd64

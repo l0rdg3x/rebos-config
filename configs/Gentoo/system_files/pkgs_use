@@ -3,6 +3,7 @@
 */*  L10N: it it-IT
 # END LANG
 sys-kernel/installkernel dracut grub
+sys-apps/systemd cryptsetup
 media-libs/libsdl2 gles2
 media-video/pipewire echo-cancel extra sound-server
 media-video/ffmpeg opus
