@@ -24,3 +24,6 @@ app-admin/bitwarden-desktop-bin ~amd64
 net-print/epson-inkjet-printer-escpr2-bin ~amd64
 gui-apps/packettracer ~amd64
 media-sound/puddletag ~amd64
+games-util/gamemode ~amd64
+gui-wm/gamescope ~amd64
+net-misc/rustdesk-bin ~amd64
