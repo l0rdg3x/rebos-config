@@ -49,6 +49,7 @@ items = [
   "dev-libs/light",
   "media-sound/sox",
   "dev-util/ccache",
+  "sys-fs/btrfsmaintenance",
   "app-admin/btrfs-assistant",
   "app-backup/snapper",
   "app-backup/grub-btrfs",

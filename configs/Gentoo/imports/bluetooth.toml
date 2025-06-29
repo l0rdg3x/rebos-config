@@ -1,8 +1,6 @@
 [managers.system]
 items = [
     "net-wireless/bluez",
-    # "net-wireless/bluez-tools",
-    "net-wireless/blueman",
 ]
 
 [managers.serv_startup]
