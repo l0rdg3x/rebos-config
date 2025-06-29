@@ -16,6 +16,7 @@ dev-util/android-tools udev
 app-office/libreoffice-bin java python
 dev-qt/qtpositioning geoclue
 net-dns/avahi mdnsresponder-compat
+net-dns/dnsmasq script
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
