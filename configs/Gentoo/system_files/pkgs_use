@@ -18,6 +18,7 @@ dev-qt/qtpositioning geoclue
 net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
+net-misc/spice-gtk usbredir
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
