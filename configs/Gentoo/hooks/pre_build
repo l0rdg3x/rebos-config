@@ -100,6 +100,14 @@ else
   sudo mkdir -p /etc/portage/binrepos.conf
 fi
 
+if [[ -d "/etc/portage/repos.conf" ]]; then
+  echo "Gentoo repo already exist... skipping..."
+else
+  echo "Creating Gentoo repo path..."
+
+  sudo mkdir -p /etc/portage/repos.conf
+fi
+
 video_cards="$(cat "$vct_path")"
 makeopts="$(cat "$makeopts_path")"
 emerge_default_opts="$(cat "$emergedefaultopts_path")"
