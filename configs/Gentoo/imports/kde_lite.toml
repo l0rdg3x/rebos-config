@@ -27,6 +27,7 @@ items = [
 [managers.serv_startup]
 items = [
     "sddm",
+    "ufw",
 ]
 
 [managers.serv_user_startup]
