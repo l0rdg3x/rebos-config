@@ -27,6 +27,7 @@ net-libs/nodejs inspector npm
 net-analyzer/wireshark lua_single_target_lua5-4
 net-analyzer/nmap lua_single_target_lua5-4
 media-video/vlc aom archive aribsub bluray chromecast dav1d dc1394 faad fdk gme gstreamer kate kms libplacebo libtar libtiger linsys live matroska mpeg nfs omxil sdl-image sftp shout skins soxr srt tremor twolame x265 zeroconf zvbi
+media-libs/libiptcdata -python
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
