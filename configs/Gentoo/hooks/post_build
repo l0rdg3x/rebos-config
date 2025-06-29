@@ -90,3 +90,6 @@ OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || e
 
 # Update Environment
 sudo env-update
+
+# For app-backup/grub-btrfs
+grub-mkconfig -o /boot/grub/grub.cfg
