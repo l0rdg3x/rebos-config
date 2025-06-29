@@ -4,7 +4,6 @@ items = [
     "app-emulation/libvirt",
     "app-containers/docker",
     "app-containers/docker-compose",
-    "app-containers/nvidia-container-toolkit",
     "app-admin/helm",
     "sys-cluster/kubectl",
 ]
