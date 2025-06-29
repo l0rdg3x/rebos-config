@@ -104,10 +104,10 @@ video_cards="$(cat "$vct_path")"
 makeopts="$(cat "$makeopts_path")"
 emerge_default_opts="$(cat "$emergedefaultopts_path")"
 
-sed -e "s/%video_cards%/${video_cards}/g" \
-    -e "s/%makeopts%/${makeopts}/g" \
-    -e "s/%emergedefopts%/${emerge_default_opts}/g" \
-    -e "s/%ccache_path%/${ccache_path}/g" \
+sed -e "s|%video_cards%|${video_cards}|g" \
+    -e "s|%makeopts%|${makeopts}|g" \
+    -e "s|%emergedefopts%|${emerge_default_opts}|g" \
+    -e "s|%ccache_path%|${ccache_path}|g" \
     "$make_conf_template_path" > "$make_conf_path"
 
 # echo "$new_make_conf" > "$make_conf_path"
