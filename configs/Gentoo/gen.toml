@@ -23,6 +23,7 @@ items = [
   "sys-process/btop",
   "app-portage/eix",
   "www-client/librewolf-bin",
+  "www-client/ungoogled-chromium-bin",
   "www-client/links",
   "media-gfx/gimp",
   "games-misc/lolcat",

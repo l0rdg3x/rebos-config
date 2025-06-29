@@ -1,4 +1,11 @@
 [managers.system]
 items = [
     # "games-util/steam-launcher",
+    "games-util/gamemode",
+    "gui-wm/gamescope",
+]
+
+[managers.flatpak]
+items = [
+    "net.davidotek.pupgui2",
 ]

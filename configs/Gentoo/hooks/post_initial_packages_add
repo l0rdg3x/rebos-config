@@ -33,6 +33,9 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 eselect_enable_repo "gentoo"
 eselect_enable_repo "guru"
 eselect_enable_repo "steam-overlay"
+eselect_enable_repo "pf4public"
+eselect_enable_repo "escpr2"
+eselect_enable_repo "zGentoo"
 eselect_add_repo "librewolf" git https://codeberg.org/librewolf/gentoo.git
 
 # Symlink Rustup stuff.

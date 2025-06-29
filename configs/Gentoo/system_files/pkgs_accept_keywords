@@ -20,3 +20,7 @@ x11-drivers/nvidia-drivers ~amd64
 dev-python/userpath ~amd64
 dev-ruby/paint ~amd64
 dev-ruby/optimist ~amd64
+app-admin/bitwarden-desktop-bin ~amd64
+net-print/epson-inkjet-printer-escpr2-bin ~amd64
+gui-apps/packettracer ~amd64
+media-sound/puddletag ~amd64

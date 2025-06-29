@@ -5,6 +5,8 @@ imports = [
 [managers.system]
 items = [
   "x11-drivers/nvidia-drivers",
+  "sys-apps/openrazer",
+  "sys-apps/polychromatic",
 ]
 
 [managers.flatpak]
@@ -13,4 +15,9 @@ items = [
 
 [managers.cargo]
 items = [
+]
+
+[managers.serv_user_startup]
+items = [
+    "openrazer-daemon",
 ]

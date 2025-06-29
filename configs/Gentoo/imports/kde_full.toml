@@ -13,6 +13,7 @@ items = [
     "kde-apps/kfind",
     "kde-apps/khelpcenter",
     "kde-apps/konsole",
+    "kde-apps/kleopatra",
     "kde-plasma/plasma-login-sessions",
     "kde-plasma/plasma-nm",
     "kde-plasma/bluedevil",

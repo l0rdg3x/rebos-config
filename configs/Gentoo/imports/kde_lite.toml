@@ -17,6 +17,7 @@ items = [
     "kde-misc/kdeconnect",
     "net-misc/kio-zeroconf",
     "kde-apps/kdeutils-meta",
+    "kde-apps/kleopatra",
     "kde-plasma/plasma-login-sessions",
     "kde-plasma/plasma-nm",
     "kde-plasma/bluedevil",
