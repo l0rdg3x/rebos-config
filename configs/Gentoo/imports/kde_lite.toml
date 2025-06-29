@@ -26,6 +26,10 @@ items = [
 [managers.serv_startup]
 items = [
     "sddm",
+]
+
+[managers.serv_user_startup]
+items = [
     "pipewire-pulse",
     "wireplumber",
     "pipewire",

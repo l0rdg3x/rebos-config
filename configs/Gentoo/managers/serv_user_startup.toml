@@ -1,0 +1,9 @@
+add = "systemctl --user enable #:?"
+remove = "sudo systemctl--user disable #:?"
+
+plural_name = "startup user services"
+
+hook_name = "startup_user_services"
+
+[config]
+many_args = true
