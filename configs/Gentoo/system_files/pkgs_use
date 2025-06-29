@@ -24,6 +24,7 @@ www-client/ungoogled-chromium-bin widevine
 net-misc/nextcloud-client dolphin
 dev-libs/libdbusmenu gtk3
 net-libs/nodejs inspector npm
+net-analyzer/wireshark lua_single_target_lua5-4
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
