@@ -1,6 +1,5 @@
 [managers.system]
 items = [
-  "sys-power/tlp",
 ]
 
 [managers.serv_startup]
