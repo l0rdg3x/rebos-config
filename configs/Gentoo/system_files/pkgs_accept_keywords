@@ -16,3 +16,6 @@ www-client/librewolf-bin ~amd64
 app-shells/zsh-autocomplete ~amd64
 app-shells/zsh-autosuggestions ~amd64
 x11-drivers/nvidia-drivers ~amd64
+dev-python/userpath ~amd64
+dev-ruby/paint ~amd64
+dev-ruby/optimist ~amd64
