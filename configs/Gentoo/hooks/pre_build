@@ -105,11 +105,11 @@ makeopts="$(cat "$makeopts_path")"
 emerge_default_opts="$(cat "$emergedefaultopts_path")"
 
 new_make_conf="$(cat "$make_conf_template_path" | sed "s/%video_cards%/${video_cards}/g")"
-new_make_conf="$(cat "$new_make_conf" | sed "s/%makeopts%/${makeopts}/g")"
-new_make_conf="$(cat "$new_make_conf" | sed "s/%emergedefopts%/${emerge_default_opts}/g")"
-new_make_conf="$(cat "$new_make_conf" | sed "s/%ccache_path%/${ccache_path}/g")"
+new_make_conf2="$(cat "$new_make_conf" | sed "s/%makeopts%/${makeopts}/g")"
+new_make_conf3="$(cat "$new_make_conf2" | sed "s/%emergedefopts%/${emerge_default_opts}/g")"
+new_make_conf4="$(cat "$new_make_conf3" | sed "s/%ccache_path%/${ccache_path}/g")"
 
-echo "$new_make_conf" > "$make_conf_path"
+echo "$new_make_conf4" > "$make_conf_path"
 
 cat "$pkgs_use_path" > "$pkgs_use_tmp_path"
 cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
