@@ -21,8 +21,6 @@ net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-misc/spice-gtk usbredir
 www-client/ungoogled-chromium-bin widevine
-app-emulation/libguestfs -ocaml
-app-emulation/guestfs-tools -libvirt -ocaml
 net-misc/nextcloud-client dolphin
 dev-libs/libdbusmenu gtk3
 net-libs/nodejs inspector npm
