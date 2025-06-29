@@ -33,7 +33,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 eselect_enable_repo "gentoo"
 eselect_enable_repo "guru"
 eselect_enable_repo "steam-overlay"
-eselect_add_repo "librewolf-overlay" git https://codeberg.org/librewolf/gentoo.git
+eselect_add_repo "librewolf" git https://codeberg.org/librewolf/gentoo.git
 
 # Symlink Rustup stuff.
 if command -v rustup > /dev/null 2>&1; then
