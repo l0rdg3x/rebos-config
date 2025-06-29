@@ -183,4 +183,5 @@ else
   echo "Clean repo path for git repo..."
 
   sudo rm -rf /var/db/repos/gentoo/*
+  sudo emaint sync
 fi
