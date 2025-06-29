@@ -28,3 +28,4 @@ games-util/gamemode ~amd64
 gui-wm/gamescope ~amd64
 net-misc/rustdesk-bin ~amd64
 app-emulation/libguestfs ~amd64
+app-emulation/guestfs-tools ~amd64
