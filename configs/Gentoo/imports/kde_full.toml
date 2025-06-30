@@ -17,13 +17,13 @@ items = [
     "kde-plasma/plasma-login-sessions",
     "kde-plasma/plasma-nm",
     "kde-plasma/bluedevil",
+    "net-firewall/firewalld",
     "x11-misc/sddm",
 ]
 
 [managers.serv_startup]
 items = [
     "sddm",
-    "ufw",
 ]
 
 [managers.serv_user_startup]
