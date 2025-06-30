@@ -28,6 +28,7 @@ items = [
 [managers.serv_startup]
 items = [
     "sddm",
+    "firewalld",
 ]
 
 [managers.serv_user_startup]
