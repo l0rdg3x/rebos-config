@@ -30,6 +30,7 @@ media-libs/libiptcdata -python
 net-firewall/firewalld gui
 kde-plasma/plasma-firewall firewalld
 app-emulation/libvirt firewalld
+app-editors/vscode egl
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
