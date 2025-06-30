@@ -48,7 +48,6 @@ add_group_to_user () {
 # User Groups
 add_group_to_user audio "${USER}"
 add_group_to_user cdrom "${USER}"
-# add_group_to_user cron "${USER}"
 add_group_to_user floppy "${USER}"
 add_group_to_user portage "${USER}"
 add_group_to_user usb "${USER}"

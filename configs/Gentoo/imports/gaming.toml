@@ -1,6 +1,6 @@
 [managers.system]
 items = [
-    # "games-util/steam-launcher",
+    "games-util/game-device-udev-rules",
     "games-util/gamemode",
     "gui-wm/gamescope",
 ]
@@ -8,4 +8,5 @@ items = [
 [managers.flatpak]
 items = [
     "net.davidotek.pupgui2",
+    "com.valvesoftware.Steam",
 ]
