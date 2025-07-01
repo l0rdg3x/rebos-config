@@ -33,6 +33,8 @@ kde-plasma/plasma-meta -firewall
 app-emulation/libvirt firewalld
 app-editors/vscode egl
 media-libs/freetype harfbuzz
+net-print/cups-meta -pdf
+net-print/libcupsfilters -pdf
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
