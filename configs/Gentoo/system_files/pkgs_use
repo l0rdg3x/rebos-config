@@ -36,7 +36,7 @@ media-libs/freetype harfbuzz
 net-print/cups-meta -pdf
 net-print/libcupsfilters -pdf
 net-misc/remmina spice ssh
-net-misc/freerdp server
+freerdp/freerdp-3.14.1 server #CHECK
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
