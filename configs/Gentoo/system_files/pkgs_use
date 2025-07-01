@@ -32,6 +32,7 @@ kde-plasma/plasma-firewall firewalld
 kde-plasma/plasma-meta -firewall
 app-emulation/libvirt firewalld
 app-editors/vscode egl
+media-libs/freetype harfbuzz
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
