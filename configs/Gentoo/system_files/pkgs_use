@@ -29,6 +29,7 @@ media-video/vlc aom archive aribsub bluray chromecast dav1d dc1394 faad fdk gme 
 media-libs/libiptcdata -python
 net-firewall/firewalld gui
 kde-plasma/plasma-firewall firewalld
+kde-plasma/plasma-meta -firewall
 app-emulation/libvirt firewalld
 app-editors/vscode egl
 # Nvidia
