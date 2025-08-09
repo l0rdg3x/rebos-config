@@ -27,3 +27,5 @@ games-util/gamemode ~amd64
 gui-wm/gamescope ~amd64
 net-misc/rustdesk-bin ~amd64
 media-libs/vkroots ~amd64
+sys-kernel/gentoo-kernel-bin ~amd64
+sys-kernel/gentoo-kernel ~amd64

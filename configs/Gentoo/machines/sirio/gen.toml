@@ -4,10 +4,14 @@ imports = [
 
 [managers.system]
 items = [
-  "x11-drivers/nvidia-drivers",
   "sys-apps/openrazer",
   "sys-apps/polychromatic",
-  "app-containers/nvidia-container-toolkit",
+  "sys-apps/amdgpu_top",
+  "www-client/librewolf",
+  "www-client/ungoogled-chromium",
+  "dev-lang/rust",
+  "app-office/libreoffice",
+  "net-misc/rustdesk",
 ]
 
 [managers.flatpak]

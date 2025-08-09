@@ -2,7 +2,6 @@
 items = [
   "sys-apps/flatpak",
   "app-portage/pycargoebuild",
-  "dev-lang/rust-bin",
   "dev-util/rustup",
   "app-eselect/eselect-repository",
 ]

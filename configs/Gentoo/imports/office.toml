@@ -1,6 +1,5 @@
 [managers.system]
 items = [
-  "app-office/libreoffice-bin",
   "net-print/cups-meta",
   "app-admin/bitwarden-desktop-bin",
   "net-im/discord",
@@ -18,7 +17,6 @@ items = [
   "media-sound/picard",
   "media-sound/puddletag",
   "media-gfx/rawtherapee",
-  "net-misc/rustdesk-bin",
   "net-im/signal-desktop-bin",
   "net-p2p/syncthing",
   "net-analyzer/wireshark",

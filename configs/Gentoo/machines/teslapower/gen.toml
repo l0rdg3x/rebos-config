@@ -5,7 +5,12 @@ imports = [
 
 [managers.system]
 items = [
+  "www-client/librewolf-bin",
+  "www-client/ungoogled-chromium-bin",
   "sys-apps/amdgpu_top",
+  "dev-lang/rust-bin",
+  "app-office/libreoffice-bin",
+  "net-misc/rustdesk-bin",
 ]
 
 [managers.flatpak]
