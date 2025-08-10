@@ -3,8 +3,7 @@ items = [
   "net-print/cups-meta",
   "app-admin/bitwarden-desktop-bin",
   "net-im/discord",
-  "net-print/epson-inkjet-printer-escpr2-bin",
-  "net-print/epson-inkjet-printer-escpr",
+  "net-print/hplip",
   "app-editors/vscode",
   "net-ftp/filezilla",
   "net-misc/remmina",
@@ -20,6 +19,7 @@ items = [
   "net-im/signal-desktop-bin",
   "net-p2p/syncthing",
   "net-analyzer/wireshark",
+  "dev-libs/opensc,"
 ]
 
 [managers.flatpak]
