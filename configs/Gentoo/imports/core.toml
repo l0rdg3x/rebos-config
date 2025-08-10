@@ -62,6 +62,8 @@ items = [
   "app-shells/zsh-autosuggestions",
   "app-shells/zsh-syntax-highlighting",
   "sys-kernel/dkms",
+  "net-fs/cifs-utils",
+  "app-admin/eclean-kernel",
 ]
 
 [managers.serv_startup]
@@ -69,4 +71,5 @@ items = [
   "NetworkManager",
   "dbus",
   "grub-btrfsd",
+  "avahi-daemon",
 ]

@@ -12,7 +12,7 @@ items = [
   "media-video/vlc",
   "net-misc/nextcloud-client",
   "dev-libs/opensc",
-  "gui-apps/packettracer",
+#  "gui-apps/packettracer",
   "sys-apps/pcsc-tools",
   "media-sound/picard",
   "media-sound/puddletag",
