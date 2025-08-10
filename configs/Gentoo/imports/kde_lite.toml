@@ -23,6 +23,7 @@ items = [
     "kde-plasma/bluedevil",
     "net-firewall/firewalld",
     "x11-misc/sddm",
+    "media-gfx/skanpage",
 ]
 
 [managers.serv_startup]
