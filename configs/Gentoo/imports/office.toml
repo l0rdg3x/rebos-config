@@ -19,7 +19,7 @@ items = [
   "net-im/signal-desktop-bin",
   "net-p2p/syncthing",
   "net-analyzer/wireshark",
-  "dev-libs/opensc,"
+  "dev-libs/opensc",
 ]
 
 [managers.flatpak]
