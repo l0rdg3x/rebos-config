@@ -30,3 +30,4 @@ media-libs/vkroots ~amd64
 sys-kernel/gentoo-kernel-bin ~amd64
 sys-kernel/gentoo-kernel ~amd64
 sys-boot/ventoy-bin ~amd64
+net-misc/freerdp ~amd64
