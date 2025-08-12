@@ -20,12 +20,14 @@ items = [
   "net-p2p/syncthing",
   "net-analyzer/wireshark",
   "dev-libs/opensc",
+  "sys-boot/ventoy-bin",
 ]
 
 [managers.flatpak]
 items = [
     "org.upscayl.Upscayl",
     "com.borgbase.Vorta",
+    "com.openterface.openterfaceQT",
 ]
 
 [managers.serv_startup]
