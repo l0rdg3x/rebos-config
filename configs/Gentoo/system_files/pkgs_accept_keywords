@@ -32,3 +32,4 @@ sys-kernel/gentoo-kernel ~amd64
 sys-boot/ventoy-bin ~amd64
 net-misc/freerdp ~amd64
 media-libs/sdl3-ttf ~amd64
+virtual/dist-kernel ~amd64
