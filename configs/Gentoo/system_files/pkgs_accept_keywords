@@ -33,3 +33,7 @@ sys-boot/ventoy-bin ~amd64
 net-misc/freerdp ~amd64
 media-libs/sdl3-ttf ~amd64
 virtual/dist-kernel ~amd64
+sys-fs/zfs-kmod ~amd64
+sys-fs/zfs ~amd64
+sys-kernel/dracut ~amd64
+sys-kernel/installkernel ~amd64
