@@ -21,6 +21,7 @@ items = [
   "net-analyzer/wireshark",
   "dev-libs/opensc",
   "sys-boot/ventoy-bin",
+  "app-admin/awscli",
 ]
 
 [managers.flatpak]
