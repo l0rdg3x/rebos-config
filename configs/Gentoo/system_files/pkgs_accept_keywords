@@ -37,5 +37,4 @@ sys-fs/zfs-kmod ~amd64
 sys-fs/zfs ~amd64
 sys-kernel/dracut ~amd64
 sys-kernel/installkernel ~amd64
-app-admin/awscli ~amd64
-dev-python/botocore ~amd64
+app-admin/awscli-bin ~amd64
