@@ -43,7 +43,6 @@ items = [
   "sys-fs/btrfs-progs",
   "sys-fs/f2fs-tools",
   "sys-fs/ntfs3g",
-  "sys-fs/zfs",
   "dev-debug/gdb",
   "sys-auth/rtkit",
   "dev-libs/light",
