@@ -40,6 +40,7 @@ net-misc/remmina spice ssh
 >=net-misc/freerdp-3.1:3 server
 dev-libs/opensc secure-messaging
 net-print/hplip kde scanner
+sys-apps/fwupd amdgpu flashrom nvme synaptics tpm uefi
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
