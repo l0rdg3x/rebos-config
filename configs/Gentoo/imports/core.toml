@@ -63,6 +63,7 @@ items = [
   "sys-kernel/dkms",
   "net-fs/cifs-utils",
   "app-admin/eclean-kernel",
+  "net-dns/bind-tools",
 ]
 
 [managers.serv_startup]
