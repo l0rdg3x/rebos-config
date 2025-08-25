@@ -57,6 +57,7 @@ add_group_to_user pipewire "${USER}"
 add_group_to_user dialout "${USER}"
 add_group_to_user android "${USER}"
 add_group_to_user plugdev "${USER}"
+add_group_to_user mail "${USER}"
 
 # Virtualization Stuff (QEMU)
 if command -v virt-manager > /dev/null 2>&1; then

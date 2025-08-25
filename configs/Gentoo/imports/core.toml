@@ -65,6 +65,7 @@ items = [
   "app-admin/eclean-kernel",
   "net-dns/bind-tools",
   "mail-mta/postfix",
+  "mail-client/mailx",
 ]
 
 [managers.serv_startup]
