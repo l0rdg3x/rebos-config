@@ -64,6 +64,7 @@ items = [
   "net-fs/cifs-utils",
   "app-admin/eclean-kernel",
   "net-dns/bind-tools",
+  "mail-mta/postfix",
 ]
 
 [managers.serv_startup]
