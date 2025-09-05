@@ -66,6 +66,7 @@ items = [
   "net-dns/bind-tools",
   "mail-mta/postfix",
   "mail-client/mailx",
+  "app-misc/jdupes",
 ]
 
 [managers.serv_startup]
