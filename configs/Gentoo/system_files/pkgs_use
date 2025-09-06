@@ -41,6 +41,7 @@ net-misc/remmina spice ssh
 dev-libs/opensc secure-messaging
 net-print/hplip kde scanner
 sys-apps/fwupd amdgpu flashrom nvme synaptics tpm uefi gnutls
+net-firewall/ipset -modules
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
