@@ -42,6 +42,8 @@ dev-libs/opensc secure-messaging
 net-print/hplip kde scanner
 sys-apps/fwupd amdgpu flashrom nvme synaptics tpm uefi gnutls
 net-firewall/ipset -modules
+sci-astronomy/stellarium deep-sky media stars
+dev-qt/qtmultimedia gstreamer
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
