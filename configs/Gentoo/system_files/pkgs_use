@@ -44,6 +44,7 @@ sys-apps/fwupd amdgpu flashrom nvme synaptics tpm uefi gnutls
 net-firewall/ipset -modules
 sci-astronomy/stellarium deep-sky media stars
 dev-qt/qtmultimedia gstreamer
+sys-kernel/dracut dracut-cpio
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
