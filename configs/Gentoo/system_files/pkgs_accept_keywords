@@ -41,3 +41,8 @@ app-admin/awscli-bin ~amd64
 sys-kernel/linux-firmware ~amd64
 sci-libs/nlopt ~amd64
 www-client/librewolf ~amd64
+kde-plasma/* ~amd64
+kde-apps/* ~amd64
+kde-misc/* ~amd64
+kde-frameworks/* ~amd64
+media-gfx/kio-ps-thumbnailer ~amd64
