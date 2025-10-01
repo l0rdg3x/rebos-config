@@ -39,6 +39,7 @@ sys-kernel/dracut ~amd64
 sys-kernel/installkernel ~amd64
 app-admin/awscli-bin ~amd64
 sys-kernel/linux-firmware ~amd64
+net-im/discord ~amd64
 sci-libs/nlopt ~amd64
 www-client/librewolf ~amd64
 kde-plasma/* ~amd64
