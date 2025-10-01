@@ -45,6 +45,9 @@ net-firewall/ipset -modules
 sci-astronomy/stellarium deep-sky media stars
 dev-qt/qtmultimedia gstreamer
 sys-kernel/dracut dracut-cpio
+llvm-core/clang-runtime openmp
+llvm-runtimes/openmp offload llvm_targets_AMDGPU
+sci-ml/ollama rocm
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia

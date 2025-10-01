@@ -13,6 +13,12 @@ items = [
   "dev-lang/rust",
   "app-office/libreoffice",
   "net-misc/rustdesk",
+  "dev-util/rocm-smi",
+  "dev-util/rocminfo",
+  "dev-libs/rocm-opencl-runtime",
+  "dev-libs/rocm-comgr",
+  "sci-ml/ollama",
+  "llvm-runtimes/openmp",
 ]
 
 [managers.flatpak]

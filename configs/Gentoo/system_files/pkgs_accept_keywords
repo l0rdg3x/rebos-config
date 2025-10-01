@@ -46,3 +46,10 @@ kde-apps/* ~amd64
 kde-misc/* ~amd64
 kde-frameworks/* ~amd64
 media-gfx/kio-ps-thumbnailer ~amd64
+dev-util/rocm-smi ~amd64
+dev-util/rocminfo ~amd64
+dev-libs/rocm-opencl-runtime ~amd64
+dev-libs/rocm-comgr ~amd64
+sci-ml/ollama ~amd64
+llvm-runtimes/openmp ~amd64
+llvm-core/clang-runtime ~amd64
