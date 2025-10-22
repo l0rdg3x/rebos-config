@@ -54,3 +54,4 @@ dev-libs/rocm-comgr ~amd64
 sci-ml/ollama ~amd64
 llvm-runtimes/openmp ~amd64
 llvm-core/clang-runtime ~amd64
+llvm-core/clang ~amd64
