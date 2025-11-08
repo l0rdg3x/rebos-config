@@ -19,7 +19,7 @@ net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-misc/spice-gtk usbredir
-www-client/ungoogled-chromium widevine -system-icu
+www-client/ungoogled-chromium widevine
 www-client/ungoogled-chromium-bin widevine
 net-misc/nextcloud-client dolphin
 dev-libs/libdbusmenu gtk3
@@ -48,6 +48,7 @@ sys-kernel/dracut dracut-cpio
 llvm-core/clang-runtime openmp
 llvm-runtimes/openmp offload llvm_targets_AMDGPU
 sci-ml/ollama rocm
+sys-kernel/gentoo-kernel savedconfig
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia

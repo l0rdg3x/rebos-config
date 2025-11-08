@@ -19,6 +19,7 @@ ccache_path="/var/cache/ccache/"
 ccache_system_path="$system_files_path/ccache/ccache.conf"
 portage_gentoo_git="$system_files_path/repos.conf/gentoo.conf"
 portage_gentoo_bin="$system_files_path/binrepos.conf/gentoobinhost.conf"
+kernel_config_path="$system_files_path/kernel_config"
 
 overwrite_file () {
   use_sudo=0
@@ -179,6 +180,23 @@ else
 
   sudo mkdir -p $ccache_path
   sudo cp $ccache_system_path $ccache_path
+fi
+
+if [[ -d "/etc/kernel/config.d" ]]; then
+  echo "/etc/kernel/config.d already present... copy only..."
+  if [[ -z "$(ls -A "$kernel_config_path")" ]]; then
+    echo "$kernel_config_path is empty"
+  else
+    sudo cp "$kernel_config_path"/* /etc/kernel/config.d/
+  fi
+else
+  echo "Creating /etc/kernel/config.d and copy files..."
+  sudo mkdir -p /etc/kernel/config.d
+  if [[ -z "$(ls -A "$kernel_config_path")" ]]; then
+    echo "$kernel_config_path is empty"
+  else
+    sudo cp "$kernel_config_path"/* /etc/kernel/config.d/
+  fi
 fi
 
 if [[ -d "/var/db/repos/gentoo/.git" ]]; then
