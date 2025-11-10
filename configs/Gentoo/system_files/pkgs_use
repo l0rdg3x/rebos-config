@@ -13,6 +13,7 @@ sys-apps/xdg-desktop-portal screencast
 app-emulation/qemu spice usbredir aio
 app-editors/helix grammar
 dev-util/android-tools udev
+app-office/libreoffice pdfimport
 app-office/libreoffice-bin java python
 dev-qt/qtpositioning geoclue
 net-dns/avahi mdnsresponder-compat
