@@ -32,6 +32,7 @@ items = [
   "dev-python/pipx",
   "dev-util/android-tools",
   "app-misc/sl",
+  "sys-apps/ethtool",
 ]
 
 [managers.flatpak]
