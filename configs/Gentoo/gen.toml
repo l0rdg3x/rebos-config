@@ -33,6 +33,7 @@ items = [
   "dev-util/android-tools",
   "app-misc/sl",
   "sys-apps/ethtool",
+  "media-libs/exiftool",
 ]
 
 [managers.flatpak]

@@ -50,6 +50,7 @@ llvm-core/clang-runtime openmp
 llvm-runtimes/openmp offload llvm_targets_AMDGPU
 sci-ml/ollama rocm
 sys-kernel/gentoo-kernel savedconfig
+kde-apps/gwenview fits
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
