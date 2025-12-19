@@ -67,6 +67,7 @@ items = [
   "mail-mta/postfix",
   "mail-client/mailx",
   "app-misc/jdupes",
+  "net-analyzer/tcpdump",
 ]
 
 [managers.serv_startup]
