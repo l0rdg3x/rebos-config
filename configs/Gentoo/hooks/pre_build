@@ -20,6 +20,8 @@ ccache_system_path="$system_files_path/ccache/ccache.conf"
 portage_gentoo_git="$system_files_path/repos.conf/gentoo.conf"
 portage_gentoo_bin="$system_files_path/binrepos.conf/gentoobinhost.conf"
 kernel_config_path="$system_files_path/kernel_config"
+pkg_env_path="$system_files_path/env"
+pkg_env_conf="$system_files_path/package.env"
 
 overwrite_file () {
   use_sudo=0
@@ -109,6 +111,13 @@ else
   sudo mkdir -p /etc/portage/repos.conf
 fi
 
+if [[ -d "/etc/portage/env" ]]; then
+  echo "Gentoo portage env already exist... skipping..."
+else
+  echo "Creating Gentoo portage env path..."
+  sudo mkdir -p "/etc/portage/env"
+fi
+
 video_cards="$(cat "$vct_path")"
 makeopts="$(cat "$makeopts_path")"
 emerge_default_opts="$(cat "$emergedefaultopts_path")"
@@ -127,6 +136,10 @@ cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 if [ "$(hostname)" != "sirio" ]; then
   OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
 fi
+
+OFSUDO=1 overwrite_file "$pkg_env_conf" "/etc/portage/package.env"
+
+sudo cp -r "$pkg_env_path/"* "/etc/portage/env/"
 
 OFSUDO=1 overwrite_file "$portage_gentoo_git" /etc/portage/repos.conf/gentoo.conf || exit 1
 
