@@ -93,14 +93,18 @@ else
   exit 1
 fi
 
-if [ "$(hostname)" != "sirio" ]; then
-  if [[ -d "/etc/portage/binrepos.conf" ]]; then
-    echo "Gentoo bin repo already exist... skipping..."
-  else
-    echo "Creating Gentoo bin repo path..."
-    sudo mkdir -p /etc/portage/binrepos.conf
-  fi
-fi
+case "$(hostname)" in
+  "sirio"|"teslapower")
+    ;;
+  *)
+    if [[ -d "/etc/portage/binrepos.conf" ]]; then
+      echo "Gentoo bin repo already exist... skipping..."
+    else
+      echo "Creating Gentoo bin repo path..."
+      sudo mkdir -p /etc/portage/binrepos.conf
+    fi
+    ;;
+esac
 
 if [[ -d "/etc/portage/repos.conf" ]]; then
   echo "Gentoo repo already exist... skipping..."
@@ -124,17 +128,25 @@ cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
 
 cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 
-if [ "$(hostname)" != "sirio" ]; then
-  OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
-fi
+case "$(hostname)" in
+  "sirio"|"teslapower")
+    ;;
+  *)
+    OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
+    ;;
+esac
 
 OFSUDO=1 overwrite_file "$portage_gentoo_git" /etc/portage/repos.conf/gentoo.conf || exit 1
 
 OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 
-if [ "$(hostname)" != "sirio" ]; then
-  sed -i  's/ ccache/ ccache binpkg-request-signature getbinpkg/' /etc/portage/make.conf
-fi
+case "$(hostname)" in
+  "sirio"|"teslapower")
+    ;;
+  *)
+    sed -i  's/ ccache/ ccache binpkg-request-signature getbinpkg/' /etc/portage/make.conf
+    ;;
+esac
 
 OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || exit 1
 
