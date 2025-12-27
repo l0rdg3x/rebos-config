@@ -56,3 +56,4 @@ llvm-runtimes/openmp ~amd64
 llvm-core/clang-runtime ~amd64
 llvm-core/clang ~amd64
 net-p2p/syncthing ~amd64
+net-misc/nextcloud-client ~amd64
