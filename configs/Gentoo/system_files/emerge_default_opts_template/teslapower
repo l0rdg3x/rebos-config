@@ -1,1 +1,1 @@
---jobs 12 --load-average 12 --autounmask --autounmask-write --binpkg-respect-use=y
+--jobs 3 --load-average 11 --autounmask --autounmask-write --with-bdeps=y
