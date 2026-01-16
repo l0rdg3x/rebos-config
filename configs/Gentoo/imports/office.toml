@@ -10,7 +10,6 @@ items = [
   "media-gfx/sane-airscan",
   "media-video/vlc",
   "net-misc/nextcloud-client",
-  "dev-libs/opensc",
 #  "gui-apps/packettracer",
   "sys-apps/pcsc-tools",
   "media-sound/picard",
@@ -19,7 +18,6 @@ items = [
   "net-im/signal-desktop-bin",
   "net-p2p/syncthing",
   "net-analyzer/wireshark",
-  "dev-libs/opensc",
   "sys-boot/ventoy-bin",
   "app-admin/awscli-bin",
 ]

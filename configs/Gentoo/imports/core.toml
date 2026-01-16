@@ -68,6 +68,8 @@ items = [
   "mail-client/mailx",
   "app-misc/jdupes",
   "net-analyzer/tcpdump",
+  "dev-libs/libfido2",
+  "dev-libs/opensc",
 ]
 
 [managers.serv_startup]
