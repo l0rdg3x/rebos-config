@@ -20,7 +20,7 @@ net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-misc/spice-gtk usbredir
-www-client/ungoogled-chromium widevine
+www-client/ungoogled-chromium widevine -system-icu
 www-client/ungoogled-chromium-bin widevine
 net-misc/nextcloud-client dolphin
 dev-libs/libdbusmenu gtk3

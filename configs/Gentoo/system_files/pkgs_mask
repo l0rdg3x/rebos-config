@@ -1,7 +1,3 @@
 app-editors/vscode::pf4public
 dev-python/pycparser::zGentoo
 net-im/discord::zGentoo
-=dev-python/levenshtein-0.27.3
-=dev-libs/icu-78.1
-=dev-libs/icu-78.2
-=www-client/ungoogled-chromium-144.0.7559.59_p1
