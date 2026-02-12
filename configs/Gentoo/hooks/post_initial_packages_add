@@ -35,6 +35,7 @@ eselect_enable_repo "guru"
 eselect_enable_repo "pf4public"
 eselect_enable_repo "zGentoo"
 eselect_enable_repo "gentoo-zh"
+eselect_enable_repo "another-brave-overlay"
 eselect_add_repo "librewolf" git https://codeberg.org/librewolf/gentoo.git
 
 # Symlink Rustup stuff.

@@ -9,7 +9,7 @@ items = [
   "sys-apps/polychromatic",
   "sys-apps/amdgpu_top",
   "www-client/librewolf",
-  "www-client/ungoogled-chromium",
+  "www-client/brave-browser",
   "dev-lang/rust",
   "app-office/libreoffice",
   "net-misc/rustdesk",

@@ -5,6 +5,7 @@ system_files_tmp_path="$system_files_path/tmp"
 vct_path="$system_files_path/video_cards_template/$HOSTNAME"
 makeopts_path="$system_files_path/makeopts_template/$HOSTNAME"
 emergedefaultopts_path="$system_files_path/emerge_default_opts_template/$HOSTNAME"
+amdgpu_template_path="$system_files_path/amdgpu_target_template/$HOSTNAME"
 pkgs_use_path="$system_files_path/pkgs_use"
 pkgs_use_tmp_path="$system_files_tmp_path/pkgs_use"
 pkgs_use_machine_path="$system_files_path/machine_use/$HOSTNAME"
@@ -95,6 +96,16 @@ else
   exit 1
 fi
 
+if [[ -f "$amdgpu_template_path" ]]; then
+  echo "Found machine AMDGPU-TARGET."
+else
+  echo "Missing machine AMDGPU-TARGET."
+
+  echo "Machine use AMDGPU-TARGET must be located at: $amdgpu_template_path"
+
+  exit 1
+fi
+
 case "$(hostname)" in
   "sirio"|"teslapower")
     ;;
@@ -125,11 +136,13 @@ fi
 video_cards="$(cat "$vct_path")"
 makeopts="$(cat "$makeopts_path")"
 emerge_default_opts="$(cat "$emergedefaultopts_path")"
+amdgpu_target="$(cat "$amdgpu_template_path")"
 
 sed -e "s|%video_cards%|${video_cards}|g" \
     -e "s|%makeopts%|${makeopts}|g" \
     -e "s|%emergedefopts%|${emerge_default_opts}|g" \
     -e "s|%ccache_path%|${ccache_path}|g" \
+    -e "s|%amdgpu-target%|${amdgpu_target}|g" \
     "$make_conf_template_path" > "$make_conf_path"
 
 cat "$pkgs_use_path" > "$pkgs_use_tmp_path"
