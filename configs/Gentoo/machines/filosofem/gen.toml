@@ -1,0 +1,24 @@
+imports = [
+  "kde_full",
+  "work",
+]
+
+[managers.system]
+items = [
+  "www-client/librewolf",
+  "www-client/brave-browser",
+  "dev-lang/rust",
+  "app-office/libreoffice",
+]
+
+[managers.flatpak]
+items = [
+]
+
+[managers.cargo]
+items = [
+]
+
+[managers.serv_user_startup]
+items = [
+]
