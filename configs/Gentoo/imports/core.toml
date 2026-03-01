@@ -8,7 +8,7 @@ items = [
   "llvm-core/llvm-common",
   "llvm-core/clang",
   "llvm-core/clang-common",
-  "llvm-core/clang-runtime",
+  "llvm-runtimes/clang-runtime",
   "llvm-core/lld",
   "sys-devel/gcc",
   "sys-devel/gcc-config",
