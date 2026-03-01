@@ -167,18 +167,10 @@ OFSUDO=1 overwrite_file "$portage_gentoo_git" /etc/portage/repos.conf/gentoo.con
 OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 
 case "$(hostname)" in
-  "sirio"|"teslapower")
+  "sirio"|"teslapower"|"filosofem")
     ;;
   *)
     sed -i  's/ ccache/ ccache binpkg-request-signature getbinpkg/' /etc/portage/make.conf
-    ;;
-esac
-
-case "$(hostname)" in
-  "sirio"|"teslapower"|"teslacoil")
-    ;;
-  *)
-    sed -i  's/dist-kernel /dist-kernel modules-sign secureboot /' /etc/portage/make.conf
     ;;
 esac
 
@@ -187,18 +179,6 @@ OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || ex
 OFSUDO=1 overwrite_file "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs || exit 1
 
 OFSUDO=1 overwrite_file "$pkgs_mask_path" /etc/portage/package.mask/pkgs || exit 1
-
-# for i in $(find "${pkgs_uses_path}" -mindepth 1 -maxdepth 1); do
-#     i_basename="$(basename "$i")"
-
-#     if sudo cp "$i" "/etc/portage/package.use/pkg_${i_basename}"; then
-#         echo "Successfully added use flags from: '${i_basename}' (uses dir)"
-#     else
-#         echo "Failed to add use flags from: '${i_basename}' (uses dir)"
-
-#         exit 1
-#     fi
-# done
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
 autopkguse_path="/etc/portage/package.use/zzz_pkg_use"
