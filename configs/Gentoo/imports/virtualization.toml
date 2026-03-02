@@ -11,4 +11,5 @@ items = [
 [managers.serv_startup]
 items = [
     "libvirtd",
+    "docker",
 ]
