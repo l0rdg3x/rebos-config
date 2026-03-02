@@ -1,1 +1,1 @@
---jobs 14 --load-average 15 --autounmask --autounmask-write --with-bdeps=y
+--jobs 2 --load-average 9 --autounmask --autounmask-write --with-bdeps=y
