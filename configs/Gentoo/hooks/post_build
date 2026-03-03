@@ -95,4 +95,4 @@ OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || e
 sudo env-update
 
 # For app-backup/grub-btrfs
-sudo grub-mkconfig -o
+sudo grub-mkconfig -o /boot/EFI/gentoo/grub.cfg
