@@ -67,6 +67,7 @@ items = [
   "net-analyzer/tcpdump",
   "dev-libs/libfido2",
   "dev-libs/opensc",
+  "dev-util/claude-code",
 ]
 
 [managers.serv_startup]
