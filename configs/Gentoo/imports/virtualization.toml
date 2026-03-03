@@ -6,6 +6,7 @@ items = [
     "app-containers/docker-compose",
     "app-admin/helm",
     "sys-cluster/kubectl",
+    "app-emulation/winboat-bin",
 ]
 
 [managers.serv_startup]
