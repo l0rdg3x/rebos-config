@@ -48,7 +48,6 @@ items = [
   "dev-libs/light",
   "media-sound/sox",
   "dev-perl/libintl-perl",
-  "dev-util/ccache",
   "sys-apps/fwupd",
   "net-analyzer/nmap",
   "net-analyzer/speedtest-cli",
