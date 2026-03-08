@@ -107,7 +107,7 @@ else
 fi
 
 case "$(hostname)" in
-  "sirio"|"teslapower")
+  "sirio"|"teslapower"|"filosofem")
     ;;
   *)
     if [[ -d "/etc/portage/binrepos.conf" ]]; then
@@ -151,7 +151,7 @@ cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
 cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 
 case "$(hostname)" in
-  "sirio"|"teslapower")
+  "sirio"|"teslapower"|"filosofem")
     ;;
   *)
     OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
