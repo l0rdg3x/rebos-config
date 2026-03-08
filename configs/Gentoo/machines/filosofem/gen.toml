@@ -9,6 +9,7 @@ items = [
   "www-client/brave-browser",
   "dev-lang/rust",
   "app-office/libreoffice",
+  "sys-auth/fprintd",
 ]
 
 [managers.flatpak]
