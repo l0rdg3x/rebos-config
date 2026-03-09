@@ -7,6 +7,7 @@ items = [
     "app-admin/helm",
     "sys-cluster/kubectl",
     "app-emulation/winboat-bin",
+    "app-containers/distrobox",
 ]
 
 [managers.serv_startup]
