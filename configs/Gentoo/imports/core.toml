@@ -67,6 +67,7 @@ items = [
   "dev-libs/libfido2",
   "dev-libs/opensc",
   "dev-util/claude-code",
+  "app-text/aha",
 ]
 
 [managers.serv_startup]
