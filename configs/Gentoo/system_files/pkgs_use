@@ -35,7 +35,7 @@ media-libs/libiptcdata -python
 net-firewall/firewalld gui
 kde-plasma/plasma-firewall firewalld
 kde-plasma/plasma-meta discover flatpak grub ocr plymouth thunderbolt -firewall
-app-emulation/libvirt firewalld virtiofsd
+app-emulation/libvirt firewalld virtiofsd pcap
 app-editors/vscode egl
 media-libs/freetype harfbuzz
 net-print/cups-meta -pdf
