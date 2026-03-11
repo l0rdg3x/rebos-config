@@ -32,10 +32,8 @@ net-analyzer/wireshark lua_single_target_lua5-4
 net-analyzer/nmap lua_single_target_lua5-4
 media-video/vlc aom archive aribsub bluray chromecast dav1d dc1394 faad fdk gme gstreamer kate kms libplacebo libtar libtiger linsys live matroska mpeg nfs omxil sdl-image sftp shout skins soxr srt tremor twolame x265 zeroconf zvbi
 media-libs/libiptcdata -python
-net-firewall/firewalld gui
-kde-plasma/plasma-firewall firewalld
 kde-plasma/plasma-meta discover flatpak grub ocr plymouth thunderbolt -firewall
-app-emulation/libvirt firewalld virtiofsd pcap
+app-emulation/libvirt virtiofsd pcap
 app-editors/vscode egl
 media-libs/freetype harfbuzz
 net-print/cups-meta -pdf
@@ -45,7 +43,6 @@ net-misc/remmina spice ssh
 dev-libs/opensc secure-messaging
 net-print/hplip kde scanner
 sys-apps/fwupd amdgpu flashrom nvme synaptics tpm uefi gnutls
-net-firewall/ipset -modules
 sci-astronomy/stellarium deep-sky media stars
 dev-qt/qtmultimedia gstreamer
 sys-kernel/dracut dracut-cpio
