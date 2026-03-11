@@ -34,6 +34,7 @@ media-video/vlc aom archive aribsub bluray chromecast dav1d dc1394 faad fdk gme 
 media-libs/libiptcdata -python
 kde-plasma/plasma-meta discover flatpak grub ocr plymouth thunderbolt -firewall
 app-emulation/libvirt virtiofsd pcap
+net-firewall/ipset -modules
 app-editors/vscode egl
 media-libs/freetype harfbuzz
 net-print/cups-meta -pdf
