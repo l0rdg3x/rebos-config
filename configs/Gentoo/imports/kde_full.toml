@@ -17,7 +17,6 @@ items = [
     "kde-plasma/plasma-login-sessions",
     "kde-plasma/plasma-nm",
     "kde-plasma/bluedevil",
-    "net-firewall/firewalld",
     "x11-misc/sddm",
     "media-gfx/skanpage",
 ]
@@ -25,7 +24,6 @@ items = [
 [managers.serv_startup]
 items = [
     "sddm",
-    "firewalld",
 ]
 
 [managers.serv_user_startup]
