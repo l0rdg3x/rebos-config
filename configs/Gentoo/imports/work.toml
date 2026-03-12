@@ -2,6 +2,11 @@
 items = [
 ]
 
+[managers.flatpak]
+items = [
+    "com.synology.SynologyAssistant",
+]
+
 [managers.serv_startup]
 items = [
 ]
