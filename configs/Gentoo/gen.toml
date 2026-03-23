@@ -34,7 +34,6 @@ items = [
   "app-misc/sl",
   "sys-apps/ethtool",
   "media-libs/exiftool",
-  "app-portage/smart-live-rebuild",
   "app-misc/jq",
   "app-misc/tmux",
 ]
