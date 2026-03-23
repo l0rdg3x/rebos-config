@@ -27,12 +27,12 @@ items = [
     "com.openterface.openterfaceQT",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
   "cups"
 ]
 
-[managers.serv_user_startup]
+[managers.openrc_user]
 items = [
     "syncthing",
 ]
