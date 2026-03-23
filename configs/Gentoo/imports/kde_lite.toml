@@ -25,12 +25,12 @@ items = [
     "media-gfx/skanpage",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
     "sddm",
 ]
 
-[managers.serv_user_startup]
+[managers.openrc_user]
 items = [
     "pipewire-pulse",
     "wireplumber",
