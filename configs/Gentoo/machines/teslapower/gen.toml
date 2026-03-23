@@ -10,7 +10,7 @@ items = [
   "sys-apps/amdgpu_top",
   "dev-lang/rust-bin",
   "app-office/libreoffice",
-  "net-misc/rustdesk-bin",
+  "net-misc/rustdesk",
 ]
 
 [managers.flatpak]
