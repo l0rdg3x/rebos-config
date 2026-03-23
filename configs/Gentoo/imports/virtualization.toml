@@ -9,7 +9,7 @@ items = [
     "app-containers/distrobox",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
     "libvirtd",
     "docker",
