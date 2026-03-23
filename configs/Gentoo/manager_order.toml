@@ -4,4 +4,7 @@ begin = [
 ]
 
 end = [
+  "openrc_boot",
+  "openrc",
+  "openrc_user",
 ]
