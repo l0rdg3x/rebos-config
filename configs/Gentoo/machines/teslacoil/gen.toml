@@ -6,7 +6,7 @@ imports = [
 [managers.system]
 items = [
   "www-client/librewolf-bin",
-  "www-client/ungoogled-chromium-bin",
+  "www-client/brave-browser",
   "dev-lang/rust-bin",
   "app-office/libreoffice-bin",
   "net-misc/rustdesk-bin",
