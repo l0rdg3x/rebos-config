@@ -1,5 +1,6 @@
 imports = [
   "kde_full",
+  "laptop",
   "work",
 ]
 
