@@ -17,7 +17,6 @@ items = [
   "dev-util/rocminfo",
   "dev-libs/rocm-opencl-runtime",
   "dev-libs/rocm-comgr",
-  "sci-ml/ollama",
   "llvm-runtimes/openmp",
 ]
 
@@ -29,7 +28,7 @@ items = [
 items = [
 ]
 
-[managers.serv_user_startup]
+[managers.openrc_user]
 items = [
     "openrazer-daemon",
 ]
