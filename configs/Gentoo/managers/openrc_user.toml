@@ -1,0 +1,11 @@
+# User
+
+add = "rc-update -U add #:?"
+remove = "rc-update -U del #:?"
+
+plural_name = "OpenRC services"
+
+hook_name = "services_user"
+
+[config]
+many_args = false
