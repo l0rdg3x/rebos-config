@@ -70,10 +70,11 @@ items = [
   "app-text/aha",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
   "NetworkManager",
   "dbus",
   "grub-btrfsd",
   "avahi-daemon",
+  "elogind",
 ]
