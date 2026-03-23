@@ -7,6 +7,6 @@ items = [
     "com.synology.SynologyAssistant",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
 ]
