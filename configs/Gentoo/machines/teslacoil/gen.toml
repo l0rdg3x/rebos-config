@@ -1,6 +1,6 @@
 imports = [
+  "kde_full",
   "laptop",
-  "kde_lite",
 ]
 
 [managers.system]
