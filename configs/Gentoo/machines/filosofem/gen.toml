@@ -20,6 +20,6 @@ items = [
 items = [
 ]
 
-[managers.serv_user_startup]
+[managers.openrc_user]
 items = [
 ]
