@@ -3,7 +3,7 @@ items = [
     "net-wireless/bluez",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
   "bluetooth",
 ]
