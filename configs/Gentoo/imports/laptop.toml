@@ -3,6 +3,6 @@ items = [
   "sys-power/tlp",
 ]
 
-[managers.serv_startup]
+[managers.openrc]
 items = [
 ]
