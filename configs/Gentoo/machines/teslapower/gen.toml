@@ -8,7 +8,7 @@ items = [
   "www-client/librewolf",
   "www-client/brave-browser",
   "sys-apps/amdgpu_top",
-  "dev-lang/rust-bin",
+  "dev-lang/rust",
   "app-office/libreoffice",
   "net-misc/rustdesk",
 ]
