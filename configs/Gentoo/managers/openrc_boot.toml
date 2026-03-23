@@ -1,4 +1,4 @@
-# System
+# System boot
 
 add = "sudo rc-update add #:? boot"
 remove = "sudo rc-update del #:? boot"
