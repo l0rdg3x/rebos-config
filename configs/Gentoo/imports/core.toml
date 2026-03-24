@@ -68,6 +68,7 @@ items = [
   "dev-libs/opensc",
   "dev-util/claude-code",
   "app-text/aha",
+  "net-dialup/tio",
 ]
 
 [managers.openrc]
