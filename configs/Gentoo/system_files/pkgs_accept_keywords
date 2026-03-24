@@ -27,3 +27,4 @@ sys-boot/plymouth-openrc-plugin ~amd64
 app-crypt/clevis ~amd64
 dev-libs/jose ~amd64
 dev-libs/luksmeta ~amd64
+sys-apps/fwupd-efi ~amd64
