@@ -91,6 +91,9 @@ sudo eselect editor set /usr/bin/nano
 # ENV Variables (System-Wide)
 OFSUDO=1 overwrite_file "$system_files_path/environment" "/etc/environment" || exit 1
 
+# ENV Variables (System-Wide)
+OFSUDO=1 overwrite_file "$system_files_path/display-manager" "/etc/conf.d/display-manager" || exit 1
+
 # Update Environment
 sudo env-update
 
