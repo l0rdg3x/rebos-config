@@ -29,7 +29,7 @@ items = [
 
 [managers.openrc]
 items = [
-  "cups"
+  "cupsd"
 ]
 
 [managers.openrc_user]
