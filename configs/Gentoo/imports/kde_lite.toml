@@ -27,7 +27,7 @@ items = [
 
 [managers.openrc]
 items = [
-    "sddm",
+    "display-manager",
 ]
 
 [managers.openrc_user]
