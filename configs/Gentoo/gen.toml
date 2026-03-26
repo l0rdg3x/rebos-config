@@ -39,6 +39,7 @@ items = [
   "com.stremio.Stremio",
   "com.rafaelmardojai.Blanket",
   "com.usebottles.bottles",
+  "com.vysp3r.ProtonPlus",
 ]
 
 [managers.cargo]
