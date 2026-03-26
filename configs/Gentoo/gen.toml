@@ -40,6 +40,7 @@ items = [
   "com.rafaelmardojai.Blanket",
   "com.usebottles.bottles",
   "com.vysp3r.ProtonPlus",
+  "org.ghidra_sre.Ghidra",
 ]
 
 [managers.cargo]
