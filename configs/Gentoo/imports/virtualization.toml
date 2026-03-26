@@ -9,6 +9,11 @@ items = [
     "app-containers/distrobox",
 ]
 
+[managers.flatpak]
+items = [
+    "io.github.dvlv.boxbuddyrs",
+]
+
 [managers.openrc]
 items = [
     "libvirtd",
