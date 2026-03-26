@@ -42,6 +42,7 @@ items = [
   "com.vysp3r.ProtonPlus",
   "org.ghidra_sre.Ghidra",
   "org.gnome.Firmware",
+  "org.angryip.ipscan",
 ]
 
 [managers.cargo]
