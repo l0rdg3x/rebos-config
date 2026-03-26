@@ -21,6 +21,17 @@ items = [
     "media-gfx/skanpage",
 ]
 
+[managers.flatpak]
+items = [
+    "io.github.thetumultuousunicornofdarkness.cpu-x",
+    "com.jgraph.drawio.desktop",
+    "app.drey.EarTag",
+    "com.github.AlizaMedicalImaging.AlizaMS",
+    "com.dec05eba.gpu_screen_recorder",
+    "io.github.jonmagon.kdiskmark",
+    "com.github.Bleuzen.FFaudioConverter",
+]
+
 [managers.openrc]
 items = [
     "display-manager",
