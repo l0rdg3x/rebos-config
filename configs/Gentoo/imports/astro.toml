@@ -2,3 +2,8 @@
 items = [
   "sci-astronomy/stellarium",
 ]
+
+[managers.flatpak]
+items = [
+    "org.siril.Siril",
+]
