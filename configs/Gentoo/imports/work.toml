@@ -5,6 +5,7 @@ items = [
 [managers.flatpak]
 items = [
     "com.synology.SynologyAssistant",
+    "com.mikrotik.WinBox",
 ]
 
 [managers.openrc]
