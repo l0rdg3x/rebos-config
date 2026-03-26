@@ -6,6 +6,7 @@ items = [
 items = [
     "com.synology.SynologyAssistant",
     "com.mikrotik.WinBox",
+    "com.anydesk.Anydesk.desktop",
 ]
 
 [managers.openrc]
