@@ -13,10 +13,10 @@ items = [
   "dev-lang/rust",
   "app-office/libreoffice",
   "net-misc/rustdesk",
-  "dev-util/rocm-smi",
-  "dev-util/rocminfo",
-  "dev-libs/rocm-opencl-runtime",
-  "dev-libs/rocm-comgr",
+#  "dev-util/rocm-smi",
+#  "dev-util/rocminfo",
+#  "dev-libs/rocm-opencl-runtime",
+#  "dev-libs/rocm-comgr",
   "llvm-runtimes/openmp",
 ]
 
