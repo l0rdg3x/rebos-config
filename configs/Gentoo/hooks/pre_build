@@ -106,18 +106,18 @@ else
   exit 1
 fi
 
-case "$(hostname)" in
-  "sirio"|"teslapower"|"filosofem")
-    ;;
-  *)
-    if [[ -d "/etc/portage/binrepos.conf" ]]; then
-      echo "Gentoo bin repo already exist... skipping..."
-    else
-      echo "Creating Gentoo bin repo path..."
-      sudo mkdir -p /etc/portage/binrepos.conf
-    fi
-    ;;
-esac
+#case "$(hostname)" in
+#  "sirio"|"teslapower"|"filosofem")
+#    ;;
+#  *)
+#    if [[ -d "/etc/portage/binrepos.conf" ]]; then
+#      echo "Gentoo bin repo already exist... skipping..."
+#    else
+#      echo "Creating Gentoo bin repo path..."
+#      sudo mkdir -p /etc/portage/binrepos.conf
+#    fi
+#    ;;
+#esac
 
 if [[ -d "/etc/portage/repos.conf" ]]; then
   echo "Gentoo repo already exist... skipping..."
@@ -150,13 +150,13 @@ cat "$pkgs_use_machine_path" >> "$pkgs_use_tmp_path"
 
 cat "$pkgs_accept_keywords_path" > "$pkgs_accept_keywords_tmp_path"
 
-case "$(hostname)" in
-  "sirio"|"teslapower"|"filosofem")
-    ;;
-  *)
-    OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
-    ;;
-esac
+#case "$(hostname)" in
+#  "sirio"|"teslapower"|"filosofem")
+#    ;;
+#  *)
+#    OFSUDO=1 overwrite_file "$portage_gentoo_bin" /etc/portage/binrepos.conf/gentoobinhost.conf || exit 1
+#    ;;
+#esac
 
 OFSUDO=1 overwrite_file "$pkg_env_conf" "/etc/portage/package.env"
 
@@ -166,13 +166,13 @@ OFSUDO=1 overwrite_file "$portage_gentoo_git" /etc/portage/repos.conf/gentoo.con
 
 OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 
-case "$(hostname)" in
-  "sirio"|"teslapower"|"filosofem")
-    ;;
-  *)
-    sed -i  's/ ccache/ ccache binpkg-request-signature getbinpkg/' /etc/portage/make.conf
-    ;;
-esac
+#case "$(hostname)" in
+#  "sirio"|"teslapower"|"filosofem")
+#    ;;
+#  *)
+#    sed -i  's/ ccache/ ccache binpkg-request-signature getbinpkg/' /etc/portage/make.conf
+#    ;;
+#esac
 
 OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || exit 1
 
