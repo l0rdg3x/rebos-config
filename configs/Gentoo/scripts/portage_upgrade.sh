@@ -22,7 +22,7 @@ die () {
     exit 1
 }
 
-if time sudo emerge -avuDNUg --with-bdeps=y @world; then
+if time sudo emerge -avuDNU --with-bdeps=y @world; then
     nify-user 'Portage upgrade successful!'
 else
     die 'Portage upgrade failed!'
