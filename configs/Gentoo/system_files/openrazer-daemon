@@ -5,7 +5,7 @@ command="/usr/bin/openrazer-daemon"
 command_args="--foreground"
 command_user="${OPENRAZER_USER:-root}"
 pidfile="/run/${RC_SVCNAME}.pid"
-command_background=true
+command_background="yes"
 
 depend() {
     need dbus
