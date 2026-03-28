@@ -225,13 +225,13 @@ else
   fi
 fi
 
-if [[ -f "/etc/init.d/openrazer-daemon" ]]; then
+if [[ -f "/etc/user/init.d/openrazer-daemon" ]]; then
   echo "openrazer-daemon is already present... skipping..."
 else
   echo "Copy openrazer-daemon file..."
 
-  sudo cp "$system_files_path"/openrazer-daemon /etc/init.d/
-  sudo chmod 755 /etc/init.d/openrazer-daemon
+  sudo cp "$system_files_path"/openrazer-daemon /etc/user/init.d/
+  sudo chmod 755 /etc/user/init.d/openrazer-daemon
 fi
 
 if [[ -d "/var/db/repos/gentoo/.git" ]]; then
