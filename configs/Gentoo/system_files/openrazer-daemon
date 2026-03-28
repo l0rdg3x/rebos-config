@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+
+description="OpenRazer Daemon"
+command="/usr/bin/openrazer-daemon"
+command_args="--foreground"
+command_user="${OPENRAZER_USER:-root}"
+pidfile="/run/${RC_SVCNAME}.pid"
+command_background=true
+
+depend() {
+    need dbus
+    after udev
+}
+
+start_pre() {
+    checkpath --directory --owner "${command_user}" /run/openrazer-daemon
+}
