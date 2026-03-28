@@ -231,6 +231,7 @@ else
   echo "Copy openrazer-daemon file..."
 
   sudo cp "$system_files_path"/openrazer-daemon /etc/init.d/
+  sudo chmod 755 /etc/init.d/openrazer-daemon
 fi
 
 if [[ -d "/var/db/repos/gentoo/.git" ]]; then
