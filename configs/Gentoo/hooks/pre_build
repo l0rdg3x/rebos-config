@@ -225,6 +225,14 @@ else
   fi
 fi
 
+if [[ -f "/etc/init.d/openrazer-daemon" ]]; then
+  echo "openrazer-daemon is already present... skipping..."
+else
+  echo "Copy openrazer-daemon file..."
+
+  sudo cp "$system_files_path"/openrazer-daemon /etc/init.d/
+fi
+
 if [[ -d "/var/db/repos/gentoo/.git" ]]; then
   echo "Gentoo repo already use git... skipping..."
 else
