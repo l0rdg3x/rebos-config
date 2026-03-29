@@ -226,6 +226,8 @@ if [[ -f "/var/lib/sbctl/keys/db/db.key" ]]; then
     echo "Kernel trusted cert already present... skipping..."
   else
     sudo mkdir -p /etc/kernel/certs
+    sudo cat /var/lib/sbctl/keys/db/db.key /var/lib/sbctl/keys/db/db.pem | sudo tee /etc/kernel/certs/db-combined.pem > /dev/null
+    sudo chmod 444 /etc/kernel/certs/db-combined.pem
     sudo cp /var/lib/sbctl/keys/db/db.pem /etc/kernel/certs/db.pem
     sudo chmod 444 /etc/kernel/certs/db.pem
   fi
