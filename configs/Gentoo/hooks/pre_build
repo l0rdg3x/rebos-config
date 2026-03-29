@@ -238,6 +238,7 @@ EOF
   else
     sudo mkdir -p /etc/kernel/certs
     sudo cp /var/lib/sbctl/keys/db/db.pem /etc/kernel/certs/db.pem
+    sudo chmod 444 /etc/kernel/certs/db.pem
   fi
 fi
 
