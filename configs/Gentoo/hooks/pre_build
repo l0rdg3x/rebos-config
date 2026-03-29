@@ -233,6 +233,12 @@ post_src_install() {
 }
 EOF
   fi
+  if [[ -f "/etc/kernel/certs/db.pem" ]]; then
+    echo "Kernel trusted cert already present... skipping..."
+  else
+    sudo mkdir -p /etc/kernel/certs
+    sudo cp /var/lib/sbctl/keys/db/db.pem /etc/kernel/certs/db.pem
+  fi
 fi
 
 if [[ -d "/etc/kernel/config.d" ]]; then
