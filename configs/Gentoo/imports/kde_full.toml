@@ -35,11 +35,11 @@ items = [
 [managers.openrc]
 items = [
     "display-manager",
+    "power-profiles-daemon",
 ]
 
 [managers.openrc_user]
 items = [
-     "power-profiles-daemon",
 #    "pipewire-pulse",
 #    "wireplumber",
 #    "pipewire",
