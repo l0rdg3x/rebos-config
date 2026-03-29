@@ -69,6 +69,8 @@ items = [
   "dev-util/claude-code",
   "app-text/aha",
   "net-dialup/tio",
+  "app-admin/sysklogd",
+  "app-admin/logrotate",
 ]
 
 [managers.openrc]
@@ -78,4 +80,6 @@ items = [
   "grub-btrfsd",
   "avahi-daemon",
   "elogind",
+  "ksyslogd",
+  "logrotate"
 ]
