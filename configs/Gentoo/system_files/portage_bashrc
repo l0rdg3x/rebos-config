@@ -1,0 +1,34 @@
+post_src_install() {
+    local mod sign_file="/usr/src/linux/scripts/sign-file"
+    local key="/var/lib/sbctl/keys/db/db.key"
+    local cert="/var/lib/sbctl/keys/db/db.pem"
+
+    [[ -x "${sign_file}" ]] || return 0
+
+    while IFS= read -r -d '' mod; do
+        case "${mod}" in
+            *.ko.zst)
+                einfo "Signing module: ${mod##*/}"
+                zstd -d -f "${mod}" -o "${mod%.zst}" \
+                    && "${sign_file}" sha512 "${key}" "${cert}" "${mod%.zst}" \
+                    && zstd --rm -f "${mod%.zst}" -o "${mod}" \
+                    || ewarn "Failed to sign ${mod##*/}" ;;
+            *.ko.xz)
+                einfo "Signing module: ${mod##*/}"
+                xz -d -k -f "${mod}" \
+                    && "${sign_file}" sha512 "${key}" "${cert}" "${mod%.xz}" \
+                    && xz -f "${mod%.xz}" \
+                    || ewarn "Failed to sign ${mod##*/}" ;;
+            *.ko.gz)
+                einfo "Signing module: ${mod##*/}"
+                gunzip -k -f "${mod}" \
+                    && "${sign_file}" sha512 "${key}" "${cert}" "${mod%.gz}" \
+                    && gzip -f "${mod%.gz}" \
+                    || ewarn "Failed to sign ${mod##*/}" ;;
+            *.ko)
+                einfo "Signing module: ${mod##*/}"
+                "${sign_file}" sha512 "${key}" "${cert}" "${mod}" \
+                    || ewarn "Failed to sign ${mod##*/}" ;;
+        esac
+    done < <(find "${D}" \( -name '*.ko' -o -name '*.ko.zst' -o -name '*.ko.xz' -o -name '*.ko.gz' \) -print0 2>/dev/null)
+}
