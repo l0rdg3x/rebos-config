@@ -70,7 +70,6 @@ items = [
   "app-text/aha",
   "net-dialup/tio",
   "app-admin/sysklogd",
-  "app-admin/logrotate",
 ]
 
 [managers.openrc]
@@ -81,5 +80,4 @@ items = [
   "avahi-daemon",
   "elogind",
   "ksyslogd",
-  "logrotate"
 ]
