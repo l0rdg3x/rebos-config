@@ -1,2 +1,2 @@
-CONFIG_MODULE_SIG_KEY="/var/lib/sbctl/keys/db/db.pem"
+CONFIG_MODULE_SIG_KEY="/var/lib/sbctl/keys/db/db.key"
 CONFIG_SYSTEM_TRUSTED_KEYS="/etc/kernel/certs/db.pem"
