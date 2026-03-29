@@ -208,6 +208,17 @@ else
   sudo cp $ccache_system_path $ccache_path
 fi
 
+if [[ -f "/var/lib/sbctl/keys/db/db.key" ]]; then
+  if [[ -f "/etc/dkms/framework.conf.d/sign.conf" ]]; then
+    echo "DKMS certs are already present... skipping..."
+  else
+    echo "Creating DKMS certs path and file..."
+
+    sudo mkdir -p /etc/dkms/framework.conf.d
+    sudo cp "$system_files_path"/dkms_sign.conf /etc/dkms/framework.conf.d/sign.conf
+  fi
+fi
+
 if [[ -d "/etc/kernel/config.d" ]]; then
   echo "/etc/kernel/config.d already present... copy only..."
   if [[ -z "$(ls -A "$kernel_config_path")" ]]; then
