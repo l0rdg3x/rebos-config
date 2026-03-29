@@ -79,5 +79,5 @@ items = [
   "grub-btrfsd",
   "avahi-daemon",
   "elogind",
-  "ksyslogd",
+  "sysklogd",
 ]
