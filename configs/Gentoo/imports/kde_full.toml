@@ -39,6 +39,7 @@ items = [
 
 [managers.openrc_user]
 items = [
+     "power-profiles-daemon",
 #    "pipewire-pulse",
 #    "wireplumber",
 #    "pipewire",
