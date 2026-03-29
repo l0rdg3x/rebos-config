@@ -4,6 +4,7 @@
 # END LANG
 sys-auth/elogind -cgroup-hybrid
 sys-boot/grub truetype mount
+app-admin/sysklogd logger logrotate
 sys-apps/kmod pkcs7
 sys-kernel/installkernel dracut grub
 media-libs/libsdl2 gles2
