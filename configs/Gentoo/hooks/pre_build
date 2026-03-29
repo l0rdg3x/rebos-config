@@ -217,6 +217,22 @@ if [[ -f "/var/lib/sbctl/keys/db/db.key" ]]; then
     sudo mkdir -p /etc/dkms/framework.conf.d
     sudo cp "$system_files_path"/dkms_sign.conf /etc/dkms/framework.conf.d/sign.conf
   fi
+  if [[ -f "/etc/portage/bashrc" ]]; then
+    echo "portage bashrc already present... skipping..."
+  else
+    cat > /etc/portage/bashrc << 'EOF'
+post_src_install() {
+    local mod
+    while IFS= read -r -d '' mod; do
+        einfo "Signing kernel module: ${mod}"
+        /usr/src/linux/scripts/sign-file sha256 \
+            /var/lib/sbctl/keys/db/db.key \
+            /var/lib/sbctl/keys/db/db.pem \
+            "${mod}" || ewarn "Failed to sign ${mod}"
+    done < <(find "${D}" -name '*.ko' -print0 2>/dev/null)
+}
+EOF
+  fi
 fi
 
 if [[ -d "/etc/kernel/config.d" ]]; then
