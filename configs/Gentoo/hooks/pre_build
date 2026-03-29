@@ -242,20 +242,22 @@ EOF
   fi
 fi
 
-if [[ -d "/etc/kernel/config.d" ]]; then
-  echo "/etc/kernel/config.d already present... copy only..."
+if [[ -d "/etc/portage/savedconfig/sys-kernel/" ]]; then
+  echo "kernel config path present..."
   if [[ -z "$(ls -A "$kernel_config_path")" ]]; then
     echo "$kernel_config_path is empty"
   else
-    sudo cp "$kernel_config_path"/* /etc/kernel/config.d/
+    echo "Update gentoo-kernel"
+    sudo cp "$kernel_config_path"/gentoo-kernel /etc/kernel/config.d/
   fi
 else
-  echo "Creating /etc/kernel/config.d and copy files..."
-  sudo mkdir -p /etc/kernel/config.d
+  echo "Creating /etc/portage/savedconfig/sys-kernel/ and copy file..."
+  sudo mkdir -p /etc/portage/savedconfig/sys-kernel/
   if [[ -z "$(ls -A "$kernel_config_path")" ]]; then
     echo "$kernel_config_path is empty"
   else
-    sudo cp "$kernel_config_path"/* /etc/kernel/config.d/
+    echo "Add gentoo-kernel"
+    sudo cp "$kernel_config_path"/gentoo-kernel /etc/portage/savedconfig/sys-kernel/gentoo-kernel
   fi
 fi
 
