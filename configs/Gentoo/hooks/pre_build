@@ -248,7 +248,7 @@ if [[ -d "/etc/portage/savedconfig/sys-kernel/" ]]; then
     echo "$kernel_config_path is empty"
   else
     echo "Update gentoo-kernel"
-    sudo cp "$kernel_config_path"/gentoo-kernel /etc/kernel/config.d/
+    sudo cp "$kernel_config_path"/gentoo-kernel /etc/portage/savedconfig/sys-kernel/gentoo-kernel
   fi
 else
   echo "Creating /etc/portage/savedconfig/sys-kernel/ and copy file..."
