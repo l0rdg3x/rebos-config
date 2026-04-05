@@ -1,6 +1,6 @@
 [managers.system]
 items = [
-    "app-shells/pwsh"
+    "app-shells/pwsh-bin"
 ]
 
 [managers.flatpak]
