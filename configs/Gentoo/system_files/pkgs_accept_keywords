@@ -29,4 +29,3 @@ dev-libs/jose ~amd64
 dev-libs/luksmeta ~amd64
 sys-apps/fwupd-efi ~amd64
 net-dialup/tio ~amd64
-app-shells/pwsh-bin ~amd64
