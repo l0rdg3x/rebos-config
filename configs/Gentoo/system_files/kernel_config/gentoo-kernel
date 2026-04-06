@@ -1,2 +1,3 @@
 CONFIG_MODULE_SIG_KEY="/etc/kernel/certs/db-combined.pem"
 CONFIG_SYSTEM_TRUSTED_KEYS="/etc/kernel/certs/db.pem"
+CONFIG_USER_NS=y
