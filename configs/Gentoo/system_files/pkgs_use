@@ -56,6 +56,7 @@ kde-apps/gwenview fits
 sci-libs/rocBLAS roctracer
 app-containers/distrobox gui
 app-shells/pwsh gui
+dev-libs/qtkeychain keyring
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
