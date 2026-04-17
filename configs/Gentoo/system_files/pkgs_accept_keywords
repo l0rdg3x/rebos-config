@@ -8,6 +8,7 @@ gui-wm/gamescope ~amd64
 net-misc/rustdesk-bin ~amd64
 sys-kernel/gentoo-kernel-bin ~amd64
 sys-kernel/gentoo-kernel ~amd64
+sys-kernel/linux-headers ~amd64
 sys-boot/ventoy-bin ~amd64
 net-misc/freerdp ~amd64
 virtual/dist-kernel ~amd64
