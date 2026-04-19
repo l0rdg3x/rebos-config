@@ -15,10 +15,6 @@ virtual/dist-kernel ~amd64
 sys-kernel/linux-firmware ~amd64
 net-im/discord ~amd64
 www-client/librewolf ~amd64
-dev-util/rocm-smi ~amd64
-dev-util/rocminfo ~amd64
-dev-libs/rocm-opencl-runtime ~amd64
-dev-libs/rocm-comgr ~amd64
 net-misc/nextcloud-client ~amd64
 app-crypt/sbctl ~amd64
 sys-boot/mokutil ~amd64
@@ -31,3 +27,11 @@ dev-libs/luksmeta ~amd64
 sys-apps/fwupd-efi ~amd64
 net-dialup/tio ~amd64
 sys-apps/openrazer ~amd64
+dev-libs/roct-thunk-interface ~amd64
+dev-libs/rocr-runtime ~amd64
+dev-libs/rocm-device-libs ~amd64
+dev-libs/rocm-comgr ~amd64
+dev-libs/rocm-opencl-runtime ~amd64
+dev-util/hip ~amd64
+dev-util/hipcc ~amd64
+dev-util/rocminfo ~amd64
