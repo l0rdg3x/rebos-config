@@ -36,3 +36,4 @@ dev-util/hip ~amd64
 dev-util/hipcc ~amd64
 dev-util/rocminfo ~amd64
 sci-misc/llama-cpp ~amd64
+sci-ml/huggingface_hub ~amd64
