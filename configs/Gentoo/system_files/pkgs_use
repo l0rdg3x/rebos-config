@@ -51,6 +51,7 @@ sys-kernel/dracut dracut-cpio
 llvm-core/clang-runtime openmp
 llvm-runtimes/openmp offload llvm_targets_AMDGPU
 sci-ml/ollama rocm
+sci-misc/llama-cpp rocm
 sys-kernel/gentoo-kernel savedconfig
 kde-apps/gwenview fits
 sci-libs/rocBLAS roctracer
