@@ -50,6 +50,7 @@ dev-qt/qtmultimedia gstreamer
 sys-kernel/dracut dracut-cpio
 llvm-core/clang-runtime openmp
 llvm-runtimes/openmp offload llvm_targets_AMDGPU
+llvm-runtimes/clang-runtime llvm_targets_AMDGPU
 sci-ml/ollama rocm
 sci-misc/llama-cpp rocm
 sys-kernel/gentoo-kernel savedconfig
