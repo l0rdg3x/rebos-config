@@ -23,6 +23,7 @@ items = [
   "dev-util/rocminfo",
   "llvm-runtimes/openmp",
   "sci-misc/llama-cpp",
+  "sci-ml/huggingface_hub",
 ]
 
 [managers.flatpak]
