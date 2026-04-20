@@ -1,0 +1,3 @@
+AR="llvm-ar"
+RANLIB="llvm-ranlib"
+NM="llvm-nm"
