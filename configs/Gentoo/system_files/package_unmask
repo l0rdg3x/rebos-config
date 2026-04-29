@@ -1,0 +1,4 @@
+net-proxy/burpsuite::pentoo
+dev-util/ghidra::pentoo
+net-analyzer/gobuster::pentoo
+app-dicts/seclists::pentoo
