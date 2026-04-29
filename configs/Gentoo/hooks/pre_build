@@ -19,6 +19,7 @@ sudo_conf_path="$system_files_path/sudo_config"
 ccache_path="/var/cache/ccache/"
 ccache_system_path="$system_files_path/ccache/ccache.conf"
 portage_gentoo_git="$system_files_path/repos.conf/gentoo.conf"
+portage_pentoo_git="$system_files_path/repos.conf/pentoo.conf"
 portage_gentoo_bin="$system_files_path/binrepos.conf/gentoobinhost.conf"
 kernel_config_path="$system_files_path/kernel_config"
 pkg_env_path="$system_files_path/env"
@@ -163,6 +164,8 @@ OFSUDO=1 overwrite_file "$pkg_env_conf" "/etc/portage/package.env"
 sudo cp -r "$pkg_env_path/"* "/etc/portage/env/"
 
 OFSUDO=1 overwrite_file "$portage_gentoo_git" /etc/portage/repos.conf/gentoo.conf || exit 1
+
+OFSUDO=1 overwrite_file "$portage_pentoo_git" /etc/portage/repos.conf/pentoo.conf || exit 1
 
 OFSUDO=1 overwrite_file "$make_conf_path" /etc/portage/make.conf || exit 1
 
