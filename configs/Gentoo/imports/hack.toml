@@ -1,0 +1,11 @@
+[managers.system]
+items = [
+]
+
+[managers.flatpak]
+items = [
+]
+
+[managers.openrc]
+items = [
+]
