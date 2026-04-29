@@ -2,6 +2,7 @@ imports = [
   "kde_full",
   "laptop",
   "work",
+  "hack",
 ]
 
 [managers.system]
