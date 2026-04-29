@@ -1,6 +1,7 @@
 imports = [
   "kde_full",
   "astro",
+  "hack",
 ]
 
 [managers.system]
