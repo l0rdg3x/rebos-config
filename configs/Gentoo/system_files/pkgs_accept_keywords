@@ -37,3 +37,9 @@ dev-util/hipcc ~amd64
 dev-util/rocminfo ~amd64
 sci-misc/llama-cpp ~amd64
 sci-ml/huggingface_hub ~amd64
+dev-lang/rust ~amd64
+dev-lang/rust-bin ~amd64
+kde-apps/* ~amd64
+kde-frameworks/* ~amd64
+kde-misc/* ~amd64
+kde-plasma/* ~amd64
