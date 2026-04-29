@@ -1,5 +1,9 @@
 [managers.system]
 items = [
+  "net-proxy/burpsuite",
+  "dev-util/ghidra",
+  "net-analyzer/gobuster",
+  "app-dicts/seclists",
 ]
 
 [managers.flatpak]
