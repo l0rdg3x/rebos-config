@@ -11,7 +11,7 @@ media-libs/libsdl2 gles2
 media-video/pipewire gstreamer echo-cancel extra sound-server
 media-video/ffmpeg lame opus x265
 dev-lang/rust-bin big-endian clippy doc profiler rust-analyzer rust-src verify-sig
-dev-lang/rust lto rust-analyzer
+dev-lang/rust lto rust-analyzer rust-src
 sys-libs/ncurses gpm
 sys-apps/xdg-desktop-portal screencast
 app-emulation/qemu spice usbredir aio
