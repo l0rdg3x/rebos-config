@@ -30,6 +30,7 @@ items = [
     "com.dec05eba.gpu_screen_recorder",
     "io.github.jonmagon.kdiskmark",
     "com.github.Bleuzen.FFaudioConverter",
+    "io.trezor.suite",
 ]
 
 [managers.openrc]
