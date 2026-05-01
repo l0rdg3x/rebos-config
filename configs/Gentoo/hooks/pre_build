@@ -13,6 +13,7 @@ pkgs_uses_path="$system_files_path/uses"
 pkgs_accept_keywords_path="$system_files_path/pkgs_accept_keywords"
 pkgs_accept_keywords_tmp_path="$system_files_tmp_path/pkgs_accept_keywords"
 pkgs_mask_path="$system_files_path/pkgs_mask"
+pkgs_unmask_path="$system_files_path/pkgs_unmask"
 make_conf_path="$system_files_tmp_path/make.conf"
 make_conf_template_path="$system_files_path/make_conf_template/make.conf"
 sudo_conf_path="$system_files_path/sudo_config"
@@ -182,6 +183,9 @@ OFSUDO=1 overwrite_file "$pkgs_use_tmp_path" /etc/portage/package.use/pkgs || ex
 OFSUDO=1 overwrite_file "$pkgs_accept_keywords_tmp_path" /etc/portage/package.accept_keywords/pkgs || exit 1
 
 OFSUDO=1 overwrite_file "$pkgs_mask_path" /etc/portage/package.mask/pkgs || exit 1
+
+sudo mkdir -p /etc/portage/package.unmask/
+OFSUDO=1 overwrite_file "$pkgs_unmask_path" /etc/portage/package.unmask/pkgs || exit 1
 
 autounmask_path="/etc/portage/package.accept_keywords/zzz_autounmask"
 autopkguse_path="/etc/portage/package.use/zzz_pkg_use"
