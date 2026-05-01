@@ -64,3 +64,4 @@ app-crypt/age ~amd64
 sys-fs/mdadm ~amd64
 sys-fs/dmraid ~amd64
 sys-fs/lvm2 ~amd64
+app-forensics/yara-x ~amd64
