@@ -5,3 +5,4 @@ app-dicts/seclists::pentoo
 app-forensics/sleuthkit::pentoo
 app-forensics/bulk_extractor::pentoo
 app-forensics/libewf::pentoo
+app-forensics/xmount::pkalin
