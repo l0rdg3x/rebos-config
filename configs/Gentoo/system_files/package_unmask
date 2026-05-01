@@ -2,3 +2,6 @@ net-proxy/burpsuite::pentoo
 dev-util/ghidra::pentoo
 net-analyzer/gobuster::pentoo
 app-dicts/seclists::pentoo
+app-forensics/sleuthkit::pentoo
+app-forensics/bulk_extractor::pentoo
+app-forensics/libewf::pentoo
