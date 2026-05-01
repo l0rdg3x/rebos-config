@@ -90,6 +90,7 @@ items = [
   "app-crypt/age",
   "sys-fs/mdadm",
   "sys-fs/dmraid",
+  "app-forensics/yara-x",
 ]
 
 [managers.openrc]
