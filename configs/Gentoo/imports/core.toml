@@ -83,7 +83,7 @@ items = [
   "app-forensics/volatility3",
   "sys-apps/dcfldd",
   "app-forensics/afflib",
-  "app-forensics/libewf",
+#  "app-forensics/libewf",
 #  "app-forensics/xmount",
   "net-analyzer/ngrep",
   "app-crypt/rhash",
