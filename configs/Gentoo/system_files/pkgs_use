@@ -62,7 +62,7 @@ app-shells/pwsh gui
 dev-libs/qtkeychain keyring
 app-admin/testdisk ntfs
 sys-fs/ext4magic file-attr
-app-forensics/sleuthkit aff doc ewf java
+app-forensics/sleuthkit aff doc ewf
 app-forensics/bulk_extractor aff doc beviewer exiv2 hashdb
 app-forensics/volatility3 crypt disasm jsonschema leechcore snappy yara
 app-forensics/afflib fuse ncurses python qemu readline threads
