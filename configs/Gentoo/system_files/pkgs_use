@@ -68,6 +68,7 @@ app-forensics/volatility3 crypt disasm jsonschema leechcore snappy yara
 app-forensics/afflib fuse ncurses python qemu readline threads
 net-analyzer/ngrep ipv6
 sys-fs/lvm2 lvm nvme thin valgrind xfs
+app-forensics/yara-x python
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
