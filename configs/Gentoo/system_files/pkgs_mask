@@ -1,5 +1,6 @@
 app-editors/vscode::pf4public
 dev-python/pycparser::zGentoo
 net-im/discord::zGentoo
+app-forensics/sleuthkit::gentoo
 */*::pentoo
 */*::pkalin
