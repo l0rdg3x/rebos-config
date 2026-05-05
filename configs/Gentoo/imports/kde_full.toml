@@ -31,6 +31,7 @@ items = [
     "io.github.jonmagon.kdiskmark",
     "com.github.Bleuzen.FFaudioConverter",
     "io.trezor.suite",
+    "io.github.totoshko88.RustConn",
 ]
 
 [managers.openrc]
