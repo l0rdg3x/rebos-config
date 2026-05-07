@@ -2,6 +2,7 @@
 items = [
   "net-print/cups-meta",
   "app-admin/bitwarden-desktop-bin",
+  "app-admin/bitwarden-cli-bin",
   "net-im/discord",
   "net-print/hplip",
   "app-editors/vscode",
