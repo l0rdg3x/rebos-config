@@ -3,6 +3,7 @@ app-backup/grub-btrfs ~amd64
 games-util/game-device-udev-rules ~amd64
 www-client/librewolf-bin ~amd64
 app-admin/bitwarden-desktop-bin ~amd64
+app-admin/bitwarden-cli-bin ~amd64
 games-util/gamemode ~amd64
 gui-wm/gamescope ~amd64
 net-misc/rustdesk-bin ~amd64
