@@ -42,6 +42,7 @@ net-vpn/networkmanager-openconnect -gtk
 net-vpn/networkmanager-openvpn -gtk
 net-vpn/networkmanager-pptp -gtk
 net-vpn/networkmanager-sstp -gtk
+net-vpn/networkmanager-fortisslvpn -gtk
 net-vpn/openvpn inotify pam pkcs11
 app-emulation/libvirt virtiofsd pcap
 net-firewall/ipset -modules
