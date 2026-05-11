@@ -37,6 +37,11 @@ media-libs/libiptcdata -python
 kde-plasma/plasma-meta discover flatpak grub ocr plymouth thunderbolt -firewall
 kde-plasma/plasma-nm openconnect teamd
 net-misc/networkmanager teamd
+net-vpn/networkmanager-l2tp -gtk
+net-vpn/networkmanager-openconnect -gtk
+net-vpn/networkmanager-openvpn -gtk
+net-vpn/networkmanager-pptp -gtk
+net-vpn/networkmanager-sstp -gtk
 net-vpn/openvpn inotify pam pkcs11
 app-emulation/libvirt virtiofsd pcap
 net-firewall/ipset -modules
