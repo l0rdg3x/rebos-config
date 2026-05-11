@@ -19,6 +19,7 @@ items = [
     "kde-plasma/bluedevil",
     "x11-misc/sddm",
     "media-gfx/skanpage",
+    "net-vpn/openvpn",
 ]
 
 [managers.flatpak]
