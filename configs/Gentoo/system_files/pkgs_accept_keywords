@@ -22,6 +22,7 @@ sys-boot/mokutil ~amd64
 sys-firmware/sof-firmware ~amd64
 sys-firmware/intel-microcode ~amd64
 sys-boot/plymouth-openrc-plugin ~amd64
+sys-auth/elogind ~amd64
 app-crypt/clevis ~amd64
 dev-libs/jose ~amd64
 dev-libs/luksmeta ~amd64
