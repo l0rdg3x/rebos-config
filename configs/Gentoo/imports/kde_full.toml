@@ -19,6 +19,7 @@ items = [
     "kde-plasma/bluedevil",
     "x11-misc/sddm",
     "media-gfx/skanpage",
+    "net-vpn/openvpn",
     "net-vpn/networkmanager-fortisslvpn",
     "net-vpn/networkmanager-l2tp",
     "net-vpn/networkmanager-openconnect",
