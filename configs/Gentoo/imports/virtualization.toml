@@ -8,6 +8,7 @@ items = [
     "sys-cluster/kubectl",
     "app-containers/distrobox",
     "app-admin/ansible-core",
+    "dev-python/pywinrm",
 ]
 
 [managers.flatpak]
