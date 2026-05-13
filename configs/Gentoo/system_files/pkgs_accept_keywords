@@ -68,3 +68,4 @@ sys-fs/dmraid ~amd64
 sys-fs/lvm2 ~amd64
 app-forensics/yara-x ~amd64
 net-vpn/openvpn ~amd64
+app-admin/ansible-core ~amd64
