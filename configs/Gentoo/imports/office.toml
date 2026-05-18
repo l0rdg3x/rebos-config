@@ -1,8 +1,9 @@
 [managers.system]
 items = [
   "net-print/cups-meta",
-  "app-admin/bitwarden-desktop-bin",
-  "app-admin/bitwarden-cli-bin",
+  "app-admin/proton-pass-bin",
+  "net-vpn/proton-vpn-gtk-app",
+  "dev-python/proton-vpn-network-manager",
   "net-im/discord",
   "net-print/hplip",
   "app-editors/vscode",
