@@ -1,5 +1,7 @@
 [managers.system]
 items = [
+  "app-admin/bitwarden-desktop-bin",
+  "app-admin/bitwarden-cli-bin",
 ]
 
 [managers.flatpak]
