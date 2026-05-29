@@ -68,7 +68,6 @@ kde-apps/gwenview fits
 sci-libs/rocBLAS roctracer
 app-containers/distrobox gui
 app-shells/pwsh gui
-dev-libs/qtkeychain keyring
 app-admin/testdisk ntfs
 sys-fs/ext4magic file-attr
 app-forensics/sleuthkit aff doc ewf -java
