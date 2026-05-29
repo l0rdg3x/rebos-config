@@ -66,7 +66,6 @@ items = [
   "net-analyzer/tcpdump",
   "dev-libs/libfido2",
   "dev-libs/opensc",
-  "dev-util/claude-code",
   "app-text/aha",
   "net-dialup/tio",
   "app-admin/sysklogd",
