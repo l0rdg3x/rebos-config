@@ -77,6 +77,7 @@ app-forensics/afflib fuse ncurses python qemu readline threads
 net-analyzer/ngrep ipv6
 sys-fs/lvm2 lvm nvme thin xfs
 app-forensics/yara-x python
+sys-apps/polychromatic python_single_target_python3_13
 # Nvidia
 x11-drivers/nvidia-drivers kernel-open tools
 # END Nvidia
