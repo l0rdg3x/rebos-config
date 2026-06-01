@@ -19,7 +19,7 @@ items = [
   "net-p2p/syncthing",
   "net-analyzer/wireshark",
   "sys-boot/ventoy-bin",
-  "app-admin/awscli-bin",
+  "app-admin/awscli",
 ]
 
 [managers.flatpak]
