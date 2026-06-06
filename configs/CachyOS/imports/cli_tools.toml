@@ -17,10 +17,6 @@ items = [
   "lolcat",
   "cowsay",
   "sl",
-]
-
-[managers.flatpak]
-items = [
-  "com.github.tchx84.Flatseal",
-  "org.raspberrypi.rpi-imager",
+  "rpi-imager",   # Arch (was the rpi-imager Flatpak)
+  "flatseal",     # Arch (was the Flatseal Flatpak) - manages the remaining Flatpaks
 ]

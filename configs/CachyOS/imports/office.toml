@@ -20,6 +20,8 @@ items = [
   "wireshark-qt",
   "ventoy-bin",                  # repo CachyOS (was sys-boot/ventoy-bin)
   "aws-cli",
+  "vorta",                       # Arch - Borg backup GUI (was the Vorta Flatpak)
+  "drawio-desktop",              # Arch (was the drawio Flatpak)
 ]
 
 [managers.serv_now]
@@ -32,11 +34,10 @@ items = [
   "syncthing",   # per-user syncthing.service (was the syncthing OpenRC user service)
 ]
 
+# Kept as Flatpak: native packages exist only in the AUR.
 [managers.flatpak]
 items = [
   "org.upscayl.Upscayl",
-  "com.borgbase.Vorta",
   "com.openterface.openterfaceQT",
-  "com.jgraph.drawio.desktop",
   "io.github.totoshko88.RustConn",
 ]

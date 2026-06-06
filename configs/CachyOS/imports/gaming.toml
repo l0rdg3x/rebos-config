@@ -5,12 +5,14 @@ items = [
   "gamemode",
   "gamescope",
   "game-devices-udev",   # AUR (was games-util/game-device-udev-rules)
+  "steam",               # multilib (was the Steam Flatpak)
+  "protonplus",          # repo CachyOS - Proton-GE manager (was the ProtonPlus Flatpak;
+                         # chosen over ProtonUp-Qt, which was dropped)
 ]
 
+# Bottles stays a Flatpak: that is the install method recommended upstream
+# (the AUR `bottles` package is discouraged by the Bottles project).
 [managers.flatpak]
 items = [
-  "net.davidotek.pupgui2",
-  "com.valvesoftware.Steam",
   "com.usebottles.bottles",
-  "com.vysp3r.ProtonPlus",
 ]

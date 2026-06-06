@@ -1,4 +1,4 @@
-# Hardware: firmware updates, SMART, smartcards/FIDO, backlight.
+# Hardware: firmware updates, SMART, smartcards/FIDO, backlight, sysinfo.
 
 [managers.system]
 items = [
@@ -10,9 +10,7 @@ items = [
                      # AUR `light` / Gentoo dev-libs/light). Ships udev rules so the
                      # `video` group can set brightness without root.
                      # CLI differs from light: `brightnessctl set 5%+` / `set 5%-`
-]
-
-[managers.flatpak]
-items = [
-  "org.gnome.Firmware",
+  "gnome-firmware",  # Arch (was the org.gnome.Firmware Flatpak)
+  "cpu-x",           # Arch (was the cpu-x Flatpak, previously in desktop_kde)
+  "kdiskmark",       # Arch (was the kdiskmark Flatpak, previously in desktop_kde)
 ]

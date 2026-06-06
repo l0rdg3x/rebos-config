@@ -12,11 +12,14 @@ Stessi pacchetti, ma:
 > Sono stati controllati uno a uno contro i database ufficiali Arch e l'AUR
 > (snapshot al momento della scrittura), ma repo e AUR cambiano nel tempo.
 
-> ℹ️ CachyOS abilita più repo che `paru` usa automaticamente: `cachyos` (i
-> pacchetti esclusivi, es. `proton-pass`, `librewolf-bin`, `brave-bin`,
-> `ventoy-bin`) + i rebuild ottimizzati per CPU (`*-v3`, `*-v4`, `znver4/znver5`,
-> stessi *nomi* di Arch). La colonna "Fonte" qui sotto è stata verificata contro
-> Arch (core/extra/multilib) **e** l'unione di tutti i repo CachyOS.
+> ℹ️ CachyOS **usa i repo Arch**: `core`/`extra`/`multilib` restano attivi (provato
+> dallo script ufficiale `install-repo.awk`, che inserisce i repo CachyOS *sopra*
+> `[core]` lasciando intatte le righe Arch). Sopra ci sono i repo CachyOS che `paru`
+> usa in automatico: `cachyos` (pacchetti esclusivi, es. `proton-pass`,
+> `librewolf-bin`, `brave-bin`, `ventoy-bin`, `protonplus`, `protonup-qt`) + i
+> rebuild ottimizzati per CPU (`*-v3`, `*-v4`, `znver4/znver5`, stessi *nomi* di
+> Arch). La colonna "Fonte" è verificata contro Arch (core/extra/multilib) **e**
+> l'unione di tutti i repo CachyOS.
 
 ## Attivazione
 
@@ -108,6 +111,24 @@ Power management: tutte usano **power-profiles-daemon** (da `desktop_kde`), nien
 | syncthing (user), openrazer-daemon (user) | `*.service --user` | `serv_user` |
 | dbus, elogind | gestiti da systemd | — (rimossi) |
 | sysklogd | journald (default) | — (rimosso, vedi sotto) |
+
+## Flatpak → nativo
+
+I 28 Flatpak originali (ID tutti validi su Flathub) sono stati divisi così:
+
+- **12 → nativo** (disponibili nei repo ufficiali Arch/CachyOS, quindi nessun
+  AUR aggiunto): Steam `steam`, ProtonPlus `protonplus`, EarTag `eartag`,
+  Blanket `blanket`, gpu_screen_recorder `gpu-screen-recorder-ui`, drawio
+  `drawio-desktop`, Vorta `vorta`, kdiskmark `kdiskmark`, cpu-x `cpu-x`, Firmware
+  `gnome-firmware`, rpi-imager `rpi-imager`, Flatseal `flatseal`.
+- **2 Flatpak rimossi senza sostituto**: **Ghidra** (doppione del `ghidra` nativo
+  in `hack`) e **ProtonUp-Qt** (si sovrappone a ProtonPlus, scelto come unico
+  gestore Proton-GE).
+- **14 restano Flatpak** (nativo solo su AUR → convertirli aumenterebbe l'AUR
+  senza vantaggi): Anydesk, AlizaMS, FFaudioConverter, WinBox, openterfaceQT,
+  Stremio, SynologyAssistant, Bottles, boxbuddyrs, RustConn, Trezor Suite,
+  ipscan, Siril, Upscayl. Per **Bottles** e **Trezor Suite** il Flatpak è anche
+  il metodo consigliato a monte (packaging ufficiale / sandbox per il wallet).
 
 ## ⚠️ Da decidere / verificare
 

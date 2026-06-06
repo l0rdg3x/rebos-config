@@ -6,14 +6,15 @@ items = [
   "gimp",
   "rawtherapee",
   "picard",
+  "eartag",                 # Arch (was the EarTag Flatpak)
+  "blanket",                # Arch (was the Blanket Flatpak)
+  "gpu-screen-recorder-ui", # Arch - GUI front-end (was the gpu_screen_recorder Flatpak)
 ]
 
+# Kept as Flatpak: native packages exist only in the AUR.
 [managers.flatpak]
 items = [
   "com.stremio.Stremio",
-  "com.rafaelmardojai.Blanket",
-  "app.drey.EarTag",
   "com.github.Bleuzen.FFaudioConverter",
-  "com.dec05eba.gpu_screen_recorder",
   "com.github.AlizaMedicalImaging.AlizaMS",
 ]

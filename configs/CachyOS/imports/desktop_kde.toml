@@ -24,7 +24,7 @@ items = [
   "bluedevil",
   "sddm",
   "skanpage",
-  "power-profiles-daemon",   # NOTE: conflicts with TLP (see imports/laptop.toml)
+  "power-profiles-daemon",   # active power management for every machine
 ]
 
 [managers.serv_startup]
@@ -35,10 +35,4 @@ items = [
 [managers.serv_now]
 items = [
   "power-profiles-daemon",
-]
-
-[managers.flatpak]
-items = [
-  "io.github.thetumultuousunicornofdarkness.cpu-x",
-  "io.github.jonmagon.kdiskmark",
 ]

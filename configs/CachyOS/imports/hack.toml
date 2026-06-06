@@ -2,13 +2,8 @@
 
 [managers.system]
 items = [
-  "ghidra",
+  "ghidra",      # native (the Flatpak org.ghidra_sre.Ghidra was a duplicate -> dropped)
   "gobuster",
   "burpsuite",   # AUR
   "seclists",    # AUR
-]
-
-[managers.flatpak]
-items = [
-  "org.ghidra_sre.Ghidra",   # Gentoo kept both the native and the Flatpak Ghidra
 ]
