@@ -16,8 +16,8 @@ Stessi pacchetti, ma:
 > dallo script ufficiale `install-repo.awk`, che inserisce i repo CachyOS *sopra*
 > `[core]` lasciando intatte le righe Arch). Sopra ci sono i repo CachyOS che `paru`
 > usa in automatico: `cachyos` (pacchetti esclusivi, es. `proton-pass`,
-> `librewolf-bin`, `brave-bin`, `ventoy-bin`, `protonplus`, `protonup-qt`) + i
-> rebuild ottimizzati per CPU (`*-v3`, `*-v4`, `znver4/znver5`, stessi *nomi* di
+> `librewolf-bin`, `brave-bin`, `ventoy-bin`, `protonplus`) + i rebuild
+> ottimizzati per CPU (`*-v3`, `*-v4`, `znver4/znver5`, stessi *nomi* di
 > Arch). La colonna "Fonte" è verificata contro Arch (core/extra/multilib) **e**
 > l'unione di tutti i repo CachyOS.
 
@@ -45,7 +45,7 @@ solo i propri import hardware/ruolo.
 | `filesystems` | partizioni, RAID, Btrfs/snapper, recovery base |
 | `fonts` · `audio` · `crypto` | noto · alsa/sox/rtkit · age/rhash |
 | `networking` · `bluetooth` · `gpm` | NM/avahi/diagnostica · bluez · gpm |
-| `hardware` | fwupd, smart, fido/smartcard, backlight |
+| `hardware` | fwupd, smart, fido/smartcard, backlight, sysinfo (cpu-x/kdiskmark) |
 | `forensics` | testdisk, sleuthkit, volatility3, carving, yara-x… |
 | `gaming` · `virtualization` | gamemode/scope/steam · libvirt/docker/k8s |
 | `office` · `media` · `cli_tools` | produttività · vlc/gimp/picard · tool CLI |
@@ -104,7 +104,7 @@ Power management: tutte usano **power-profiles-daemon** (da `desktop_kde`), nien
 | OpenRC | systemd | manager |
 |---|---|---|
 | NetworkManager, avahi-daemon | `NetworkManager`, `avahi-daemon` | `serv_now` |
-| bluetooth, gpm, grub-btrfsd | idem | `serv_now` |
+| bluetooth, gpm | idem | `serv_now` |
 | libvirtd, docker, cupsd | `libvirtd`,`docker`,`cups` | `serv_now` |
 | power-profiles-daemon | `power-profiles-daemon` | `serv_now` |
 | display-manager | `sddm` | `serv_startup` |
