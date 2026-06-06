@@ -10,8 +10,8 @@ items = [
   "proton-vpn-gtk-app",          # official (pulls the proton-vpn python stack,
                                  # i.e. Gentoo's proton-vpn-network-manager)
   "discord",
-  "visual-studio-code-bin",      # AUR - MS build (was app-editors/vscode).
-                                 # Official OSS build is `code`
+  "code",                        # official OSS build of VS Code (was app-editors/vscode;
+                                 # MS proprietary build is the AUR `visual-studio-code-bin`)
   "filezilla",
   "remmina",
   "nextcloud-client",

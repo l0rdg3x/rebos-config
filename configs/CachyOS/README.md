@@ -83,7 +83,7 @@ Su Arch la distinzione *source/bin* sparisce, quindi le app comuni stanno in
 | `app-admin/proton-pass-bin` | `proton-pass` | **repo CachyOS** |
 | `sys-boot/ventoy-bin` | `ventoy-bin` | **repo CachyOS** |
 | `net-misc/rustdesk*` | `rustdesk-bin` | **AUR** |
-| `app-editors/vscode` | `visual-studio-code-bin` | **AUR** (OSS: `code`) |
+| `app-editors/vscode` | `code` | ufficiale (build MS: AUR `visual-studio-code-bin`) |
 | `dev-libs/light` | `brightnessctl` | ufficiale (sostituisce `light`; sintassi `set 5%+`) |
 | `app-misc/jdupes`,`net-dialup/tio` | `jdupes`,`tio` | **AUR** |
 | `app-forensics/yara-x` | `yara-x` | **AUR** |
