@@ -1,4 +1,8 @@
 # Filesystems, partitioning, RAID and Btrfs snapshot tooling.
+#
+# NOTE: on a CachyOS GRUB install, `grub-btrfs` + `btrfs-assistant` (and the
+#       grub-btrfsd service) ship preinstalled and configured, so they are
+#       intentionally not managed here.
 
 [managers.system]
 items = [
@@ -15,12 +19,5 @@ items = [
   "dmraid",
   "ddrescue",
   "snapper",
-  "btrfs-assistant",
   "btrfsmaintenance",
-  "grub-btrfs",
-]
-
-[managers.serv_now]
-items = [
-  "grub-btrfsd",   # regenerates grub entries on new snapshots
 ]

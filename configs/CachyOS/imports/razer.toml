@@ -1,8 +1,15 @@
 # Razer peripherals (OpenRazer + GUI).
-# openrazer-driver-dkms needs the running kernel's headers (linux-cachyos-headers).
+#
+# openrazer-driver-dkms is a DKMS module: DKMS does NOT pull kernel headers
+# automatically. A fresh CachyOS install ships both the latest and the LTS
+# kernel, so headers for both are installed below and DKMS builds the openrazer
+# module for whichever you boot. Adjust if you run a different kernel
+# (e.g. linux-zen-headers); drop the LTS one if you removed that kernel.
 
 [managers.system]
 items = [
+  "linux-cachyos-headers",
+  "linux-cachyos-lts-headers",
   "openrazer-daemon",
   "openrazer-driver-dkms",
   "polychromatic",        # AUR

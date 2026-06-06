@@ -1,6 +1,5 @@
 # Machine: teslacoil  (laptop)
-# Base gen.toml already provides KDE, hack and the common desktop apps.
+# Uses only the base gen.toml (KDE, hack, common desktop apps).
+# Power management via power-profiles-daemon (from desktop_kde) - no TLP.
 
-imports = [
-  "laptop",
-]
+imports = []

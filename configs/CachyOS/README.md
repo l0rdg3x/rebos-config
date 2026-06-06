@@ -49,7 +49,7 @@ solo i propri import hardware/ruolo.
 | `hack` | burpsuite/ghidra/gobuster/seclists |
 | `desktop_kde` | Plasma + app KDE + sddm + power-profiles-daemon |
 | `desktop_common` | librewolf/brave/libreoffice/rustdesk (comuni a tutte) |
-| `laptop` · `work` · `astro` | tlp · bitwarden · stellarium |
+| `work` · `astro` | bitwarden · stellarium |
 | `gpu_amd` · `razer` · `ai_rocm` | amdgpu_top · openrazer · ROCm + llama.cpp |
 
 ### Macchine
@@ -59,10 +59,12 @@ Su Arch la distinzione *source/bin* sparisce, quindi le app comuni stanno in
 
 | Macchina | Import extra |
 |---|---|
-| `filosofem` | `laptop`, `work` |
+| `filosofem` | `work` |
 | `sirio` (workstation AMD) | `astro`, `gpu_amd`, `razer`, `ai_rocm` |
-| `teslacoil` | `laptop` |
-| `teslapower` | `laptop`, `gpu_amd` |
+| `teslacoil` | (solo base) |
+| `teslapower` | `gpu_amd` |
+
+Power management: tutte usano **power-profiles-daemon** (da `desktop_kde`), niente TLP.
 
 ## Mapping notevoli (Gentoo → CachyOS)
 
@@ -111,11 +113,12 @@ Su Arch la distinzione *source/bin* sparisce, quindi le app comuni stanno in
 
 - **`rust` vs `rustup`**: la toolchain è fornita da `rustup` (init_pkgs +
   `rustup default stable`). **Non** installare anche `rust` (conflitto).
-- **TLP vs power-profiles-daemon**: si escludono a vicenda. PPD è abilitato da
-  `desktop_kde`; `laptop` installa TLP ma **non** lo abilita. Scegline uno
-  (vedi note in `imports/laptop.toml`). Alternativa CachyOS: `auto-cpufreq` (AUR).
-- **grub-btrfs**: funziona solo con GRUB. Se su CachyOS usi systemd-boot/limine,
-  l'hook salta `grub-mkconfig`; valuta `limine-snapper-sync` / `snap-pac`.
+- **Power management**: tutte le macchine usano **power-profiles-daemon**
+  (installato + abilitato in `desktop_kde`). TLP rimosso del tutto.
+- **DKMS / OpenRazer**: DKMS **non** scarica da solo gli header del kernel. Una
+  installazione fresca di CachyOS ha sia il kernel più recente sia l'LTS, quindi
+  `razer` installa `linux-cachyos-headers` **e** `linux-cachyos-lts-headers` così
+  il modulo openrazer viene buildato per entrambi. Adatta se usi altri kernel.
 - **Stack VPN di NetworkManager**: su CachyOS è **già preinstallato** (incluso
   `openvpn`), quindi l'import `vpn` è stato rimosso del tutto.
 - **PipeWire**: già di default su CachyOS, quindi non ri-elencato in `audio.toml`
@@ -133,8 +136,11 @@ Su Arch la distinzione *source/bin* sparisce, quindi le app comuni stanno in
 `dev-python/proton-vpn-network-manager` (dipendenza di `proton-vpn-gtk-app`),
 `net-vpn/openvpn` + tutti i `net-vpn/networkmanager-*` (preinstallati su CachyOS).
 
-Non portati per scelta: `app-forensics/bulk_extractor` (solo repo BlackArch) e
-`net-vpn/networkmanager-sstp` (solo AUR `network-manager-sstp-git`).
+Non portati per scelta: `app-forensics/bulk_extractor` (solo repo BlackArch),
+`net-vpn/networkmanager-sstp` (solo AUR `network-manager-sstp-git`),
+`sys-power/tlp` (sostituito da power-profiles-daemon). `app-backup/grub-btrfs`
+e `app-admin/btrfs-assistant` non sono gestiti perché preinstallati su CachyOS
+con installazione GRUB.
 
 > Sostituzioni equivalenti: ricerca pacchetti `paru -Ss <nome>`; pulizia kernel
 > gestita da pacman (`linux*` mantiene corrente+fallback); logging via

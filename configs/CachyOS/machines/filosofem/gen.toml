@@ -1,8 +1,8 @@
-# Machine: filosofem  (laptop / work)
+# Machine: filosofem  (work laptop)
+# Power management via power-profiles-daemon (from desktop_kde) - no TLP.
 # Base gen.toml already provides KDE, hack and the common desktop apps
 # (librewolf-bin, brave-bin, libreoffice-fresh, rustdesk-bin).
 
 imports = [
-  "laptop",
   "work",
 ]
