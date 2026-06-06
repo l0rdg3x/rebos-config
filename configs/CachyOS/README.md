@@ -44,7 +44,7 @@ solo i propri import hardware/ruolo.
 | `devel` | toolchain (gcc/llvm/clang), build system, dkms |
 | `filesystems` | partizioni, RAID, Btrfs/snapper, recovery base |
 | `fonts` · `audio` · `crypto` | noto · alsa/sox/rtkit · age/rhash |
-| `networking` · `bluetooth` · `gpm` | NM/avahi/diagnostica · bluez · gpm |
+| `networking` · `bluetooth` | NM/avahi/diagnostica · bluez |
 | `hardware` | fwupd, smart, fido/smartcard, backlight, sysinfo (cpu-x/kdiskmark) |
 | `forensics` | testdisk, sleuthkit, volatility3, carving, yara-x… |
 | `gaming` · `virtualization` | gamemode/scope/steam · libvirt/docker/k8s |
@@ -104,7 +104,7 @@ Power management: tutte usano **power-profiles-daemon** (da `desktop_kde`), nien
 | OpenRC | systemd | manager |
 |---|---|---|
 | NetworkManager, avahi-daemon | `NetworkManager`, `avahi-daemon` | `serv_now` |
-| bluetooth, gpm | idem | `serv_now` |
+| bluetooth | idem | `serv_now` |
 | libvirtd, docker, cupsd | `libvirtd`,`docker`,`cups` | `serv_now` |
 | power-profiles-daemon | `power-profiles-daemon` | `serv_now` |
 | display-manager | `sddm` | `serv_startup` |
@@ -129,24 +129,6 @@ I 28 Flatpak originali (ID tutti validi su Flathub) sono stati divisi così:
   Stremio, SynologyAssistant, Bottles, boxbuddyrs, RustConn, Trezor Suite,
   ipscan, Siril, Upscayl. Per **Bottles** e **Trezor Suite** il Flatpak è anche
   il metodo consigliato a monte (packaging ufficiale / sandbox per il wallet).
-
-## ⚠️ Da decidere / verificare
-
-- **`rust` vs `rustup`**: la toolchain è fornita da `rustup` (init_pkgs +
-  `rustup default stable`). **Non** installare anche `rust` (conflitto).
-- **Power management**: tutte le macchine usano **power-profiles-daemon**
-  (installato + abilitato in `desktop_kde`). TLP rimosso del tutto.
-- **DKMS / OpenRazer**: DKMS **non** scarica da solo gli header del kernel. Una
-  installazione fresca di CachyOS ha sia il kernel più recente sia l'LTS, quindi
-  `razer` installa `linux-cachyos-headers` **e** `linux-cachyos-lts-headers` così
-  il modulo openrazer viene buildato per entrambi. Adatta se usi altri kernel.
-- **Stack VPN di NetworkManager**: su CachyOS è **già preinstallato** (incluso
-  `openvpn`), quindi l'import `vpn` è stato rimosso del tutto.
-- **PipeWire**: già di default su CachyOS, quindi non ri-elencato in `audio.toml`
-  (blocco disponibile commentato).
-- **`llama.cpp-hip` vs `ollama-rocm`**: in `ai_rocm` uso `llama.cpp-hip` (AUR) per
-  fedeltà alla config Gentoo; se preferisci niente AUR, il repo CachyOS offre
-  `ollama-rocm`.
 
 ## Rimossi (specifici Portage, nessun equivalente)
 
