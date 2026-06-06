@@ -9,7 +9,6 @@ items = [
   "safecopy",        # AUR
   "recoverjpeg",     # AUR
   "extundelete",     # AUR
-  "fatcat",          # AUR
   "dcfldd",          # AUR
   "afflib",          # AUR
   "yara-x",          # AUR (the Rust rewrite; official C one is `yara`)
