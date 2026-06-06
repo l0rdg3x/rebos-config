@@ -29,7 +29,6 @@ items = [
 
 [managers.serv_startup]
 items = [
-  "sddm",   # display manager: enable on boot, but never `--now` mid-session
 ]
 
 [managers.serv_now]
