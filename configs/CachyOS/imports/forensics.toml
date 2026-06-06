@@ -14,7 +14,8 @@ items = [
   "afflib",          # AUR
   "yara-x",          # AUR (the Rust rewrite; official C one is `yara`)
   "scalpel-git",     # AUR (no stable `scalpel` package on Arch)
-  "ext4magic",       # AUR (Gentoo sys-fs/ext4magic)
+  "ext4magic-patch-extent-free",  # AUR - only ext4magic build available (extent patch);
+                                  # was Gentoo sys-fs/ext4magic
 
   # --- Were already commented out in the Gentoo config -------------
   # "libewf",
