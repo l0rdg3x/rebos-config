@@ -1,0 +1,21 @@
+# Compiler toolchain and build systems.
+# On Arch these single packages replace Gentoo's split
+# llvm/llvm-common, clang/clang-common, gcc/gcc-config, binutils/binutils-config.
+
+[managers.system]
+items = [
+  "gcc",
+  "binutils",
+  "llvm",
+  "clang",
+  "lld",
+  "gdb",
+  "make",
+  "cmake",
+  "meson",
+  "ninja",
+  "tree-sitter-cli",
+  "glfw",   # Arch merged glfw-x11/glfw-wayland into a single `glfw`
+  "glew",
+  "dkms",   # out-of-tree kernel modules (needs <kernel>-headers, e.g. linux-cachyos-headers)
+]

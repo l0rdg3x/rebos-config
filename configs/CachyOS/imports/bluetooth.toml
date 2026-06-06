@@ -1,0 +1,12 @@
+# Bluetooth.
+
+[managers.system]
+items = [
+  "bluez",
+  "bluez-utils",
+]
+
+[managers.serv_now]
+items = [
+  "bluetooth",
+]

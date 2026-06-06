@@ -1,0 +1,25 @@
+# Core userland: shells, editors, archivers, base libraries.
+
+[managers.system]
+items = [
+  "nano",
+  "vim",
+  "git",
+  "python",
+  "curl",
+  "wget",
+  "coreutils",
+  "findutils",
+  "tar",
+  "zip",
+  "unzip",
+  "7zip",            # was app-arch/7zip (p7zip is the old virtual)
+  "dbus",
+  "polkit",
+  "gettext",
+  "pciutils",
+  "bash-completion",
+  "perl-libintl-perl",  # was dev-perl/libintl-perl
+  "postfix",            # MTA used for local mail (smartd/mdadm/cron alerts)
+  "s-nail",             # `mailx` command (was mail-client/mailx)
+]

@@ -1,0 +1,14 @@
+# Razer peripherals (OpenRazer + GUI).
+# openrazer-driver-dkms needs the running kernel's headers (linux-cachyos-headers).
+
+[managers.system]
+items = [
+  "openrazer-daemon",
+  "openrazer-driver-dkms",
+  "polychromatic",        # AUR
+]
+
+[managers.serv_user]
+items = [
+  "openrazer-daemon",     # per-user daemon (was the openrazer-daemon OpenRC user service)
+]

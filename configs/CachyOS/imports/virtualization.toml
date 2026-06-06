@@ -1,0 +1,25 @@
+# Virtualization & containers.
+
+[managers.system]
+items = [
+  "virt-manager",
+  "libvirt",
+  "docker",
+  "docker-compose",
+  "helm",
+  "kubectl",
+  "distrobox",
+  "ansible",            # was app-admin/ansible-core (ansible pulls ansible-core)
+  "python-pywinrm",     # was dev-python/pywinrm
+]
+
+[managers.serv_now]
+items = [
+  "libvirtd",
+  "docker",
+]
+
+[managers.flatpak]
+items = [
+  "io.github.dvlv.boxbuddyrs",
+]

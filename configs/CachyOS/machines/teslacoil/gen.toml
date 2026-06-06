@@ -1,0 +1,6 @@
+# Machine: teslacoil  (laptop)
+# Base gen.toml already provides KDE, hack and the common desktop apps.
+
+imports = [
+  "laptop",
+]

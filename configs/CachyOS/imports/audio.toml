@@ -1,0 +1,16 @@
+# Audio stack.
+# CachyOS ships PipeWire (pipewire / pipewire-pulse / pipewire-alsa /
+# wireplumber) out of the box, so it is intentionally NOT re-listed here.
+# Uncomment the block below if you ever install from a minimal base.
+
+[managers.system]
+items = [
+  "alsa-utils",
+  "alsa-plugins",
+  "sox",
+  "rtkit",
+#  "pipewire",
+#  "pipewire-pulse",
+#  "pipewire-alsa",
+#  "wireplumber",
+]

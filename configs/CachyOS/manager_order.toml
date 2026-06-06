@@ -1,0 +1,5 @@
+# Order in which managers run.
+# init_pkgs first (bootstrap what Rebos needs), then the main paru pass.
+# Services are enabled at the very end, once their packages exist.
+begin = ["init_pkgs", "system"]
+end = ["serv_startup", "serv_now", "serv_user"]

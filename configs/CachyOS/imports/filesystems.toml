@@ -1,0 +1,26 @@
+# Filesystems, partitioning, RAID and Btrfs snapshot tooling.
+
+[managers.system]
+items = [
+  "parted",
+  "gparted",
+  "xfsprogs",
+  "e2fsprogs",
+  "dosfstools",
+  "btrfs-progs",
+  "f2fs-tools",
+  "ntfs-3g",
+  "cifs-utils",
+  "mdadm",
+  "dmraid",
+  "ddrescue",
+  "snapper",
+  "btrfs-assistant",
+  "btrfsmaintenance",
+  "grub-btrfs",
+]
+
+[managers.serv_now]
+items = [
+  "grub-btrfsd",   # regenerates grub entries on new snapshots
+]

@@ -1,0 +1,10 @@
+# Machine: sirio  (AMD GPU desktop workstation)
+# Desktop (no laptop power mgmt). Adds Razer gear, AMD GPU tooling,
+# the ROCm/LLM compute stack and astronomy software.
+
+imports = [
+  "astro",
+  "gpu_amd",
+  "razer",
+  "ai_rocm",
+]

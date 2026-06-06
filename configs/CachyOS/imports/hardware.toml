@@ -1,0 +1,18 @@
+# Hardware: firmware updates, SMART, smartcards/FIDO, backlight.
+
+[managers.system]
+items = [
+  "fwupd",
+  "smartmontools",
+  "libfido2",
+  "opensc",
+  "brightnessctl",   # official - backlight + LED/keyboard control (replaces the
+                     # AUR `light` / Gentoo dev-libs/light). Ships udev rules so the
+                     # `video` group can set brightness without root.
+                     # CLI differs from light: `brightnessctl set 5%+` / `set 5%-`
+]
+
+[managers.flatpak]
+items = [
+  "org.gnome.Firmware",
+]

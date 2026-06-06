@@ -1,0 +1,8 @@
+# AMD GPU monitoring.
+# The actual driver stack (mesa, vulkan-radeon, lib32-* ) is installed by the
+# CachyOS installer, so only the monitoring tool is managed here.
+
+[managers.system]
+items = [
+  "amdgpu_top",
+]

@@ -1,0 +1,26 @@
+# Everyday CLI tools & terminal toys.
+
+[managers.system]
+items = [
+  "fastfetch",
+  "htop",
+  "tmux",
+  "jq",
+  "uv",
+  "qbittorrent",
+  "android-tools",
+  "perl-image-exiftool",   # `exiftool` (was media-libs/exiftool)
+  "jdupes",     # AUR
+  "tio",        # AUR
+  "aha",
+  "cmatrix",
+  "lolcat",
+  "cowsay",
+  "sl",
+]
+
+[managers.flatpak]
+items = [
+  "com.github.tchx84.Flatseal",
+  "org.raspberrypi.rpi-imager",
+]

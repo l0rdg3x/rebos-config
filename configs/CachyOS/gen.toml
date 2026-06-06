@@ -1,0 +1,39 @@
+# --------------------- #
+#    Generation File    #
+#       (CachyOS)       #
+# --------------------- #
+#
+# Base generation, applied to EVERY machine.
+# Machine-specific extras live in machines/<hostname>/gen.toml
+#
+# Package sources are resolved by `paru`: official Arch/CachyOS repos first,
+# falling back to the AUR. Lines tagged `# AUR` need the AUR enabled (paru
+# handles that). Lines tagged `# TODO` have no direct equivalent yet.
+
+imports = [
+  # --- Base system ---
+  "initial_packages",
+  "core",
+  "devel",
+  "filesystems",
+  "fonts",
+  "audio",
+  "networking",
+  "bluetooth",
+  "gpm",
+  "hardware",
+  "crypto",
+
+  # --- Tooling / apps ---
+  "forensics",
+  "gaming",
+  "virtualization",
+  "office",
+  "media",
+  "cli_tools",
+  "hack",
+
+  # --- Desktop (shared by all machines) ---
+  "desktop_kde",
+  "desktop_common",
+]

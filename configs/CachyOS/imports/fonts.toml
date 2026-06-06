@@ -1,0 +1,8 @@
+# Noto font family (latin + CJK + emoji).
+
+[managers.system]
+items = [
+  "noto-fonts",
+  "noto-fonts-cjk",
+  "noto-fonts-emoji",
+]

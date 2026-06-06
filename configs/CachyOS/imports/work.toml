@@ -1,0 +1,15 @@
+# Work-specific tools.
+
+[managers.system]
+items = [
+  "bitwarden",       # was app-admin/bitwarden-desktop-bin
+  "bitwarden-cli",   # was app-admin/bitwarden-cli-bin (CLI alt: `rbw`)
+]
+
+[managers.flatpak]
+items = [
+  "com.synology.SynologyAssistant",
+  "com.mikrotik.WinBox",
+  "com.anydesk.Anydesk",
+  "io.trezor.suite",
+]

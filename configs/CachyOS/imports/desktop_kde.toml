@@ -1,0 +1,44 @@
+# KDE Plasma desktop (port of Gentoo's kde_full).
+# Arch meta packages replace the Gentoo kde-*/*-meta sets:
+#   kdeadmin-meta      -> kde-system-meta
+#   kdeaccessibility   -> kde-accessibility-meta
+#   plasma-login-sessions is provided by plasma-meta/plasma-workspace, so it is dropped.
+
+[managers.system]
+items = [
+  "plasma-meta",
+  "kde-accessibility-meta",
+  "kde-system-meta",
+  "kde-graphics-meta",
+  "kde-multimedia-meta",
+  "kde-network-meta",
+  "kde-utilities-meta",
+  "dolphin",
+  "kdialog",
+  "keditbookmarks",
+  "kfind",
+  "khelpcenter",
+  "konsole",
+  "kleopatra",
+  "plasma-nm",
+  "bluedevil",
+  "sddm",
+  "skanpage",
+  "power-profiles-daemon",   # NOTE: conflicts with TLP (see imports/laptop.toml)
+]
+
+[managers.serv_startup]
+items = [
+  "sddm",   # display manager: enable on boot, but never `--now` mid-session
+]
+
+[managers.serv_now]
+items = [
+  "power-profiles-daemon",
+]
+
+[managers.flatpak]
+items = [
+  "io.github.thetumultuousunicornofdarkness.cpu-x",
+  "io.github.jonmagon.kdiskmark",
+]

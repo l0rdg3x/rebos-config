@@ -1,0 +1,6 @@
+# Machine: teslapower  (AMD laptop)
+
+imports = [
+  "laptop",
+  "gpu_amd",
+]

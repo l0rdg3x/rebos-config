@@ -1,0 +1,20 @@
+# ----------------------------------- #
+#    Package Manager Configuration    #
+#               (paru)                #
+# ----------------------------------- #
+
+add = "paru -S --needed #:?"
+remove = "paru -Rns #:?"
+sync = "paru -Syy"
+upgrade = "paru -Syu"
+
+# ------------------------------- #
+#    Additional configuration.    #
+# ------------------------------- #
+
+plural_name = "system packages"
+
+hook_name = "system_packages"
+
+[config]
+many_args = true

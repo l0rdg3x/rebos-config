@@ -1,0 +1,14 @@
+# Security / pentest toolkit.
+
+[managers.system]
+items = [
+  "ghidra",
+  "gobuster",
+  "burpsuite",   # AUR
+  "seclists",    # AUR
+]
+
+[managers.flatpak]
+items = [
+  "org.ghidra_sre.Ghidra",   # Gentoo kept both the native and the Flatpak Ghidra
+]

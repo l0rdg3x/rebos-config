@@ -1,0 +1,18 @@
+# ----------------------------------- #
+#    Package Manager Configuration    #
+#     (pacman - bootstrap only)       #
+# ----------------------------------- #
+
+add = "sudo pacman -S --needed #:?"
+remove = "sudo pacman -Rns #:?"
+
+# ------------------------------- #
+#    Additional configuration.    #
+# ------------------------------- #
+
+plural_name = "initial packages (install everything that Rebos needs)"
+
+hook_name = "init_pkgs"
+
+[config]
+many_args = true

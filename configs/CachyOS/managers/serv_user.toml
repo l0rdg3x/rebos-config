@@ -1,0 +1,11 @@
+# systemd user services (per-user, e.g. openrazer-daemon, syncthing)
+
+add = "systemctl --user enable #:?"
+remove = "systemctl --user disable #:?"
+
+plural_name = "user services"
+
+hook_name = "user_services"
+
+[config]
+many_args = true

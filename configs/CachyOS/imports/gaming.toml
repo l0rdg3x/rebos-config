@@ -1,0 +1,16 @@
+# Gaming: GameMode, Gamescope, controller udev rules + launchers.
+
+[managers.system]
+items = [
+  "gamemode",
+  "gamescope",
+  "game-devices-udev",   # AUR (was games-util/game-device-udev-rules)
+]
+
+[managers.flatpak]
+items = [
+  "net.davidotek.pupgui2",
+  "com.valvesoftware.Steam",
+  "com.usebottles.bottles",
+  "com.vysp3r.ProtonPlus",
+]

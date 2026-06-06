@@ -1,0 +1,11 @@
+# Astronomy.
+
+[managers.system]
+items = [
+  "stellarium",
+]
+
+[managers.flatpak]
+items = [
+  "org.siril.Siril",
+]

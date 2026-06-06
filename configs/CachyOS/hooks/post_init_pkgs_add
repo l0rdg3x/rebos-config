@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Enable Flathub for Flatpak.
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || exit 1
+
+# Select the stable Rust toolchain via rustup.
+rustup default stable || exit 1

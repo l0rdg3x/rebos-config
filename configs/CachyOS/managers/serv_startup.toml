@@ -1,0 +1,13 @@
+# systemd system services (enable on boot only, do NOT start now)
+# Used for things like the display manager, which you don't want to
+# (re)start in the middle of a running session.
+
+add = "sudo systemctl enable #:?"
+remove = "sudo systemctl disable #:?"
+
+plural_name = "startup services"
+
+hook_name = "startup_services"
+
+[config]
+many_args = true

@@ -1,0 +1,22 @@
+# Digital forensics / data-recovery toolkit.
+# Most of these live in the AUR (a few are BlackArch-only).
+
+[managers.system]
+items = [
+  "testdisk",        # official (also ships photorec)
+  "sleuthkit",       # official
+  "volatility3",     # official
+  "safecopy",        # AUR
+  "recoverjpeg",     # AUR
+  "extundelete",     # AUR
+  "fatcat",          # AUR
+  "dcfldd",          # AUR
+  "afflib",          # AUR
+  "yara-x",          # AUR (the Rust rewrite; official C one is `yara`)
+  "scalpel-git",     # AUR (no stable `scalpel` package on Arch)
+  "ext4magic",       # AUR (Gentoo sys-fs/ext4magic)
+
+  # --- Were already commented out in the Gentoo config -------------
+  # "libewf",
+  # "xmount",
+]

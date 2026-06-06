@@ -1,0 +1,30 @@
+# Networking core + diagnostics.
+
+[managers.system]
+items = [
+  "networkmanager",
+  "avahi",            # mDNS/zeroconf (was the avahi-daemon OpenRC service)
+  "nss-mdns",
+  "bind",             # provides dig/host/nslookup (was net-dns/bind-tools)
+  "nmap",
+  "tcpdump",
+  "ngrep",
+  "arp-scan",
+  "ethtool",
+  "speedtest-cli",
+]
+
+# NOTE: the whole NetworkManager VPN stack (openvpn + the networkmanager-openvpn/
+#       openconnect/pptp/l2tp/strongswan/... plugins) ships preinstalled on
+#       CachyOS, so none of it is managed here.
+
+[managers.serv_now]
+items = [
+  "NetworkManager",
+  "avahi-daemon",
+]
+
+[managers.flatpak]
+items = [
+  "org.angryip.ipscan",
+]

@@ -1,0 +1,16 @@
+# Daily-driver desktop apps shared by every machine.
+#
+# On Arch/CachyOS the Gentoo source-vs-bin split disappears, so the per-machine
+# duplication (librewolf / librewolf-bin, rust / rust-bin, libreoffice /
+# libreoffice-bin, rustdesk / rustdesk-bin) collapses into this single import.
+#
+# Rust: provided by `rustup` (see imports/initial_packages.toml). Do NOT add the
+# `rust` package as well - the two conflict on Arch.
+
+[managers.system]
+items = [
+  "librewolf-bin",     # repo CachyOS (prebuilt; source build is `librewolf`)
+  "brave-bin",         # repo CachyOS
+  "libreoffice-fresh", # official (use `libreoffice-still` for the LTS branch)
+  "rustdesk-bin",      # AUR (prebuilt; source build is `rustdesk`)
+]

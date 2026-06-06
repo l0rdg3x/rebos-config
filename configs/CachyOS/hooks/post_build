@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+# ----------------------------------------------------------------------------
+#  CachyOS post-build hook
+#  - adds the user to the relevant groups
+#  - regenerates grub-btrfs entries (only if GRUB is the bootloader)
+#  - makes sure Flathub is configured
+# ----------------------------------------------------------------------------
+
+add_group_to_user () {
+    # Skip groups that don't exist on this system.
+    if ! getent group "$1" > /dev/null 2>&1; then
+        echo -e "Group '\033[0;96m$1\033[0m' does not exist (skipping...)"
+        return
+    fi
+
+    if groups "$2" | tr ' ' '\n' | grep -qx "$1" > /dev/null 2>&1; then
+        echo -e "User \033[0;36m$2\033[0m already in group '\033[0;96m$1\033[0m' (skipping...)"
+        return
+    fi
+
+    if sudo usermod -aG "$1" "$2"; then
+        echo -e "Added group '\033[0;96m$1\033[0m' to user \033[0;36m$2\033[0m! :D"
+    else
+        echo -e "Failed to add group '\033[0;96m$1\033[0m' to user \033[0;36m$2\033[0m! :("
+        exit 1
+    fi
+}
+
+# Standard user groups (Arch naming).
+for g in wheel audio video render storage optical lp scanner network power sys \
+         rfkill kvm input uucp dialout games; do
+    add_group_to_user "$g" "${USER}"
+done
+
+# Virtualization (only if libvirt is present).
+if command -v virsh > /dev/null 2>&1; then
+    echo "Detected libvirt... adding virtualization groups..."
+    add_group_to_user libvirt "${USER}"
+    add_group_to_user kvm "${USER}"
+fi
+
+# Docker (only if installed).
+if command -v docker > /dev/null 2>&1; then
+    echo "Detected Docker... adding docker group..."
+    add_group_to_user docker "${USER}"
+fi
+
+# Make sure Flathub is available.
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || true
+
+# grub-btrfs: only meaningful when GRUB is actually the bootloader.
+if command -v grub-mkconfig > /dev/null 2>&1 && [[ -d /boot/grub ]]; then
+    echo "Regenerating GRUB config for grub-btrfs..."
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+else
+    echo "GRUB not detected (systemd-boot/limine?) - skipping grub-mkconfig."
+    echo "grub-btrfs only works with GRUB; use limine-snapper-sync or snap-pac otherwise."
+fi

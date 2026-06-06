@@ -1,0 +1,22 @@
+# ROCm compute stack + local LLM inference (AMD GPU workstation).
+#
+# sirio = Radeon RX 9070 XT (RDNA4, target gfx1201). ROCm 7.x (repos ship 7.2.4)
+# supports gfx1201 natively, so NO `HSA_OVERRIDE_GFX_VERSION` workaround is needed.
+# Vulkan alternative for inference only: swap `llama.cpp-hip` -> `llama.cpp-vulkan`.
+#
+# `rocm-hip-sdk` is the meta package that pulls the whole HIP/ROCm dev stack
+# (hip, hipcc, rocm-llvm, comgr, rocm-device-libs, rocminfo, hsa-rocr, ...),
+# replacing the long list of individual Gentoo ebuilds:
+#   roct-thunk-interface, rocr-runtime, rocm-device-libs, rocm-comgr,
+#   hip, hipcc, rocminfo  ->  rocm-hip-sdk
+
+[managers.system]
+items = [
+  "rocm-hip-sdk",
+  "rocm-opencl-runtime",
+  "rocminfo",
+  "openmp",                  # llvm-runtimes/openmp
+  "python-huggingface-hub",  # sci-ml/huggingface_hub
+  "llama.cpp-hip",           # AUR - llama.cpp built against ROCm/HIP.
+                             # No-AUR alternative in the CachyOS repo: "ollama-rocm"
+]

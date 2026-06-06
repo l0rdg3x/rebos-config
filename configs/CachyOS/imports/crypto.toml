@@ -1,0 +1,7 @@
+# Hashing / encryption helpers.
+
+[managers.system]
+items = [
+  "age",
+  "rhash",
+]

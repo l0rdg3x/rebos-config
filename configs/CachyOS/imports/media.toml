@@ -1,0 +1,19 @@
+# Multimedia & graphics.
+
+[managers.system]
+items = [
+  "vlc",
+  "gimp",
+  "rawtherapee",
+  "picard",
+]
+
+[managers.flatpak]
+items = [
+  "com.stremio.Stremio",
+  "com.rafaelmardojai.Blanket",
+  "app.drey.EarTag",
+  "com.github.Bleuzen.FFaudioConverter",
+  "com.dec05eba.gpu_screen_recorder",
+  "com.github.AlizaMedicalImaging.AlizaMS",
+]

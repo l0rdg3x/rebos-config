@@ -1,0 +1,12 @@
+# Bootstrap packages Rebos itself relies on.
+# NOTE: `paru` ships preinstalled on CachyOS, so it is not listed here.
+#       base-devel + git are required to build anything from the AUR.
+
+[managers.init_pkgs]
+items = [
+  "base-devel",
+  "git",
+  "flatpak",
+  "rustup",   # toolchain manager -> do NOT also install `rust` (they conflict)
+  "ccache",
+]
