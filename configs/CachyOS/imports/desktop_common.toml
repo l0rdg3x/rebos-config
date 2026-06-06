@@ -14,3 +14,8 @@ items = [
   "libreoffice-fresh", # official (use `libreoffice-still` for the LTS branch)
   "rustdesk-bin",      # AUR (prebuilt; source build is `rustdesk`)
 ]
+
+[managers.serv_now]
+items = [
+  "rustdesk",
+]
