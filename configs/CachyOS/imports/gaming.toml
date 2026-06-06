@@ -4,7 +4,6 @@
 items = [
   "gamemode",
   "gamescope",
-  "game-devices-udev",   # AUR (was games-util/game-device-udev-rules)
   "steam",               # multilib (was the Steam Flatpak)
   "protonplus",          # repo CachyOS - Proton-GE manager (was the ProtonPlus Flatpak;
                          # chosen over ProtonUp-Qt, which was dropped)
