@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Install the custom /etc/sudoers (ported from the Gentoo config).
+# It is validated with `visudo -c` BEFORE being installed, so a syntax error
+# can never lock you out of sudo.
+
+system_files_path="$HOME/.config/rebos/system_files"
+src="$system_files_path/sudo_config"
+
+if [[ -f "$src" ]]; then
+    if sudo visudo -cf "$src" > /dev/null 2>&1; then
+        sudo install -m 0440 -o root -g root "$src" /etc/sudoers
+        echo -e "\033[1;92mInstalled custom /etc/sudoers.\033[0m"
+    else
+        echo -e "\033[1;91msudo_config has syntax errors -> NOT installing.\033[0m" >&2
+        echo "Check it with: visudo -cf \"$src\"" >&2
+        exit 1
+    fi
+fi
