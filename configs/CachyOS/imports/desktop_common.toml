@@ -15,6 +15,11 @@ items = [
   "rustdesk-bin",      # AUR (prebuilt; source build is `rustdesk`)
 ]
 
+[managers.flatpak]
+items = [
+  "io.trezor.suite",
+]
+
 [managers.serv_now]
 items = [
   "rustdesk",
