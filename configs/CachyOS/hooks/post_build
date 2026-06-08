@@ -29,7 +29,7 @@ add_group_to_user () {
 
 # Standard user groups (Arch naming).
 for g in wheel audio video render storage optical lp scanner network power sys \
-         rfkill kvm input uucp dialout games; do
+         rfkill kvm input uucp dialout games openrazer; do
     add_group_to_user "$g" "${USER}"
 done
 
