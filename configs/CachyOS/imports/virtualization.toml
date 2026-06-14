@@ -3,6 +3,7 @@
 [managers.system]
 items = [
   "virt-manager",
+  "qemu-full",
   "libvirt",
   "docker",
   "docker-compose",
