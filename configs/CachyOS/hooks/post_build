@@ -37,7 +37,9 @@ done
 if command -v virsh > /dev/null 2>&1; then
     echo "Detected libvirt... adding virtualization groups..."
     add_group_to_user libvirt "${USER}"
+    add_group_to_user libvirt-qemu "${USER}"
     add_group_to_user kvm "${USER}"
+    add_group_to_user qemu "${USER}"
 fi
 
 # Docker (only if installed).
