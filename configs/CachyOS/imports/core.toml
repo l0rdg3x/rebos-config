@@ -23,4 +23,5 @@ items = [
   "perl-libintl-perl",  # was dev-perl/libintl-perl
   "postfix",            # MTA used for local mail (smartd/mdadm/cron alerts)
   "s-nail",             # `mailx` command (was mail-client/mailx)
+  "tftp-hpa",
 ]
