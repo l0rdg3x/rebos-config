@@ -6,6 +6,7 @@ items = [
   "hplip",
   "sane-airscan",
   "pcsc-tools",
+  "rustconn",
   "proton-pass",                 # repo CachyOS (was app-admin/proton-pass-bin)
   "proton-vpn-gtk-app",          # official (pulls the proton-vpn python stack,
                                  # i.e. Gentoo's proton-vpn-network-manager)
@@ -39,5 +40,4 @@ items = [
 items = [
   "org.upscayl.Upscayl",
   "com.openterface.openterfaceQT",
-  "io.github.totoshko88.RustConn",
 ]
