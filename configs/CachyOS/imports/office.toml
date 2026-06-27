@@ -7,6 +7,9 @@ items = [
   "sane-airscan",
   "pcsc-tools",
   "rustconn",
+  "waypipe",
+  "cloudflared",
+  "picocom",
   "proton-pass",                 # repo CachyOS (was app-admin/proton-pass-bin)
   "proton-vpn-gtk-app",          # official (pulls the proton-vpn python stack,
                                  # i.e. Gentoo's proton-vpn-network-manager)
