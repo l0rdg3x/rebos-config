@@ -19,4 +19,5 @@ items = [
   "sl",
   "rpi-imager",   # Arch (was the rpi-imager Flatpak)
   "flatseal",     # Arch (was the Flatseal Flatpak) - manages the remaining Flatpaks
+  "github-cli",
 ]
